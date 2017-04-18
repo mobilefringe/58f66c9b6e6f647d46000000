@@ -664,6 +664,16 @@ input[type="checkbox"], input[type="radio"]{
     max-width:957px;
     width:100%;
 }
+.header_content {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    z-index: 33;
+    width: 945px;
+    height: 26px;
+    margin: 0 auto;
+}
 .social{
     top:12px;    
 }
