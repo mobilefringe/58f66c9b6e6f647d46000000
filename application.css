@@ -23,20 +23,13 @@
 }
 
 .white-bar {
-    float: left;
-    width: 100%;
-    height: 46px;
-    margin-top: 1px;
-    background-color: rgb(255, 255, 255);
-}
-.white-bar {
     position: relative;
     float: left;
     z-index: 17;
     width: 100%;
     height: 46px;
     margin-top: 1px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
 }
 
 .custom_spl_banner img{
