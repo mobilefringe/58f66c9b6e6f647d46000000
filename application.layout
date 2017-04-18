@@ -51,200 +51,124 @@
         </script>
     </head>
 
-    <body id="page-top">
-        <div class="site_container">
-            <nav class="show_phone mobile_nav navbar-fixed-top">
-                <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445970905000/menu.png" class="menu_toggler">
-                <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/png/1446664167000/dixie_mall_logo_1B[1].png" class="logo_phone" alt="logo"></a>
-                <div id="navbar">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a class="dd_link" href="#" id="mobile_nav1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Stores <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="mobile_nav1">
-                                <li><a href="/stores">Directory</a></li>
-                                <li><a href="/map">Centre Map</a></li>
-                            </ul>
-                                
-                        </li>
-                        <li>
-                            <a class="dd_link" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Events <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="mobile_nav2">
-                                <li><a href="/events">Mall-Wide Events</a></li>
-                                <li><a href="/contests">Online Contests</a></li>
-                                <li><a href="/livingroomevents">The Living Room</a></li>
-                               
-                            </ul>
-                                
-                        </li>
-                        <li><a href="/promotions">Promotions</a></li>
-                        <li>
-                            <a class="dd_link" href="#" id="mobile_nav3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Centre Information <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="mobile_nav3">
-                                <li><a href="/about_us">About Us</a></li>
-                                <li><a href="/hours">Operating Hours</a></li>
-                                <li><a href="/getting_here">Getting Here</a></li>
-                                <li><a href="/jobs">Careers</a></li>
-                                <li><a href="/non_profit_groups">Non-Profit Groups</a></li>
-                                <li><a href="/leasing">Leasing & Partnerships</a></li>
-                                <li><a href="/contact_us">Contact Us</a></li>
-                                
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="dd_link" href="#" id="mobile_nav4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="mobile_nav4">
-                                <li><a href="/guest_services">Guest Services</a></li>
-                                <li><a href="/gift_cards">Gift Cards</a></li>
-                                <li><a href="/group_tours">Group Tours</a></li>
-                                <li><a href="/mall_walkers_program">Mall Walker’s Program</a></li>
-                                <li><a href="/accessibility">Accessibility</a></li>
-                                <li><a href="/green_initiatives">Green Initiatives</a></li>
-                                <li><a href="/newsletter">Newsletter</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="dd_link" href="#" id="mobile_nav5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">The Living Room <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="mobile_nav5">
-                                <li><a href="/livingroom/about">About</a></li>
-                                <li><a href="/livingroom/the_details">The Details</a></li>
-                                <li><a href="/livingroom/events_calendar">Events Calendar</a></li>
-                                <li><a href="/livingroom/book_this_space">Book This Space</a></li>
-                                <li><a href="/livingroom/dixie_living_room">#DixieLivingRoom</a></li>
-                                <li><a href="/livingroom/faq">FAQ</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </nav>
-            <div class="row top_header">
-                <div class="col-md-4 hidden_phone">
-                    <p class="todays_hours">
-                        <b>Today's Hours </b>
-                        <span id="home_hours_container">
-                            <script id="home_hours_template" type="x-tmpl-mustache/text">
-                                {%raw%}{{h}}{%endraw%}
-                            </script>
-                        </span>
-                        <br />
-                        <a href="/hours">
-                            CLICK HERE FOR FULL HOURS
-                        </a>
-                    </p>
-                    <div class="top_header_social_icons ">
-                           <a target="_blank" href="https://instagram.com/dixieoutletmall/"><img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445628026000/Instagram.png" class="" alt="Instagram"></a>
-                        <a target="_blank" href="//www.facebook.com/dixieoutletmall?ref=mf"><img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="Facebook"></a>
-                        <a target="_blank" href="//twitter.com/DixieOutletMall"><img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627988000/Twitter Copy 2.png" class="" alt="Twitter"></a>
-                        <a target="_blank" href="//pinterest.com/dixieoutletmall/"><img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445628012000/Pinterest Copy 2.png" class="" alt="Pinterest"></a>
-                 
-                    </div>
-                </div>
-                <div class="col-md-4 text-center hidden_phone">
-                    <a href="/">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/png/1446664167000/dixie_mall_logo_1B[1].png" class="top_logo" alt="Dixie Logo">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <div class="pull-right">
-                        <div class="site_searcher_div" >
-                            <label class="top_form_control no_margin">
-                                <i class="custom_i fa fa-search"></i>
-                                <input type="text" placeholder="Search" id="site_search" />
-                                <i id="close_search" class="fa fa-times-circle"></i>
-                            </label>
-                            <div class="site_search_results" id="search_results_stores"></div>
-                            <div class="site_search_results" id="search_results_events"></div>
-                            <div class="site_search_results" id="search_results_promotions"></div>
-                        </div>
-                        <div class="newsletter_btn">
-                            <a href="/newsletter">
-                                <i class="custom_i fa fa-envelope-o"></i>
-                                <span>Subscribe to Our Newsletter</span>
-                            </a>
-                        </div>
-                        <!--<form action="//mobilefringe.createsend.com/t/d/s/ddtidj/" method="post" id="subForm" class="newsletter_form">-->
-                        <!--    <label class="top_form_control">-->
-                        <!--        <i class="custom_i fa fa-envelope-o"></i>-->
-                        <!--        <input name="cm-ddtidj-ddtidj" type="text" placeholder="Enter your email to Subscribe" required />-->
-                        <!--    </label>-->
-                        <!--    <label class="newsletter_label ">-->
-                        <!--        <input id="agree_newsletter" type="checkbox" required oninvalid="this.setCustomValidity('Please check this box to proceed')"  />-->
-                        <!--        I agree to receive newsletters.-->
-                        <!--    </label>-->
-                        <!--    <button type="submit" class="submit_newsletter"><i class="fa fa-arrow-right"></i></button>-->
-                        <!--    <span id="subscription_confirmed">Thank you for subscribing.</span>-->
-                        <!--</form>-->
-                    </div>
-                </div>
-            </div>
-            <div class="row top_nav hidden_phone">
-                <div class="top_nav_row">
-                    <div class="top_nav_menu" id="top_nav_stores">
-                        <div class="dropdown">
-                            <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Stores <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu1">
-                                <li><a href="/stores">Directory</a></li>
-                                <li><a href="/map">Centre Map</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="top_nav_menu" id="top_nav_events">
-                        <div class="dropdown">
-                            <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Events <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
-                                <li><a href="/events">Mall-Wide Events</a></li>
-                                <li><a href="/contests">Online Contests</a></li>
-                                <li><a href="/livingroomevents">The Living Room</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="top_nav_menu" id="top_nav_promotions">
-                        <a href="/promotions">Promotions</a>
-                    </div>
-                    <div class="top_nav_menu" id="top_nav_centre_info">
-                        <div class="dropdown">
-                            <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Centre Information <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
-                                <li><a href="/about_us">About Us</a></li>
-                                <li><a href="/hours">Operating Hours</a></li>
-                                <li><a href="/getting_here">Getting Here</a></li>
-                                <li><a href="/jobs">Careers</a></li>
-                                <li><a href="/non_profit_groups">Non-Profit Groups</a></li>
-                                <li><a href="/leasing">Leasing & Partnerships</a></li>
-                                <li><a href="/contact_us">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="top_nav_menu" id="top_nav_about_us">
-                        <div class="dropdown">
-                            <a href="#" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu4">
-                                <li><a href="/guest_services">Guest Services</a></li>
-                                <li><a href="/gift_cards">Gift Cards</a></li>
-                                <li><a href="/group_tours">Group Tours</a></li>
-                                <li><a href="/mall_walkers_program">Mall Walker’s Program</a></li>
-                                <li><a href="/accessibility">Accessibility</a></li>
-                                <li><a href="/green_initiatives">Green Initiatives</a></li>
-                                <li><a href="/newsletter">Newsletter</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="top_nav_menu" id="top_nav_livingroom">
-                        <div class="dropdown">
-                            <a href="#" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">The Living Room <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu5">
-                                <li><a href="/livingroom/about">About</a></li>
-                                <li><a href="/livingroom/the_details">The Details</a></li>
-                                <li><a href="/livingroom/events_calendar">Events Calendar</a></li>
-                                <li><a href="/livingroom/book_this_space">Book This Space</a></li>
-                                <li><a href="/livingroom/dixie_living_room">#DixieLivingRoom</a></li>
-                                <li><a href="/livingroom/faq">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <body>
+        <a class="accessible" href="#main_content">[Skip to Content]</a>
+        <header>
+        <div class="logo_content">
+            <a href="/">
+                <img alt="logo" class="lp_logo" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492544930000/lansdownelogo.png">
+            </a>
         </div>
+        <div class="_container _container-2 clearfix" id="header">
+            <div class="white-bar"></div>
+            <div class="header_content clearfix">
+                <div class="menu-phone hidden-desktop">
+                    <div class="menu-phone-btn">
+                        <a class="text text-34">MENU</a>
+                    </div>
+                    <div class="menu-phone-list">
+                        <ul>
+                            <li class="menu-phone-submenu">
+                                <a class="text-35">SHOPPING</a>                                                     
+                                <ul>                            
+                                    <li><a class="text-34" href='/stores' target='_self'>store directory</a></li>
+                                    <li><a class="text-34" href='/new_stores' target='_self'>new stores</a></li>
+                                    <li><a class="text-34" href='/coming_soon_stores' target='_self'>coming soon</a></li>
+                                    <li><a class="text-34" href='/pages/lansdowne-gift-cards' target='_self'>gift cards</a></li>
+                                    <li><a class="text-34" href='/newsletter' target='_self'>newsletter sign up</a></li>
+                                </ul>
+                            </li>  
+                            <li class="menu-phone-submenu">
+                                <a class="text-35">VISITING</a>                                                     
+                                <ul>                            
+                                    <li><a class="text-34" href='/hours' target='_self'>hours</a></li>
+                                    <li><a class="text-34" href='/pages/lansdowne-directions' target='_self'>directions</a></li>
+                                    <li><a class="text-34" href='/pages/lansdowne-services' target='_self'>services</a></li>
+                                    <li><a class="text-34" href='/pages/lansdowne-tourism' target='_self'>tourism</a></li>
+                                    <li><a class="text-34" href='/pages/lansdowne-security' target='_self'>security</a></li>
+                                </ul>
+                            </li>  
+                            <li class="menu-phone-submenu">
+                                <a class="text-35">PROMOS & EVENTS</a>                                                     
+                                <ul>                            
+                                    <li><a class="text-34" href='/promotions' target='_self'>promotions</a></li>
+                                    <li><a class="text-34" href='/events' target='_self'>events</a></li>
+                                </ul>
+                            </li>  
+                            <li class="menu-phone-submenu">                        
+                                <a class="text-34" href="/jobs">JOBS</a>
+                            </li>
+                            <li class="menu-phone-submenu">
+                                <a class="text-35">ABOUT US</a>                                                     
+                                <ul style="right:0px; left:auto;">                            
+                                    <li><a class="text-34" href='/pages/lansdowne-contact-us' target='_self'>contact us</a></li>
+                                    <li><a class="text-34" href='/pages/lansdowne-leasing-info' target='_self'>leasing information</a></li>
+                                    <li><a class="text-34" href='/pages/lansdowne-temporary-leasing' target='_self'>specialty leasing</a></li>
+                                    <li><a class="text-34" href='/pages/lansdowne-commitment-to-green' target='_self'>green initiative</a></li>
+                                    <li><a class="text-34" href='/pages/lansdowne-community' target='_self'>community</a></li>
+                                </ul>
+                            </li>  
+                        </ul>
+                    </div>
+                </div> 
+                <div class="menu visible-desktop">
+                    <ul>
+                        <li>
+                            <a>SHOPPING</a>                                                     
+                            <ul>                            
+                                <li><a href='/stores' target='_self'>store directory</a></li>
+                                <li><a href='/new_stores' target='_self'>new stores</a></li>
+                                <li><a href='/coming_soon_stores' target='_self'>coming soon</a></li>
+                                <li><a href='/pages/lansdowne-gift-cards' target='_self'>gift cards</a></li>
+                                <li><a href='/newsletter' target='_self'>newsletter sign up</a></li>
+                            </ul>
+                        </li>  
+                        <li>
+                            <a>VISITING</a>                                                     
+                            <ul>                            
+                                <li><a href='/hours' target='_self'>hours</a></li>
+                                <li><a href='/pages/lansdowne-directions' target='_self'>directions</a></li>
+                                <li><a href='/pages/lansdowne-services' target='_self'>services</a></li>
+                                <li><a href='/pages/lansdowne-tourism' target='_self'>tourism</a></li>
+                                <li><a href='/pages/lansdowne-security' target='_self'>security</a></li>
+                            </ul>
+                        </li>  
+                        <li>
+                            <a>PROMOS & EVENTS</a>                                                     
+                            <ul>                            
+                                <li><a href='/promotions' target='_self'>promotions</a></li>
+                                <li><a href='/events' target='_self'>events</a></li>
+                            </ul>
+                        </li>  
+                        <li>                        
+                            <a href="/jobs">JOBS</a>
+                        </li>
+                        <li>
+                            <a>ABOUT US</a>                                                     
+                            <ul style="right:0px; left:auto;">                            
+                                <li><a href='/pages/lansdowne-contact-us' target='_self'>contact us</a></li>
+                                <li><a href='/pages/lansdowne-leasing-info' target='_self'>leasing information</a></li>
+                                <li><a href='/pages/lansdowne-temporary-leasing' target='_self'>specialty leasing</a></li>
+                                <li><a href='/pages/lansdowne-commitment-to-green' target='_self'>green initiative</a></li>
+                                <li><a href='/pages/lansdowne-community' target='_self'>community</a></li>
+                            </ul>
+                        </li>  
+                    </ul>
+                </div>
+                <div class="social clearfix visible-desktop">
+                    <a target="_blank" href="http://www.facebook.com/LansdownePlaceMall"><img alt="Facebook" class="social_fb" src="https://www.mallmaverick.com/system/site_images/photos/000/003/650/original/social_fb.png?1409155832"></a>
+                    <a target="_blank" href="http://twitter.com/#!/LansdownePlace"><img alt="Twitter" class="social_twit" src="https://www.mallmaverick.com/system/site_images/photos/000/003/653/original/social_twit.png?1409155899"></a>
+                    <a target="_blank" href="http://www.youtube.com/watch?v=KvJ8mMafz0k"><img alt="Youtube" class="social_youtube" src="https://www.mallmaverick.com/system/site_images/photos/000/003/654/original/social_youtube.png?1409155910"></a>
+                    <a target="_blank" href="http://pinterest.com/lansdownemall/"><img alt="Pinterest" class="social_pin" src="https://www.mallmaverick.com/system/site_images/photos/000/003/652/original/social_pin.png?1409155886"></a>
+                    <a target="_blank" href="http://instagram.com/lansdowneplace"><img alt="Instagram" class="social_instagram" src="https://www.mallmaverick.com/system/site_images/photos/000/003/651/original/social_instagram.png?1409155873"></a>
+                </div>
+            </div>
+            <div class="grey-line grey-line-1"></div>
+            <div class="grey-line grey-line-2"></div>
+            </div>
+        </header>
+
+        
         <div class="site_container yield">
             {{yield}}
         </div>
