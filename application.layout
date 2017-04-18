@@ -172,70 +172,126 @@
         <div class="site_container yield">
             {{yield}}
         </div>
-        <footer class="site_container">
-            <div class="row footer_nav">
-                <div class="col-md-3">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/png/1446664167000/dixie_mall_logo_1B[1].png" class="main_logo" alt="Dixie Logo">
-                    <p class="footer_desc">
-                     Dixie Outlet Mall delivers what any great shopping experience should: a large selection at fantastic prices with plenty of ‘Back away, I found it first’ moments. Located just 20 minutes from downtown Toronto along the Queen Elizabeth Highway, Dixie Outlet Mall is Southern Ontario’s go-to destination for shoppers who are Wild for Deals!
-                    </p>
+        
+        <footer class="_container _container-1 clearfix">
+            <div class="footer_content clearfix">
+                <div class="fill_in clearfix">
+                    <p class="text text-2">BE THE FIRST TO KNOW</p>
+                    <p class="text text-3" id="newsletter_message">Sign up to get email updates on the exclusive offers and events!<br></p>
+                    <div class="signup clearfix">
+                    <form action=http://mobilefringe.createsend.com/t/d/s/junih/ method="post" id="subForm">
+                        <label for="fieldEmail" style="display:none"> subscribe email </label>
+                        <input id="fieldEmail" name="cm-junih-junih" required class="element element-3" />  
+                        <div class="btn_signup clearfix">
+                            <button><div class="element"><p class="text">SIGN UP</p></div></button>
+                        </div>
+                        <br/>
+                        <span>
+                            <input title="checkbox" type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Lansdowne Place
+                        </span>
+                		<br />
+                    </form>        
                 </div>
-                <div class="col-md-6 hidden_phone">
-                    <h3 class="footer_explore">EXPLORE</h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <ul class="footer_ul">
-                                <li class="footer_main_li">Stores</li>
-                                <li><a href="/stores">Directory</a></li>
-                                <li><a href="/map">Centre Map</a></li>
-                                <li class="footer_main_li">Events</li>
-                                <li><a href="/events">Mall-Wide Events</a></li>
-                            <li><a href="/contests">Online Contests</a></li>   
-                                <li class="footer_main_li"><a href="/promotions">Promotions</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul class="footer_ul">
-                                <li class="footer_main_li">Centre Information</li>
-                                <li><a href="/about_us">About Us</a></li>
-                                <li><a href="/hours">Operating Hours</a></li>
-                                <li><a href="/getting_here">Getting Here</a></li>
-                                <li><a href="/jobs">Careers</a></li>
-                                <li><a href="/non_profit_groups">Non-Profit Groups</a></li>
-                                <li><a href="/leasing">Leasing & Partnerships</a></li>
-                                <li><a href="/contact_us">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul class="footer_ul">
-                                <li class="footer_main_li">Guest Services</li>
-                                <li><a href="/guest_services">Guest Services</a></li>
-                                <li><a href="/gift_cards">Gift Cards</a></li>
-                                <li><a href="/group_tours">Group Tours</a></li>
-                                <li><a href="/mall_walkers_program">Mall Walker’s Program</a></li>
-                                <li><a href="/accessibility">Accessibility</a></li>
-                                <li><a href="/green_initiatives">Green Initiatives</a></li>
-                                <li><a href="/newsletter">Newsletter</a></li>
-                            </ul>
-                        </div>
+                <div class="search clearfix">
+                    <input title="Search" class="element element-1" id="search_keyword" onkeydown="if (event.keyCode ==13) search_site()"/>
+                    <div TABINDEX='20' class="btn_search clearfix" ONKEYPRESS="search_site();" onclick="search_site();">
+                        <div class="element"></div>
+                        <img alt="Search" class="image" src="https://www.mallmaverick.com/system/site_images/photos/000/003/622/original/icon_search.png?1409152653">
                     </div>
-                </div>
-                <div class="col-md-3 hidden_phone">
-                    <h3 class="footer_explore">INSTAGRAM</h3>
-                   <div id="instafeed"></div>
+                 </div>
+            </div>
+            <div class="element element-5 visible-desktop"></div>
+            <div class="element element-6 visible-desktop"></div>
+            <div class="quick_map clearfix visible-desktop">
+        
+            
+            
+            <div class="footer-nav-column">
+                <a href=""><p class="text text-4">shopping</p></a>
+                <div class="text text-10">
+                
+                    <a href='/stores' target='_self'><p>store directory</p></a>
+                
+                    <a href='/new_stores' target='_self'><p>new stores</p></a>
+                
+                    <a href='/coming_soon_stores' target='_self'><p>coming soon</p></a>
+                
+                    <a href='/pages/lansdowne-gift-cards' target='_self'><p>gift cards</p></a>
+                
+                    <a href='/newsletter' target='_self'><p>newsletter sign up</p></a>
+                 
                 </div>
             </div>
-            <div class="mini_footer mobile_padding">
-                <p class="pull-left">
-                    © 2016 Dixie Outlet Mall. All rights reserved. <a href="/privacy_policy">Privacy Policy</a> | <a href="/terms_and_conditions">Terms & Conditions</a>
-                </p>
-                <p class="pull-right">
-                    Powered by <a target="_blank" href="//mallmaverick.com">Mall Maverick</a>
-                </p>
-                <div class="clearfix"></div>
+        
+            
+            
+            <div class="footer-nav-column">
+                <a href=""><p class="text text-4">visiting</p></a>
+                <div class="text text-10">
+                
+                    <a href='/hours' target='_self'><p>hours</p></a>
+                
+                    <a href='/pages/lansdowne-directions' target='_self'><p>directions</p></a>
+                
+                    <a href='/pages/lansdowne-services' target='_self'><p>services</p></a>
+                
+                    <a href='/pages/lansdowne-tourism' target='_self'><p>tourism</p></a>
+                
+                    <a href='/pages/lansdowne-security' target='_self'><p>security</p></a>
+                 
+                </div>
             </div>
-        </footer>
-        <a href="#top" class="scrollToTop"><i class="fa fa-arrow-up"></i></a>
+        
+            
+            
+            <div class="footer-nav-column">
+                <a href=""><p class="text text-4">promos & events</p></a>
+                <div class="text text-10">
+                
+                    <a href='/promotions' target='_self'><p>promotions</p></a>
+                
+                    <a href='/events' target='_self'><p>events</p></a>
+                 
+                </div>
+            </div>
+        
+            
+            
+            <div class="footer-nav-column">
+                <a href="/jobs"><p class="text text-4">jobs</p></a>
+                <div class="text text-10">
+                 
+                </div>
+            </div>
+        
+            
+            
+            <div class="footer-nav-column">
+                <a href=""><p class="text text-4">about us</p></a>
+                <div class="text text-10">
+                
+                    <a href='/pages/lansdowne-contact-us' target='_self'><p>contact us</p></a>
+                
+                    <a href='/pages/lansdowne-leasing-info' target='_self'><p>leasing information</p></a>
+                
+                    <a href='/pages/lansdowne-temporary-leasing' target='_self'><p>specialty leasing</p></a>
+                
+                    <a href='/pages/lansdowne-commitment-to-green' target='_self'><p>green initiative</p></a>
+                
+                    <a href='/pages/lansdowne-community' target='_self'><p>community</p></a>
+                 
+                </div>
+            </div>
+         
+    </div>
+  </div>
+  <div class="element element-7"></div>
+  <p class="text text-13">© 2014 Lansdowne Place | <a href="/pages/lansdowne-privacy-policy">PRIVACY POLICY</a> | <a href="/retail_users/sign_in"><u><b>TENANT LOGIN</b></u></a> | POWERED BY <a href="http://www.mallmaverick.com" target="_block">MALL MAVERICK</a></p> 
+  <div class="element element-8"></div>
+</footer>
+
+        
+        
         
     </body>
     
