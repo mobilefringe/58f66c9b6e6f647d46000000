@@ -304,8 +304,16 @@ a.anchor-offset{
     padding: 25px 0px;
     width: 212px;
 }
-.lp_logo{
-    padding:30px 0 20px 0;    
+.lp_logo {
+    padding:30px 0 20px 0; 
+    display: block;
+    position: relative;
+    z-index: 16;
+    width: 238px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
+    overflow: hidden;
 }
 .event,.gift-card,.promotions,.jobs{width:100%;}
 /********************************************************/
