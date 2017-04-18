@@ -163,9 +163,20 @@ a.anchor-offset{
     border: 1px solid #cccccc;
     width:206px;
 }
+._container {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+}
 ._container-1{
-    z-index:32;    
+    z-index: 32;    
     height: 211px;
+}
+._container-2 {
+    position: relative;
+    z-index: 34;
+    height: 47px;
 }
 .element-8{
     height: 176px;
