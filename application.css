@@ -18,7 +18,9 @@
     font-family: SerifaBT-Roman;
     src: url(/system/site_images/photos/000/003/748/original/serifa.ttf?1409684464) format('truetype');
 }
-.accessible{display:none}
+.accessible {
+    display: none;
+}
 
 .custom_spl_banner img{
     width:inherit
