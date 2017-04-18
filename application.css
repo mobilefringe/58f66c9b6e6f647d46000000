@@ -18,13 +18,6 @@
     font-family: SerifaBT-Roman;
     src: url(/system/site_images/photos/000/003/748/original/serifa.ttf?1409684464) format('truetype');
 }
-
-body {
-    background-color: #fff;
-    font: normal 0.656em/2 Franklin Gothic Book,FranklinGothic-Book;
-    color: #636571;
-}
-
 .accessible{display:none}
 
 .custom_spl_banner img{
@@ -299,10 +292,10 @@ a.anchor-offset{
     font: 10pt/1.3 Franklin Gothic Book,FranklinGothic-Book;
     color: #9ab3c9;
 }
-.logo_content {
-    margin: 0 auto;
+.logo_content{
     position: relative;
     max-width: 957px;
+    margin: 0 auto;    
 }
 .widget-hours{
     position: absolute;
@@ -349,7 +342,7 @@ a.text-35{
 /********************************************************/
 /* home page */
 header{
-    height: 144px;    
+    height:144px;    
 }
 .logo{
     padding:13px 0px 15px 0px;
