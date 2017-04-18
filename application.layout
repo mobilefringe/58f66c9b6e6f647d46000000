@@ -179,116 +179,77 @@
                     <p class="text text-2">BE THE FIRST TO KNOW</p>
                     <p class="text text-3" id="newsletter_message">Sign up to get email updates on the exclusive offers and events!<br></p>
                     <div class="signup clearfix">
-                    <form action=http://mobilefringe.createsend.com/t/d/s/junih/ method="post" id="subForm">
-                        <label for="fieldEmail" style="display:none"> subscribe email </label>
-                        <input id="fieldEmail" name="cm-junih-junih" required class="element element-3" />  
-                        <div class="btn_signup clearfix">
-                            <button><div class="element"><p class="text">SIGN UP</p></div></button>
-                        </div>
-                        <br/>
-                        <span>
-                            <input title="checkbox" type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Lansdowne Place
-                        </span>
-                		<br />
-                    </form>        
-                </div>
-                <div class="search clearfix">
-                    <input title="Search" class="element element-1" id="search_keyword" onkeydown="if (event.keyCode ==13) search_site()"/>
-                    <div TABINDEX='20' class="btn_search clearfix" ONKEYPRESS="search_site();" onclick="search_site();">
-                        <div class="element"></div>
-                        <img alt="Search" class="image" src="https://www.mallmaverick.com/system/site_images/photos/000/003/622/original/icon_search.png?1409152653">
+                        <form action=http://mobilefringe.createsend.com/t/d/s/junih/ method="post" id="subForm">
+                            <label for="fieldEmail" style="display:none"> subscribe email </label>
+                            <input id="fieldEmail" name="cm-junih-junih" required class="element element-3" />  
+                            <div class="btn_signup clearfix">
+                                <button><div class="element"><p class="text">SIGN UP</p></div></button>
+                            </div>
+                            <br/>
+                            <span>
+                                <input title="checkbox" type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Lansdowne Place
+                            </span>
+                    		<br />
+                        </form>        
                     </div>
-                 </div>
-            </div>
-            <div class="element element-5 visible-desktop"></div>
-            <div class="element element-6 visible-desktop"></div>
-            <div class="quick_map clearfix visible-desktop">
-        
-            
-            
-            <div class="footer-nav-column">
-                <a href=""><p class="text text-4">shopping</p></a>
-                <div class="text text-10">
-                
-                    <a href='/stores' target='_self'><p>store directory</p></a>
-                
-                    <a href='/new_stores' target='_self'><p>new stores</p></a>
-                
-                    <a href='/coming_soon_stores' target='_self'><p>coming soon</p></a>
-                
-                    <a href='/pages/lansdowne-gift-cards' target='_self'><p>gift cards</p></a>
-                
-                    <a href='/newsletter' target='_self'><p>newsletter sign up</p></a>
-                 
+                    <div class="search clearfix">
+                        <input title="Search" class="element element-1" id="search_keyword" onkeydown="if (event.keyCode ==13) search_site()"/>
+                        <div TABINDEX='20' class="btn_search clearfix" ONKEYPRESS="search_site();" onclick="search_site();">
+                            <div class="element"></div>
+                            <img alt="Search" class="image" src="https://www.mallmaverick.com/system/site_images/photos/000/003/622/original/icon_search.png?1409152653">
+                        </div>
+                     </div>
+                </div>
+                <div class="element element-5 visible-desktop"></div>
+                <div class="element element-6 visible-desktop"></div>
+                <div class="quick_map clearfix visible-desktop">
+                    <div class="footer-nav-column">
+                        <a href=""><p class="text text-4">shopping</p></a>
+                        <div class="text text-10">
+                            <a href='/stores' target='_self'><p>store directory</p></a>
+                            <a href='/new_stores' target='_self'><p>new stores</p></a>
+                            <a href='/coming_soon_stores' target='_self'><p>coming soon</p></a>
+                            <a href='/pages/lansdowne-gift-cards' target='_self'><p>gift cards</p></a>
+                            <a href='/newsletter' target='_self'><p>newsletter sign up</p></a>
+                        </div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <a href=""><p class="text text-4">visiting</p></a>
+                        <div class="text text-10">
+                            <a href='/hours' target='_self'><p>hours</p></a>
+                            <a href='/pages/lansdowne-directions' target='_self'><p>directions</p></a>
+                            <a href='/pages/lansdowne-services' target='_self'><p>services</p></a>
+                            <a href='/pages/lansdowne-tourism' target='_self'><p>tourism</p></a>
+                            <a href='/pages/lansdowne-security' target='_self'><p>security</p></a>
+                        </div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <a href=""><p class="text text-4">promos & events</p></a>
+                        <div class="text text-10">
+                            <a href='/promotions' target='_self'><p>promotions</p></a>
+                            <a href='/events' target='_self'><p>events</p></a>
+                        </div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <a href="/jobs"><p class="text text-4">jobs</p></a>
+                        <div class="text text-10"></div>
+                    </div>
+                    <div class="footer-nav-column">
+                        <a href=""><p class="text text-4">about us</p></a>
+                        <div class="text text-10">
+                            <a href='/pages/lansdowne-contact-us' target='_self'><p>contact us</p></a>
+                            <a href='/pages/lansdowne-leasing-info' target='_self'><p>leasing information</p></a>
+                            <a href='/pages/lansdowne-temporary-leasing' target='_self'><p>specialty leasing</p></a>
+                            <a href='/pages/lansdowne-commitment-to-green' target='_self'><p>green initiative</p></a>
+                            <a href='/pages/lansdowne-community' target='_self'><p>community</p></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        
-            
-            
-            <div class="footer-nav-column">
-                <a href=""><p class="text text-4">visiting</p></a>
-                <div class="text text-10">
-                
-                    <a href='/hours' target='_self'><p>hours</p></a>
-                
-                    <a href='/pages/lansdowne-directions' target='_self'><p>directions</p></a>
-                
-                    <a href='/pages/lansdowne-services' target='_self'><p>services</p></a>
-                
-                    <a href='/pages/lansdowne-tourism' target='_self'><p>tourism</p></a>
-                
-                    <a href='/pages/lansdowne-security' target='_self'><p>security</p></a>
-                 
-                </div>
-            </div>
-        
-            
-            
-            <div class="footer-nav-column">
-                <a href=""><p class="text text-4">promos & events</p></a>
-                <div class="text text-10">
-                
-                    <a href='/promotions' target='_self'><p>promotions</p></a>
-                
-                    <a href='/events' target='_self'><p>events</p></a>
-                 
-                </div>
-            </div>
-        
-            
-            
-            <div class="footer-nav-column">
-                <a href="/jobs"><p class="text text-4">jobs</p></a>
-                <div class="text text-10">
-                 
-                </div>
-            </div>
-        
-            
-            
-            <div class="footer-nav-column">
-                <a href=""><p class="text text-4">about us</p></a>
-                <div class="text text-10">
-                
-                    <a href='/pages/lansdowne-contact-us' target='_self'><p>contact us</p></a>
-                
-                    <a href='/pages/lansdowne-leasing-info' target='_self'><p>leasing information</p></a>
-                
-                    <a href='/pages/lansdowne-temporary-leasing' target='_self'><p>specialty leasing</p></a>
-                
-                    <a href='/pages/lansdowne-commitment-to-green' target='_self'><p>green initiative</p></a>
-                
-                    <a href='/pages/lansdowne-community' target='_self'><p>community</p></a>
-                 
-                </div>
-            </div>
-         
-    </div>
-  </div>
-  <div class="element element-7"></div>
-  <p class="text text-13">© 2014 Lansdowne Place | <a href="/pages/lansdowne-privacy-policy">PRIVACY POLICY</a> | <a href="/retail_users/sign_in"><u><b>TENANT LOGIN</b></u></a> | POWERED BY <a href="http://www.mallmaverick.com" target="_block">MALL MAVERICK</a></p> 
-  <div class="element element-8"></div>
-</footer>
+            <div class="element element-7"></div>
+            <p class="text text-13">© 2014 Lansdowne Place | <a href="/pages/lansdowne-privacy-policy">PRIVACY POLICY</a> | <a href="/retail_users/sign_in"><u><b>TENANT LOGIN</b></u></a> | POWERED BY <a href="http://www.mallmaverick.com" target="_block">MALL MAVERICK</a></p> 
+            <div class="element element-8"></div>
+        </footer>
 
         
         
