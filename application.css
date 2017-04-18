@@ -299,10 +299,10 @@ a.anchor-offset{
     font: 10pt/1.3 Franklin Gothic Book,FranklinGothic-Book;
     color: #9ab3c9;
 }
-.logo_content{
+.logo_content {
+    margin: 0 auto;
     position: relative;
     max-width: 957px;
-    margin: 0 auto;    
 }
 .widget-hours{
     position: absolute;
@@ -349,7 +349,7 @@ a.text-35{
 /********************************************************/
 /* home page */
 header{
-    height:144px;    
+    height: 144px;    
 }
 .logo{
     padding:13px 0px 15px 0px;
