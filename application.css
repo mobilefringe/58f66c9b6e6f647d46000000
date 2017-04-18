@@ -21,7 +21,9 @@
 .accessible {
     display: none;
 }
-
+.hidden-desktop {
+    display: none !important;
+}
 .white-bar {
     position: relative;
     float: left;
