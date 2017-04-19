@@ -429,7 +429,7 @@ function renderNewStores(container, template, collection){
         if(val.store_front_url.indexOf('missing.png') < 0){
             val.store_front_url = val.store_front_url_abs;
         } else {
-            // val.store_front_url = default_image.image_url;
+            val.store_front_url = "//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg";
         }
         
         var today = moment();
