@@ -4,7 +4,7 @@ body {
   color: #636571;
 }
 
-.text {
+.text, .text p {
   font-family: Franklin Gothic Book,FranklinGothic-Book; 
 }
 
