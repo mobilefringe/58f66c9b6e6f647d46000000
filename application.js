@@ -435,14 +435,13 @@ function renderNewStores(container, template, collection){
         var today = moment();
         var store_opens = moment(val.new_store_open_date);
         if(val.new_store_open_date != null || val.new_store_open_date != undefined){
-            if (today.tz(getPropertyTimeZone()) >= store_opens.tz(getPropertyTimeZone())) {
+            if (today.tz(getPropertyTimeZone()) <= store_opens.tz(getPropertyTimeZone())) {
                 val.open = "Opens " + moment(val.new_store_open_date).format("MMM DD");
-            } 
+            } else {
+                val.open = "Now Open!"
+            }
         }
-        // else {
-        //     val.open = "Now Open!"
-        // } 
-        
+
         if (val.description.length  >= 70) {
             val.description = val.description.substring(0,69) + "...";
         }
