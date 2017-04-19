@@ -1,0 +1,41 @@
+<div class="content clearfix">
+    <div class="left-panel">
+	    <div class="event clearfix">
+	        <p class="text text-20">EVENTS</p>
+            <a href="/events/lansdowne-canada-150-art-installation-reveal"><p class="text text-21">Canada 150 Art Installation Reveal </p></a>
+	        <div class="text text-22">
+	            <p>STARTS May 01 - ENDS May 01</p>
+	        </div>
+            <img alt="Line" class="image" src="https://www.mallmaverick.com/system/site_images/photos/000/003/624/original/line_shadow.png?1409152676">
+	    </div>
+        <div class="gift-card clearfix">
+	        <p class="text">GIFT CARDS </p>
+	        <a href="/pages/lansdowne-gift-cards">
+                <img class="image" src="https://www.mallmaverick.com/system/feature_items/feature_images/000/000/239/original/giftcard.jpg?1422987240" alt='Gift Cards '>
+            </a>
+	    </div>        
+        <div class="gift-card clearfix">
+	        <p class="text">PROMOTIONS</p>
+	        <a href="/promotions">
+                <img class="image" src="https://www.mallmaverick.com/system/feature_items/feature_images/000/000/240/original/Promotions.jpg?1422987434" alt='Promotions'>
+            </a>
+	    </div>        
+        <div class="gift-card clearfix">
+	        <p class="text">JOBS</p>
+	        <a href="/jobs">
+                <img class="image" src="https://www.mallmaverick.com/system/feature_items/feature_images/000/000/241/original/New_job.jpg?1422987547" alt='Jobs'>
+            </a>
+	    </div>        
+	</div>
+	<div class="right-panel">
+	    <div class="flexslider trim_screen" style="margin-bottom:0px;">
+            <ul class="slides">            
+                <li>
+                    <a href="http://lansdowneplace.com/events/lansdowne-act-green-event">
+                        <img alt="Banner" src="https://www.mallmaverick.com/system/site_images/photos/000/028/057/original/ACT___Be_Green.jpg?1492384414" />
+                    </a>
+	            </li>                
+	        </ul>
+	    </div>
+	</div>
+</div>
