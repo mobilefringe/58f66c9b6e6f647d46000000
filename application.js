@@ -437,11 +437,13 @@ function renderNewStores(container, template, collection){
         if(val.new_store_open_date != null || val.new_store_open_date != undefined){
             if (today.tz(getPropertyTimeZone()) <= store_opens.tz(getPropertyTimeZone())) {
                 val.open = "Opens " + moment(val.new_store_open_date).format("MMM DD");
+                val.show = "display: block;";
             } else {
                 val.open = "Now Open!"
+                val.show = "display: block;";
             }
         } else {
-            $(".store_open_date").hide();
+            val.show = "display: none;";
         }
 
         if (val.description.length  >= 70) {
