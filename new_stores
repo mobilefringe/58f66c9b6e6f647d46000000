@@ -55,7 +55,7 @@
                     <div class="widget_right_panel">
                         <a href="/stores/{{slug}}"><p class="text text-33">{{name}}</p></a>
                         <p class="text text-27" style="{{show}}">{{open}}</p>
-                        <p class="text text-28">{{{rich_description}}}</p>
+                        <p class="text text-28">{{description}}</p>
                     </div>
                 </div>
             </script>
