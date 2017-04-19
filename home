@@ -46,6 +46,7 @@
             
             $('.flexslider').flexslider({
                 animation: "slide",
+                smoothHeight: true
             });
         }
         loadMallData(renderAll); 
