@@ -265,8 +265,10 @@ body {
   float: left;
   color: #636571;
 }
-.quick_map .text-10 p {
+.quick_map .text p {
     margin: 0;
+}
+.quick_map .text-10 p {
     font-size: 9.99219px;
 }
 .search {
