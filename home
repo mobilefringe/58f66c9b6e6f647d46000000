@@ -11,7 +11,7 @@
 	    
 	    <div class="gift-card clearfix" id="feature_container">
             <script id="feature_template" type="x-tmpl-mustache/text">
-                <p class="text">{{}}</p>
+                <p class="text">{{name}}</p>
     	        <a href="{{url}}" {{css}} onclick="{{noLink}}">
                     <img class="image" src="{{image_url}}" alt="{{name}}">
                 </a>
