@@ -65,10 +65,10 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var new_stores = getNewStoresList();
+            var new_stores_list = getNewStoresList();
             console.log(new_stores)
             var new_stores = [];
-            $.each(new_stores, function(key, val){
+            $.each(new_stores_list, function(key, val){
                 if(val.is_new_store === true && val.is_coming_soon_store === false){
                     new_stores.push(val);
                 } 
