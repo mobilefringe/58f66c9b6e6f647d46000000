@@ -252,6 +252,9 @@ a.anchor-offset{
     left:0px;
     height:auto;
 }
+#subForm {
+    margin: 0;
+}
 .element-1,.element-3{
     margin-left:0;
     padding:0px 5px;
