@@ -162,3 +162,24 @@ Explore PANDORA&#39;s silver, gold &amp; diamond jewellery. Celebrate your unfor
         
     </div>    
 </div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var banners = getBanners();
+            renderBanner('#banner_template', '#home_banner', banners);
+            
+            var feature_items = getFeatureList();
+            console.log(feature_items);
+            renderFeatureItems('#feature_container', '#feature_template', feature_items);
+            // show_content();
+            
+            $('.flexslider').flexslider({
+                animation: "slide",
+                smoothHeight: true
+            });
+        }
+        loadMallData(renderAll); 
+    });
+</script>
