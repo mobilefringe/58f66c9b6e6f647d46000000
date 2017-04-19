@@ -45,117 +45,19 @@
             <div class="element element-11"></div>
         </div>
                     
-        <div class="widget widget-promotion">
-            <div class="widget_left_panel">
-                <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/015/326/original/Aerie.jpg?1452742234);"></div>
-            </div>
-            <div class="widget_right_panel">
-                <a href="/stores/lansdowne-aerie"><p class="text text-33">Aerie </p></a>
-                
-                <p class="text text-28">NOW OPEN!&nbsp; Visit our new location on the lower level directly beside American Eagle!
-</p>
-            </div>
-            </div>        
-                    
-            <div class="widget widget-promotion">
+        <div class="widget widget-promotion" id="new_store_container">
+            <script id="new_store_template" type="x-tmpl-mustache/text">
                 <div class="widget_left_panel">
-                    
-                        
-                     
-                    <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/030/624/original/clair2.png?1471283530);"></div>
+                    <div class="element element-12>
+                        <img src="{{}}" alt="{{}}"/>
+                    </div>
                 </div>
                 <div class="widget_right_panel">
-                    <a href="/stores/lansdowne-clair-de-lune"><p class="text text-33">Clair de Lune</p></a>
-                    
-                    <p class="text text-27">OPENS Sep 16</p>
-                    
-                    <p class="text text-28">Now open on the lower level!
-
-Clair de Lune is a leading retailer of decorative, scented candles, aromatic lamps, home fragrances, decor, scent diffusers, and fabulous gift ideas!
-</p>
+                    <a href="/stores/{{slug}}"><p class="text text-33">Aerie </p></a>
+                    <p class="text text-28">{{}}</p>
                 </div>
-            </div>        
-                    
-            <div class="widget widget-promotion">
-                <div class="widget_left_panel">
-                    
-                        
-                     
-                    <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/031/287/original/dollarama.png?1484241465);"></div>
-                </div>
-                <div class="widget_right_panel">
-                    <a href="/stores/lansdowne-lansdowne-place-dollarama"><p class="text text-33">Dollarama</p></a>
-                    
-                    <p class="text text-27">OPENS Mar 14</p>
-                    
-                    <p class="text text-28">Offering&nbsp;a broad assortment of everyday consumer products, general merchandise and seasonal items with compelling value.&nbsp;The store&#39;s&nbsp;quality merchandise is sold in individual or ...</p>
-                </div>
-            </div>        
-                    
-            <div class="widget widget-promotion">
-                <div class="widget_left_panel">
-                      
-                        
-                     
-                    <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/sites/default_store_logo_images/000/000/057/original/img_default.jpg?1409770492);"></div>
-                </div>
-                <div class="widget_right_panel">
-                    <a href="/stores/lansdowne-krystos-grill-it-greek"><p class="text text-33">Krystos Grill it Greek</p></a>
-                    
-                    <p class="text text-28">Krystos Grill It Greek is now OPEN at Lansdowne Place!
-</p>
-                </div>
-            </div>        
-                    
-            <div class="widget widget-promotion">
-                <div class="widget_left_panel">
-                    
-                        
-                     
-                    <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/015/386/original/Northern.png?1452742287);"></div>
-                </div>
-                <div class="widget_right_panel">
-                    <a href="/stores/lansdowne-northern-reflections"><p class="text text-33">Northern Reflections</p></a>
-                    
-                    <p class="text text-28">NOW OPEN!&nbsp; Visit our new location on the lower level beside Hallmark!
-</p>
-                </div>
-            </div>        
-                    
-            <div class="widget widget-promotion">
-                <div class="widget_left_panel">
-                    
-                        
-                     
-                    <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/023/774/original/Optimax_2.jpg?1460550877);"></div>
-                </div>
-                <div class="widget_right_panel">
-                    <a href="/stores/lansdowne-optimax-optical"><p class="text text-33">Optimax Vision</p></a>
-                    
-                    <p class="text text-28">NOW OPEN on the Upper Level! The hottest optical destination in Peterborough, offering simply the&nbsp;best glasses for men, women, teens and kids!
-
-OPTIMAX Vision features high end&nbsp;fashion br...</p>
-                </div>
-            </div>        
-                    
-            <div class="widget widget-promotion">
-                <div class="widget_left_panel">
-                    
-                        
-                     
-                    <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/030/283/original/Pandora.jpg?1466194056);"></div>
-                </div>
-                <div class="widget_right_panel">
-                    <a href="/stores/lansdowne-pandora"><p class="text text-33">Pandora</p></a>
-                    
-                    <p class="text text-28">Now open on the lower level of Lansdowne Place!
-
-&nbsp;
-
-Explore PANDORA&#39;s silver, gold &amp; diamond jewellery. Celebrate your unforgettable moments with bracelets, charms, rings, necklaces &a...</p>
-                </div>
-            </div>        
-        
+            </script>
+        </div>        
     </div>    
 </div>
 
