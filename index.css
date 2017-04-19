@@ -657,13 +657,14 @@ body {
 }
 
 .text-33 {
-  float: left;
-  width: 100%;
-  min-height: 26px;
-  padding: 0px 0px 8px 0px;
-  margin: 0px;
-  font: 1.905em/1.38 SerifaBT-Roman;
-  color: #4078b1;
+    float: left;
+    width: 100%;
+    min-height: 26px;
+    padding: 0px 0px 8px 0px;
+    margin: 0px;
+    font-size: 19.9949px;
+    font-family: SerifaBT-Roman;
+    color: #4078b1;
 }
 
 .text-28 {
