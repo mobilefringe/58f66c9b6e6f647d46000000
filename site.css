@@ -4,19 +4,19 @@
 
 @font-face {
     font-family: FranklinGothic-Book;
-    src: url(/system/site_images/photos/000/003/746/original/Franklin_Gothic_Book.ttf?1409684418) format('truetype');
+    src: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000//1492613575000/Franklin_Gothic_Book.ttf) format('truetype');
 }
 @font-face {
     font-family: FranklinGothic-Book-italic;
-    src: url(/system/site_images/photos/000/003/745/original/Franklin_Gothic_Book_Italic.ttf?1409684409) format('truetype');
+    src: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000//1492613596000/Franklin_Gothic_Book_Italic.ttf) format('truetype');
 }
 @font-face {
     font-family: FranklinGothic-Medium;
-    src: url('/system/site_images/photos/000/003/747/original/Franklin_Gothic_Medium.ttf?1409684427') format('truetype');
+    src: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000//1492613618000/Franklin_Gothic_Medium.ttf) format('truetype');
 }
 @font-face {
     font-family: SerifaBT-Roman;
-    src: url(/system/site_images/photos/000/003/748/original/serifa.ttf?1409684464) format('truetype');
+    src: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000//1492613675000/serifa.ttf) format('truetype');
 }
 .accessible{display:none}
 
@@ -245,7 +245,7 @@ a.anchor-offset{
     height:135px;
 }
 #subForm span{
-    font-size:7pt;
+    font-size: 7pt;
 }
 .fill_in{
     width:230px;
