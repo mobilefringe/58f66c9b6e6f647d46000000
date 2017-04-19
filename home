@@ -8,6 +8,19 @@
 	        </div>
             <img alt="Line" class="image" src="https://www.mallmaverick.com/system/site_images/photos/000/003/624/original/line_shadow.png?1409152676">
 	    </div>
+	    
+	    <div class="feature_row" id="feature_container">
+            <script id="feature_template" type="x-tmpl-mustache/text">
+                <div class="feature_item">
+                    <div class="yellow_line"></div>
+                    <a href="{{url}}" {{css}} onclick="{{noLink}}" class="darken">
+                        <h5 class="feature_header">{{name}}</h5>
+                        <img src="{{image_url}}" alt="{{name}}" />
+                    </a>
+                </div>
+            </script>    
+        </div>
+        
         <div class="gift-card clearfix">
 	        <p class="text">GIFT CARDS </p>
 	        <a href="/pages/lansdowne-gift-cards">
@@ -49,6 +62,7 @@
             renderBanner('#banner_template', '#home_banner', banners);
             
             var feature_items = getFeatureList();
+            console.log(feature_items);
             // renderFeatureItems('#feature_container','#feature_template', feature_items);
             // show_content();
             
