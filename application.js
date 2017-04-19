@@ -429,7 +429,7 @@ function renderNewStores(container, template, collection){
         if(val.store_front_url.indexOf('missing.png') < 0){
             val.store_front_url = val.store_front_url_abs;
         } else {
-            val.store_front_url = default_image.image_url;
+            // val.store_front_url = default_image.image_url;
         }
         
         var today = moment();
