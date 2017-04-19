@@ -37,28 +37,24 @@
     </div>
     <div class="right-panel">
         <div class="detail-banner">
-            
-                <img alt="promo" src="http://cdn.mallmaverick.com/system/site_images/photos/000/015/895/original/New_Stores.jpg?1452011860"></div>
-            
+            <img alt="promo" src="http://cdn.mallmaverick.com/system/site_images/photos/000/015/895/original/New_Stores.jpg?1452011860">
+        </div>
         <div class="title clearfix">
-          <div class="element"></div>
-          <p class="text">NEW STORES</p>
-          <div class="element element-11"></div>
+            <div class="element"></div>
+            <p class="text">NEW STORES</p>
+            <div class="element element-11"></div>
         </div>
                     
-            <div class="widget widget-promotion">
-                <div class="widget_left_panel">
-                    
-                        
-                     
-                    <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/015/326/original/Aerie.jpg?1452742234);"></div>
-                </div>
-                <div class="widget_right_panel">
-                    <a href="/stores/lansdowne-aerie"><p class="text text-33">Aerie </p></a>
-                    
-                    <p class="text text-28">NOW OPEN!&nbsp; Visit our new location on the lower level directly beside American Eagle!
+        <div class="widget widget-promotion">
+            <div class="widget_left_panel">
+                <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/015/326/original/Aerie.jpg?1452742234);"></div>
+            </div>
+            <div class="widget_right_panel">
+                <a href="/stores/lansdowne-aerie"><p class="text text-33">Aerie </p></a>
+                
+                <p class="text text-28">NOW OPEN!&nbsp; Visit our new location on the lower level directly beside American Eagle!
 </p>
-                </div>
+            </div>
             </div>        
                     
             <div class="widget widget-promotion">
@@ -167,18 +163,19 @@ Explore PANDORA&#39;s silver, gold &amp; diamond jewellery. Celebrate your unfor
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var banners = getBanners();
-            renderBanner('#banner_template', '#home_banner', banners);
-            
-            var feature_items = getFeatureList();
-            console.log(feature_items);
-            renderFeatureItems('#feature_container', '#feature_template', feature_items);
-            // show_content();
-            
-            $('.flexslider').flexslider({
-                animation: "slide",
-                smoothHeight: true
+            var new_stores = getNewStoresList();
+            console.log(new_stores)
+            var new_stores = [];
+            $.each(new_stores, function(key, val){
+                if(val.is_new_store === true && val.is_coming_soon_store === false){
+                    new_stores.push(val);
+                } 
             });
+            if(new_stores.length > 0){
+                renderNewStores('#new_store_container', '#new_store_template', new_stores);
+            } else {
+                $("#no_stores").show();
+            }
         }
         loadMallData(renderAll); 
     });
