@@ -11,13 +11,13 @@
             </div>
         </a>
         <a href="/new_stores">
-            <div class="side_btn clearfix active">
+            <div class="side_btn clearfix">
               <p class="text"><b>NEW STORES</b></p>
               <div class="image"></div>
             </div>
         </a>
         <a href="/coming_soon_stores"> 
-            <div class="side_btn clearfix ">     
+            <div class="side_btn clearfix active">     
               <p class="text">COMING SOON</p>
               <div class="image"></div>
             </div>
