@@ -434,21 +434,11 @@ function renderNewStores(container, template, collection){
         
         var today = moment();
         var store_opens = moment(val.new_store_open_date);
-        if(sessionStorage.current_locale == "en-CA"){
-            if (today.tz(getPropertyTimeZone()) <= store_opens.tz(getPropertyTimeZone())) {
-                val.open = "Opens on " + moment(val.new_store_open_date).format("MMM DD");
-            } else {
-                val.open = "Now Open!"
-            } 
-        }
-        if(sessionStorage.current_locale == "fr-CA"){
-            if (today.tz(getPropertyTimeZone()) <= store_opens.tz(getPropertyTimeZone())) {
-                var french_open = moment(val.new_store_open_date).locale('fr-ca');
-                val.open = "Ouverture " + moment(french_open).format("DD MMM");
-            } else {
-                val.open = "Ouvert!"
-            } 
-        }
+        if (today.tz(getPropertyTimeZone()) <= store_opens.tz(getPropertyTimeZone())) {
+            val.open = "Opens on " + moment(val.new_store_open_date).format("MMM DD");
+        } else {
+            val.open = "Now Open!"
+        } 
         
         if (val.description.length  >= 70) {
             val.description = val.description.substring(0,69) + "...";
