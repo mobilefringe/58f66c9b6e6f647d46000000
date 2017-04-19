@@ -519,7 +519,7 @@ header{
 .side_btn:hover,.side_btn.active{background-color: #636571;}
 .side_btn:hover .text,.side_btn.active .text{color:#ffffff;}
 .side_btn:hover .image,.side_btn.active .image{
-    background-image: url(/system/site_images/photos/000/003/683/original/icon_whiteback.png?1409261140);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492635724000/icon_whiteback.png);
 }
 .side_btn:hover .image.image_down,.side_btn.active .image.image_down{
     background-image: url(/system/site_images/photos/000/003/796/original/icon_whiteback_down.png?1409847051);
