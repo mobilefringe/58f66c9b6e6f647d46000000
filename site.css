@@ -778,12 +778,12 @@ input[type="checkbox"], input[type="radio"]{
     float: right;
 }
 
-.flexslider{
-    border:none;
-    border-radius:0px;
+.flexslider {
+    border: none;
+    border-radius: 0px;
     box-shadow: none;
 }
-.flex-direction-nav a{
+.flex-direction-nav a {
     background: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492616573000/bg_direction_nav.png) no-repeat scroll 0 0 transparent}
 
 .flex-control-nav {
