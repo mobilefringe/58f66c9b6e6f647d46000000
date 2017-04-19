@@ -420,7 +420,44 @@ function renderPromoDetails(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-
+function renderNewStores(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    $.each( collection , function( key, val ) {
+        if(val.store_front_url.indexOf('missing.png') < 0){
+            val.store_front_url = val.store_front_url_abs;
+        } else {
+            val.store_front_url = default_image.image_url;
+        }
+        
+        var today = moment();
+        var store_opens = moment(val.new_store_open_date);
+        if(sessionStorage.current_locale == "en-CA"){
+            if (today.tz(getPropertyTimeZone()) <= store_opens.tz(getPropertyTimeZone())) {
+                val.open = "Opens on " + moment(val.new_store_open_date).format("MMM DD");
+            } else {
+                val.open = "Now Open!"
+            } 
+        }
+        if(sessionStorage.current_locale == "fr-CA"){
+            if (today.tz(getPropertyTimeZone()) <= store_opens.tz(getPropertyTimeZone())) {
+                var french_open = moment(val.new_store_open_date).locale('fr-ca');
+                val.open = "Ouverture " + moment(french_open).format("DD MMM");
+            } else {
+                val.open = "Ouvert!"
+            } 
+        }
+        
+        if (val.description.length  >= 70) {
+            val.description = val.description.substring(0,69) + "...";
+        }
+        var repo_rendered = Mustache.render(template_html,val);
+        item_rendered.push(repo_rendered);
+    });
+    $(container).html(item_rendered.join(''));
+}
 
 function renderStoreDetailsHours(container, template, collection){
     var item_list = [];
