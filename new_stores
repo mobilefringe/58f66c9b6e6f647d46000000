@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="widget_right_panel">
-                    <a href="/stores/{{slug}}"><p class="text text-33">Aerie </p></a>
+                    <a href="/stores/{{slug}}"><p class="text text-33">{{name}}</p></a>
                     <p class="text text-28">{{}}</p>
                 </div>
             </script>
