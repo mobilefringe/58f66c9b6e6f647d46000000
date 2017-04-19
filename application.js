@@ -446,8 +446,8 @@ function renderNewStores(container, template, collection){
             val.show = "display: none;";
         }
 
-        if (val.description.length  >= 200) {
-            val.description = val.description.substring(0, 199) + "...";
+        if (val.description.length  >= 195) {
+            val.description = val.description.substring(0, 194) + "...";
         }
         var repo_rendered = Mustache.render(template_html,val);
         item_rendered.push(repo_rendered);
