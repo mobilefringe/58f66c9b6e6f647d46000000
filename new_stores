@@ -45,17 +45,19 @@
             <div class="element element-11"></div>
         </div>
                     
-        <div class="widget widget-promotion" id="new_store_container">
+        <div id="new_store_container">
             <script id="new_store_template" type="x-tmpl-mustache/text">
-                <div class="widget_left_panel">
-                    <div class="element element-12">
-                        <img src="{{store_front_url}}" alt="{{name}}"/>
+                <div class="widget widget-promotion">
+                    <div class="widget_left_panel">
+                        <div class="element element-12">
+                            <img src="{{store_front_url}}" alt="{{name}}"/>
+                        </div>
                     </div>
-                </div>
-                <div class="widget_right_panel">
-                    <a href="/stores/{{slug}}"><p class="text text-33">{{name}}</p></a>
-                    <p class="text text-27" style="{{show}}">{{open}}</p>
-                    <p class="text text-28">{{{rich_description}}}</p>
+                    <div class="widget_right_panel">
+                        <a href="/stores/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                        <p class="text text-27" style="{{show}}">{{open}}</p>
+                        <p class="text text-28">{{{rich_description}}}</p>
+                    </div>
                 </div>
             </script>
         </div>        
