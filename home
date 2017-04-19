@@ -9,36 +9,33 @@
             <img alt="Line" class="image" src="https://www.mallmaverick.com/system/site_images/photos/000/003/624/original/line_shadow.png?1409152676">
 	    </div>
 	    
-	    <div class="feature_row" id="feature_container">
+	    <div class="gift-card clearfix" id="feature_container">
             <script id="feature_template" type="x-tmpl-mustache/text">
-                <div class="feature_item">
-                    <div class="yellow_line"></div>
-                    <a href="{{url}}" {{css}} onclick="{{noLink}}" class="darken">
-                        <h5 class="feature_header">{{name}}</h5>
-                        <img src="{{image_url}}" alt="{{name}}" />
-                    </a>
-                </div>
+                <p class="text">{{}}</p>
+    	        <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    <img class="image" src="{{image_url}}" alt="{{name}}">
+                </a>
             </script>    
         </div>
         
-        <div class="gift-card clearfix">
-	        <p class="text">GIFT CARDS </p>
-	        <a href="/pages/lansdowne-gift-cards">
-                <img class="image" src="https://www.mallmaverick.com/system/feature_items/feature_images/000/000/239/original/giftcard.jpg?1422987240" alt='Gift Cards '>
-            </a>
-	    </div>        
-        <div class="gift-card clearfix">
-	        <p class="text">PROMOTIONS</p>
-	        <a href="/promotions">
-                <img class="image" src="https://www.mallmaverick.com/system/feature_items/feature_images/000/000/240/original/Promotions.jpg?1422987434" alt='Promotions'>
-            </a>
-	    </div>        
-        <div class="gift-card clearfix">
-	        <p class="text">JOBS</p>
-	        <a href="/jobs">
-                <img class="image" src="https://www.mallmaverick.com/system/feature_items/feature_images/000/000/241/original/New_job.jpg?1422987547" alt='Jobs'>
-            </a>
-	    </div>        
+     <!--   <div class="gift-card clearfix">-->
+	    <!--    <p class="text">GIFT CARDS </p>-->
+	    <!--    <a href="/pages/lansdowne-gift-cards">-->
+     <!--           <img class="image" src="https://www.mallmaverick.com/system/feature_items/feature_images/000/000/239/original/giftcard.jpg?1422987240" alt='Gift Cards '>-->
+     <!--       </a>-->
+	    <!--</div>        -->
+     <!--   <div class="gift-card clearfix">-->
+	    <!--    <p class="text">PROMOTIONS</p>-->
+	    <!--    <a href="/promotions">-->
+     <!--           <img class="image" src="https://www.mallmaverick.com/system/feature_items/feature_images/000/000/240/original/Promotions.jpg?1422987434" alt='Promotions'>-->
+     <!--       </a>-->
+	    <!--</div>        -->
+     <!--   <div class="gift-card clearfix">-->
+	    <!--    <p class="text">JOBS</p>-->
+	    <!--    <a href="/jobs">-->
+     <!--           <img class="image" src="https://www.mallmaverick.com/system/feature_items/feature_images/000/000/241/original/New_job.jpg?1422987547" alt='Jobs'>-->
+     <!--       </a>-->
+	    <!--</div>        -->
 	</div>
 	<div class="right-panel">
 	    <div class="flexslider trim_screen">
