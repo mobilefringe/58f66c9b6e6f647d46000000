@@ -435,10 +435,11 @@ function renderNewStores(container, template, collection){
         var today = moment();
         var store_opens = moment(val.new_store_open_date);
         if (today.tz(getPropertyTimeZone()) <= store_opens.tz(getPropertyTimeZone())) {
-            val.open = "Opens on " + moment(val.new_store_open_date).format("MMM DD");
-        } else {
-            val.open = "Now Open!"
+            val.open = "Opens " + moment(val.new_store_open_date).format("MMM DD");
         } 
+        // else {
+        //     val.open = "Now Open!"
+        // } 
         
         if (val.description.length  >= 70) {
             val.description = val.description.substring(0,69) + "...";
