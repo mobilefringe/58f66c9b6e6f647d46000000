@@ -440,6 +440,8 @@ function renderNewStores(container, template, collection){
             } else {
                 val.open = "Now Open!"
             }
+        } else {
+            $(".store_open_date").hide();
         }
 
         if (val.description.length  >= 70) {
