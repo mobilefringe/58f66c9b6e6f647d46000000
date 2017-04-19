@@ -446,6 +446,9 @@ function renderNewStores(container, template, collection){
             val.show = "display: none;";
         }
 
+        if (val.description.length  >= 100) {
+            val.description = val.description.substring(0, 99) + "...";
+        }
         var repo_rendered = Mustache.render(template_html,val);
         item_rendered.push(repo_rendered);
     });
