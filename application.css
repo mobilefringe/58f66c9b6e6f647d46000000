@@ -1,3 +1,24 @@
+@import url(/system/site_images/photos/000/003/585/original/standardize.css?1409069050);
+@import url(/system/site_images/photos/000/003/586/original/index-grid.css?1409069730);
+@import url(/system/site_images/photos/000/003/618/original/index.css?1412007758);
+
+@font-face {
+    font-family: FranklinGothic-Book;
+    src: url(/system/site_images/photos/000/003/746/original/Franklin_Gothic_Book.ttf?1409684418) format('truetype');
+}
+@font-face {
+    font-family: FranklinGothic-Book-italic;
+    src: url(/system/site_images/photos/000/003/745/original/Franklin_Gothic_Book_Italic.ttf?1409684409) format('truetype');
+}
+@font-face {
+    font-family: FranklinGothic-Medium;
+    src: url('/system/site_images/photos/000/003/747/original/Franklin_Gothic_Medium.ttf?1409684427') format('truetype');
+}
+@font-face {
+    font-family: SerifaBT-Roman;
+    src: url(/system/site_images/photos/000/003/748/original/serifa.ttf?1409684464) format('truetype');
+}
+
 body {
   background-color: rgb(255, 255, 255);
   font: normal 0.656em/2 Franklin Gothic Book,FranklinGothic-Book;
@@ -735,26 +756,7 @@ body {
   height: 47px;
 }
 
-@import url(/system/site_images/photos/000/003/585/original/standardize.css?1409069050);
-@import url(/system/site_images/photos/000/003/586/original/index-grid.css?1409069730);
-@import url(/system/site_images/photos/000/003/618/original/index.css?1412007758);
 
-@font-face {
-    font-family: FranklinGothic-Book;
-    src: url(/system/site_images/photos/000/003/746/original/Franklin_Gothic_Book.ttf?1409684418) format('truetype');
-}
-@font-face {
-    font-family: FranklinGothic-Book-italic;
-    src: url(/system/site_images/photos/000/003/745/original/Franklin_Gothic_Book_Italic.ttf?1409684409) format('truetype');
-}
-@font-face {
-    font-family: FranklinGothic-Medium;
-    src: url('/system/site_images/photos/000/003/747/original/Franklin_Gothic_Medium.ttf?1409684427') format('truetype');
-}
-@font-face {
-    font-family: SerifaBT-Roman;
-    src: url(/system/site_images/photos/000/003/748/original/serifa.ttf?1409684464) format('truetype');
-}
 .accessible{display:none}
 
 .custom_spl_banner img{
