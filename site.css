@@ -594,7 +594,7 @@ input[type="checkbox"], input[type="radio"]{
 
 .menu ul li a{
     display: block;
-    padding: 13px 25px;
+    padding: 13px 15px;
     margin: 0px;
     color: #333;
     text-decoration: none;
