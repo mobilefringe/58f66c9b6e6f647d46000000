@@ -52,20 +52,19 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var new_stores_list = getNewStoresList();
-            console.log(new_stores_list)
-            var new_stores = [];
-            $.each(new_stores_list, function(key, val){
-                if(val.is_new_store === true && val.is_coming_soon_store === false){
-                    new_stores.push(val);
-                } 
-            });
-            if(new_stores.length > 0){
-                renderNewStores('#new_store_container', '#new_store_template', new_stores);
-            } else {
-                $("#no_stores").show();
-            }
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = prefix+"/pages/" + slug + ".json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title);
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
         }
-        loadMallData(renderAll); 
-    });
+        loadMallDataCached(renderAll); 
+    })
 </script>
