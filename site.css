@@ -18,8 +18,12 @@
     font-family: SerifaBT-Roman;
     src: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000//1492613675000/serifa.ttf) format('truetype');
 }
-.accessible{display:none}
-
+.accessible { 
+    display: none;
+}
+.hidden_now {
+    display: none;
+}
 .custom_spl_banner img{
     width:inherit
 }
