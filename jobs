@@ -21,7 +21,7 @@
             <div class="element element-11"></div>
         </div>
         <div id="no_jobs" class="hidden_now">
-            <p class="text">There are currently no job postings available. Please check back soon.</p>
+            <p class="text text-28">There are currently no job postings available. Please check back soon.</p>
         </div>
         <div id="retail_jobs_container">
             <script id="retail_jobs_template" type="x-tmpl-mustache/text">
