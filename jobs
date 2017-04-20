@@ -66,13 +66,12 @@
                     }
                 } else {
                     var today = moment();
-                     var webDate = moment(val.show_on_web_date)
+                    var webDate = moment(val.show_on_web_date)
                     if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                         retailer_published_jobs.push(val);
                     }     
                 } 
             });
-            
             if(retailer_published_jobs.length > 0){
                 retailer_published_jobs.sortBy(function(o){ return o.store_name});
                 renderJobs("#retail_jobs_container","#retail_jobs_template", retailer_published_jobs);
@@ -82,7 +81,7 @@
                 renderJobs("#mall_jobs_container","#mall_jobs_template", mall_published_jobs);
                 $("#prop_jobs").show();
             }
-            if(mall_published_jobs.length < 1 && retailer_published_jobs.length < 1){
+            if(mall_published_jobs.length < 13 && retailer_published_jobs.length < 13){
                 $("#no_jobs").show();   
             }
         }
