@@ -1,0 +1,25 @@
+<div class="content clearfix">
+    <div class="left-panel visible-desktop">
+        <p class="page-title">JOBS</p>
+        <div class="element element-13">
+            <img alt="Jobs" src="//codecloud.cdn.speedyrails.net/ "/>
+        </div>
+        <a href="/jobs">
+            <div class="side_btn clearfix active">
+              <p class="text">JOBS</p>
+              <div class="image"></div>
+            </div>
+        </a>
+    </div>
+    <div class="right-panel">
+        <div class="detail-banner">
+            <img alt="New Stores" src="//codecloud.cdn.speedyrails.net/ ">
+        </div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">JOBS</p>
+            <div class="element element-11"></div>
+        </div>
+        <div class="page-content" id="mm_page_content"></div>   
+    </div>    
+</div>
