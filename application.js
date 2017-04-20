@@ -310,19 +310,13 @@ function renderJobDetails(container, template, collection){
             }
         }
         else{
-            val.store_name = "Dixie Outlet";
+            val.store_name = "Lansdowne Place";
             val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
         }
         
-        var show_date = moment(val.show_on_web_date);
-        var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
-        if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMM D")
-        }
-        else{
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
-        }
+        val.end_date = end.format("MMM D");
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
