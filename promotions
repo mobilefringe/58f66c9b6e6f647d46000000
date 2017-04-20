@@ -39,7 +39,7 @@
                         <div class="widget_right_panel">
                             <a href="/promotions/{{slug}}"><p class="text text-33">{{name}}</p></a>
                             <a href="/stores/{{store_detail_btn}}"><p class="text text-34">{{store_name}}</p></a>
-                            <p class="text text-27">STARTS Mar 01 - ENDS Dec 31</p>
+                            <p class="text text-27">{{dates}}</p>
                             <p class="text text-28">{{description}}</p>
                         </div>
                     </div>
