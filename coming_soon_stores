@@ -67,6 +67,7 @@
         init(e);
         function renderAll(){
             var coming_soon_list = getComingSoonList();
+            console.log(coming_soon_list)
             var coming_soon = [];
             $.each(coming_soon_list, function(key, val){
                 if(val.is_coming_soon_store === true){
