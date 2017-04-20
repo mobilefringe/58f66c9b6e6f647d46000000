@@ -330,12 +330,12 @@ function renderPromotions(container, template, collection){
             val.image_url = store_details.store_front_url_abs;
         }
         else{
-            val.store_name = "Dixie Outlet";
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.store_name = "Lansdowne Place";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg";
         }
         
         if(val.image_url.indexOf('missing.png') > 0){
-            val.image_url  = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";;
+            val.image_url  = "//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg";
         }
         
         var show_date = moment(val.show_on_web_date);
