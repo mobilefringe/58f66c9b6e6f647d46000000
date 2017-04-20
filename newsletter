@@ -44,7 +44,41 @@
             <p class="text">NEWSLETTER SIGN UP</p>
             <div class="element element-11"></div>
         </div>
-               
+        <div class="page-content" id="newsletter-form">
+            <center>
+                <form action="http://mobilefringe.createsend.com/t/d/s/junih/" method="post" id="newsletterForm">
+                    <p>
+                        <label for="fieldName">Name</label>
+                        <input id="fieldName" name="cm-name" type="text" />
+                    </p>
+                    <p>
+                        <label for="fieldEmail_newletter">Email</label>
+                        <input id="fieldEmail_newletter" name="cm-junih-junih" type="email" required />
+                    </p>
+                    <p>
+                        <label for="fieldsirx">Phone</label>
+                        <input id="fieldsirx" name="cm-f-sirx" type="text" />
+                    </p>
+                    <p>
+                        <label for="fieldsirm">Postal</label>
+                        <input id="fieldsirm" name="cm-f-sirm" type="text" />
+                    </p>
+                    <p>
+                        <label for="fieldsirc">Gender</label>
+                        <select id="fieldsirc" name="cm-fo-sirc">
+                            <option value="262373">Male</option>
+                            <option value="262374">Female</option>
+                        </select>
+                    </p>
+                    <p style="font-size:12px;">
+                        <span><input title="Agree terms" type="checkbox" class="info_check" id="agree_terms_newletter" /> I agree to receive newsletters from Lansdowne Place</span>
+                    </p>
+                    <p>
+                        <button class="form_btn" type="submit">Subscribe</button>
+                    </p>
+                </form>
+            </center>
+        </div>       
     </div>    
 </div>
 
@@ -52,19 +86,26 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var new_stores_list = getNewStoresList();
-            console.log(new_stores_list)
-            var new_stores = [];
-            $.each(new_stores_list, function(key, val){
-                if(val.is_new_store === true && val.is_coming_soon_store === false){
-                    new_stores.push(val);
-                } 
+            
+            $('#newsletterForm').submit(function (e) {
+                if ($("#agree_terms_newletter").prop("checked") != true){
+                    alert("Please agree to the term and conditions.");
+                    $("#agree_terms_newletter").focus();
+                    return false;
+                }
+                e.preventDefault();
+                $.getJSON(
+                    this.action + "?callback=?",
+                    $(this).serialize(),
+                    function (data) {
+                        if (data.Status === 400) {
+                            alert("Please try again later.");
+                        } else { // 200
+                            alert("Thank you for subscribing to our newsletter.");
+                        }
+                });
             });
-            if(new_stores.length > 0){
-                renderNewStores('#new_store_container', '#new_store_template', new_stores);
-            } else {
-                $("#no_stores").show();
-            }
+            
         }
         loadMallData(renderAll); 
     });
