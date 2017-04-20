@@ -66,6 +66,7 @@
                     <p>
                         <label for="fieldsirc">Gender</label>
                         <select id="fieldsirc" name="cm-fo-sirc">
+                            <option selected>Select One</option>
                             <option value="262373">Male</option>
                             <option value="262374">Female</option>
                         </select>
