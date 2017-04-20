@@ -23,3 +23,25 @@
         <div class="page-content" id="mm_page_content"></div>   
     </div>    
 </div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var jobs_list = getJobsList();
+            console.log(jobs_list)
+            var coming_soon = [];
+            $.each(coming_soon_list, function(key, val){
+                if(val.is_coming_soon_store === true){
+                    coming_soon.push(val);
+                } 
+            });
+            if(coming_soon.length > 0){
+                renderNewStores('#coming_soon_container', '#coming_soon_template', coming_soon);
+                $("#coming_soon").show();
+            } else {
+                $("#no_stores").show();
+            }
+        }
+        loadMallData(renderAll); 
+    });
+</script>
