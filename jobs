@@ -2,7 +2,7 @@
     <div class="left-panel visible-desktop">
         <p class="page-title">JOBS</p>
         <div class="element element-13">
-            <img alt="Jobs" src="//codecloud.cdn.speedyrails.net/ "/>
+            <img alt="Jobs" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492699060000/img_jobs.jpg"/>
         </div>
         <a href="/jobs">
             <div class="side_btn clearfix active">
@@ -20,8 +20,8 @@
             <p class="text">JOBS</p>
             <div class="element element-11"></div>
         </div>
-        <div id="coming_soon_container">
-            <script id="coming_soon_template" type="x-tmpl-mustache/text">
+        <div id="jobs_container">
+            <script id="jobs_template" type="x-tmpl-mustache/text">
                 <div class="widget widget-job">
                     <div class="widget_right_panel">
                         <a href="/stores/lansdowne-lansdowne-place-alia-n-tanjay"><p class="text text-34">Alia N' TanJay</p></a>
@@ -40,14 +40,14 @@
         function renderAll(){
             var jobs_list = getJobsList();
             console.log(jobs_list)
-            var coming_soon = [];
+            var jobs = [];
             $.each(coming_soon_list, function(key, val){
                 if(val.is_coming_soon_store === true){
                     coming_soon.push(val);
                 } 
             });
             if(coming_soon.length > 0){
-                renderNewStores('#coming_soon_container', '#coming_soon_template', coming_soon);
+                renderJobs('#jobs_container', '#jobs_template', jobs);
                 $("#coming_soon").show();
             } else {
                 $("#no_stores").show();
