@@ -305,6 +305,7 @@ function renderJobDetails(container, template, collection){
         }
         else{
             val.store_name = "Lansdowne Place";
+            val.store_slug = "";
         }
         
         var end = moment(val.end_date).tz(getPropertyTimeZone());
