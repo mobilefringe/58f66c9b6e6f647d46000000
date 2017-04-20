@@ -41,12 +41,12 @@
             var jobs_list = getJobsList();
             console.log(jobs_list)
             var jobs = [];
-            $.each(coming_soon_list, function(key, val){
+            $.each(jobs_list, function(key, val){
                 if(val.is_coming_soon_store === true){
-                    coming_soon.push(val);
+                    jobs.push(val);
                 } 
             });
-            if(coming_soon.length > 0){
+            if(jobs.length > 0){
                 renderJobs('#jobs_container', '#jobs_template', jobs);
                 $("#coming_soon").show();
             } else {
