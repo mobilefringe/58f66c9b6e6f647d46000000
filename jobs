@@ -23,29 +23,33 @@
         <div id="no_jobs" class="hidden_now title">
             <p class="text">There are currently no job postings available. Please check back soon.</p>
         </div>
-        <div id="retail_jobs_container">
-            <script id="retail_jobs_template" type="x-tmpl-mustache/text">
-                <div class="widget widget-job">
-                    <div class="widget_right_panel">
-                        <a href="/stores/{{store_slug}}"><p class="text text-34">{{store_name}}</p></a>
-                        <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
-                        <p class="text text-27">Application Deadline: {{end_date}}</p>
-                        <p class="text text-28">{{description}}</p>
-                    </div>
-                </div>  
-            </script>
+        <div id="retail_jobs">
+            <div id="retail_jobs_container">
+                <script id="retail_jobs_template" type="x-tmpl-mustache/text">
+                    <div class="widget widget-job">
+                        <div class="widget_right_panel">
+                            <a href="/stores/{{store_slug}}"><p class="text text-34">{{store_name}}</p></a>
+                            <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                            <p class="text text-27">Application Deadline: {{end_date}}</p>
+                            <p class="text text-28">{{description}}</p>
+                        </div>
+                    </div>  
+                </script>
+            </div>
         </div>
-        <div id="mall_jobs_container">
-            <script id="mall_jobs_template" type="x-tmpl-mustache/text">
-                <div class="widget widget-job">
-                    <div class="widget_right_panel">
-                        <p class="text text-34">{{store_name}}</p>
-                        <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
-                        <p class="text text-27">Application Deadline: {{end_date}}</p>
-                        <p class="text text-28">{{description}}</p>
-                    </div>
-                </div>  
-            </script>
+        <div id="mall_jobs">
+            <div id="mall_jobs_container">
+                <script id="mall_jobs_template" type="x-tmpl-mustache/text">
+                    <div class="widget widget-job">
+                        <div class="widget_right_panel">
+                            <p class="text text-34">{{store_name}}</p>
+                            <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                            <p class="text text-27">Application Deadline: {{end_date}}</p>
+                            <p class="text text-28">{{description}}</p>
+                        </div>
+                    </div>  
+                </script>
+            </div>
         </div>
     </div>    
 </div>
