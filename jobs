@@ -26,7 +26,7 @@
                     <div class="widget_right_panel">
                         <a href="/stores/{{slug}}"><p class="text text-34">{{}}</p></a>
                         <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
-                        <p class="text text-27">Application Deadline: Apr 20</p>
+                        <p class="text text-27">Application Deadline: {{end_date}}</p>
                         <p class="text text-28"></p>
                     </div>
                 </div>  
