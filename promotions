@@ -37,8 +37,8 @@
                             </div>
                         </div>
                         <div class="widget_right_panel">
-                            <a href="/promotions/{{}}"><p class="text text-33">FREE EAR PIERCING - EVERYDAY!</p></a>
-                            <a href="/stores/lansdowne-claire-s-boutique"><p class="text text-34">Claire's </p></a>
+                            <a href="/promotions/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                            <a href="/stores/{{store_detail_btn}}"><p class="text text-34">{{store_name}}</p></a>
                             <p class="text text-27">STARTS Mar 01 - ENDS Dec 31</p>
                             <p class="text text-28">{{description}}</p>
                         </div>
