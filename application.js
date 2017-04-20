@@ -46,17 +46,17 @@ function renderEvents(container, template, collection){
             val.store_name = "Dixie Outlet";
             val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
         }
-        if(val.event_image_url_abs.indexOf('missing.png') < 0){
-            val.logo = val.event_image_url_abs;
-        }
-        else{
-            if(val.image_url.indexOf('missing.png') < 0){
-                val.logo = val.image_url;
-            }
-            else{
-                val.logo = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
-            }
-        }
+        // if(val.event_image_url_abs.indexOf('missing.png') < 0){
+        //     val.logo = val.event_image_url_abs;
+        // }
+        // else{
+        //     if(val.image_url.indexOf('missing.png') < 0){
+        //         val.logo = val.image_url;
+        //     }
+        //     else{
+        //         val.logo = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+        //     }
+        // }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
