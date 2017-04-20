@@ -66,46 +66,19 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var new_stores_list = getNewStoresList();
             var coming_soon_list = getComingSoonList();
-            var new_stores = [];
             var coming_soon = [];
-            $.each(new_stores_list, function(key, val){
-                if(val.is_new_store === true && val.is_coming_soon_store === false){
-                    new_stores.push(val);
-                } 
-            });
             $.each(coming_soon_list, function(key, val){
                 if(val.is_coming_soon_store === true){
                     coming_soon.push(val);
                 } 
             });
-            if(new_stores.length > 0){
-                if(sessionStorage.current_locale == "en-CA"){
-                    renderNewStores('#new_store_container', '#new_store_template', new_stores);
-                }
-                if(sessionStorage.current_locale == "fr-CA"){
-                    renderNewStores('#new_store_container_fr', '#new_store_template_fr', new_stores);
-                }
-            }
             if(coming_soon.length > 0){
-                if(sessionStorage.current_locale == "en-CA"){
-                    renderNewStores('#coming_soon_container', '#coming_soon_template', coming_soon);
-                }
-                if(sessionStorage.current_locale == "fr-CA"){
-                    renderNewStores('#coming_soon_container_fr', '#coming_soon_template_fr', coming_soon);    
-                }
+                renderNewStores('#coming_soon_container', '#coming_soon_template', coming_soon);
                 $("#coming_soon").show();
-            }
-            if(new_stores_list.length === 0){
+            } else {
                 $("#no_stores").show();
-                $("#no_stores_fr").show();
             }
-            
-            setTimeout(function() {
-               show_content();
-           }, 500);
-        }
         }
         loadMallData(renderAll); 
     });
