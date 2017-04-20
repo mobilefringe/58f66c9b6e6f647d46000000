@@ -37,7 +37,7 @@
                 </script>
             </div>
         </div>
-        <div id="mall_jobs" class="hidden_now">
+        <div id="prop_jobs" class="hidden_now">
             <div id="mall_jobs_container">
                 <script id="mall_jobs_template" type="x-tmpl-mustache/text">
                     <div class="widget widget-job">
