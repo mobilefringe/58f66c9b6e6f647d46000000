@@ -27,7 +27,9 @@
 .custom_spl_banner img{
     width:inherit
 }
-
+.yield {
+    display: none;
+}
 /* *** LOADER *** */
 .modal-backdrop {
     background-color: hsla(0, 0%, 0%, 0.2);
