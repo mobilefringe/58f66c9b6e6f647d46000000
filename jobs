@@ -20,7 +20,14 @@
             <p class="text">JOBS</p>
             <div class="element element-11"></div>
         </div>
-        <div class="page-content" id="mm_page_content"></div>   
+        <div class="widget widget-job">
+            <div class="widget_right_panel">
+                <a href="/stores/lansdowne-lansdowne-place-alia-n-tanjay"><p class="text text-34">Alia N' TanJay</p></a>
+                <a href="/jobs/job-fair--110"><p class="text text-33">Job Fair</p></a>
+                <p class="text text-27"> Application Deadline: Apr 20</p>
+                <p class="text text-28"></p>
+            </div>
+        </div>  
     </div>    
 </div>
 <script>
