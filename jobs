@@ -27,7 +27,7 @@
                         <a href="/stores/{{store_slug}}"><p class="text text-34">{{store_name}}</p></a>
                         <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
                         <p class="text text-27">Application Deadline: {{end_date}}</p>
-                        <p class="text text-28"></p>
+                        <p class="text text-28">{{description}}</p>
                     </div>
                 </div>  
             </script>
@@ -39,7 +39,7 @@
                         <p class="text text-34">{{store_name}}</p>
                         <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
                         <p class="text text-27">Application Deadline: {{end_date}}</p>
-                        <p class="text text-28"></p>
+                        <p class="text text-28">{{description}}</p>
                     </div>
                 </div>  
             </script>
