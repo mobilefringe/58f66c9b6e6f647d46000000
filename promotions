@@ -20,32 +20,20 @@
     <div class="right-panel">
         <div class="detail-banner"><img src="/system/site_images/photos/000/009/185/original/Promotions.jpg?1431467014"></div>
         <div class="title clearfix">
-          <div class="element"></div>
-          <p class="text">PROMOTIONS</p>
-          <div class="element element-11"></div>
+            <div class="element"></div>
+            <p class="text">PROMOTIONS</p>
+            <div class="element element-11"></div>
         </div>
-        
-        
-        
-            
-                
-                    
-                        
-                    
-                
-                <div class="widget widget-promotion">
-                    <div class="widget_left_panel">
-                        <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/015/346/original/claires.png?1452742251);"></div>
-                    </div>
-                    <div class="widget_right_panel">
-                        <a href="/promotions/lansdowne-lansdowne-place-claire-s-free-ear-piercing-everyday-20-off-your-next-purchase"><p class="text text-33">FREE EAR PIERCING - EVERYDAY!</p></a>
-                        <a href="/stores/lansdowne-claire-s-boutique"><p class="text text-34">Claire's </p></a>
-                        <p class="text text-27">STARTS Mar 01 - ENDS Dec 31</p>
-                        <p class="text text-28">+ 20% OFF your next purchase!
-
-*Available at participating retailers
-
-
-</p>
-                    </div>
-                </div>
+        <div class="widget widget-promotion">
+            <div class="widget_left_panel">
+                <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/015/346/original/claires.png?1452742251);"></div>
+            </div>
+            <div class="widget_right_panel">
+                <a href="/promotions/lansdowne-lansdowne-place-claire-s-free-ear-piercing-everyday-20-off-your-next-purchase"><p class="text text-33">FREE EAR PIERCING - EVERYDAY!</p></a>
+                <a href="/stores/lansdowne-claire-s-boutique"><p class="text text-34">Claire's </p></a>
+                <p class="text text-27">STARTS Mar 01 - ENDS Dec 31</p>
+                <p class="text text-28">{{description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
