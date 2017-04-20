@@ -44,7 +44,7 @@
             <p class="text">GIFT CARDS</p>
             <div class="element element-11"></div>
         </div>
-           
+        <div id="mm_page_content"></div>   
     </div>    
 </div>
 <script>
