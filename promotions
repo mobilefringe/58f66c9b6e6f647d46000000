@@ -29,7 +29,9 @@
                 <script id="retail_jobs_template" type="x-tmpl-mustache/text">
                     <div class="widget widget-promotion">
                         <div class="widget_left_panel">
-                            <div class="element element-12" style="background-image: url(https://www.mallmaverick.com/system/stores/store_fronts/000/015/346/original/claires.png?1452742251);"></div>
+                            <div class="element element-12">
+                                <img src="{{store_front_url}}" alt="{{name}}"/>
+                            </div>
                         </div>
                         <div class="widget_right_panel">
                             <a href="/promotions/lansdowne-lansdowne-place-claire-s-free-ear-piercing-everyday-20-off-your-next-purchase"><p class="text text-33">FREE EAR PIERCING - EVERYDAY!</p></a>
