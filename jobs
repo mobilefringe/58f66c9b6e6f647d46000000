@@ -74,7 +74,6 @@
             });
             
             if(retailer_published_jobs.length > 0){
-                var
                 retailer_published_jobs.sortBy(function(o){ return o.store_name});
                 renderJobs("#retail_jobs_container","#retail_jobs_template", retailer_published_jobs);
                 $("#retail_jobs").show();
