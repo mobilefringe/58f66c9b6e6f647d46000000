@@ -36,9 +36,9 @@
             <script id="mall_jobs_template" type="x-tmpl-mustache/text">
                 <div class="widget widget-job">
                     <div class="widget_right_panel">
-                        <a href="/stores/{{slug}}"><p class="text text-34">Alia N' TanJay</p></a>
-                        <a href="/jobs/job-fair--110"><p class="text text-33">Job Fair</p></a>
-                        <p class="text text-27"> Application Deadline: Apr 20</p>
+                        <a href="/stores/{{slug}}"><p class="text text-34">{{}}</p></a>
+                        <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                        <p class="text text-27">Application Deadline: {{end_date}}</p>
                         <p class="text text-28"></p>
                     </div>
                 </div>  
