@@ -173,7 +173,7 @@
         </header>
 
         
-        <div id="main_content">
+        <div id="main_content" class="yield">
             {{yield}}
         </div>
         
