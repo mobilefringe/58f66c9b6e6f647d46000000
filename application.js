@@ -50,17 +50,6 @@ function renderEvents(container, template, collection){
         if(val.image_url.indexOf('missing.png') > 0){
             val.image_url  = "//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg";
         }
-        // if(val.event_image_url_abs.indexOf('missing.png') < 0){
-        //     val.logo = val.event_image_url_abs;
-        // }
-        // else{
-        //     if(val.image_url.indexOf('missing.png') < 0){
-        //         val.logo = val.image_url;
-        //     }
-        //     else{
-        //         val.logo = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
-        //     }
-        // }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
@@ -70,6 +59,11 @@ function renderEvents(container, template, collection){
         else{
             val.dates = "STARTS " + start.format("MMM D") + " - ENDS " + end.format("MMM D")
         }
+        
+        if (val.description.length  >= 190) {
+            val.description = val.description.substring(0, 189) + "...";
+        }
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
