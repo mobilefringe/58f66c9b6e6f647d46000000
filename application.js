@@ -348,8 +348,8 @@ function renderPromotions(container, template, collection){
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         
-        if (val.description.length  >= 180) {
-            val.description = val.description.substring(0, 179) + "...";
+        if (val.description.length  >= 175) {
+            val.description = val.description.substring(0, 174) + "...";
         }
         
         var rendered = Mustache.render(template_html,val);
