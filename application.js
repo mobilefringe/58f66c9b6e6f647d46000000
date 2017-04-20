@@ -377,8 +377,8 @@ function renderPromoDetails(container, template, collection){
             }
         }
         else{
-            val.store_name = "Dixie Outlet";
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.store_name = "Lansdowne Place";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg";
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > -1){
