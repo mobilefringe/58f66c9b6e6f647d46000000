@@ -392,7 +392,7 @@ function renderPromoDetails(container, template, collection){
             val.dates = start.format("MMM D")
         }
         else{
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
+            val.dates = "Starts " + start.format("MMM D") + " - Ends " + end.format("MMM D")
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
