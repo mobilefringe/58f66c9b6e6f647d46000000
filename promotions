@@ -25,8 +25,8 @@
             <div class="element element-11"></div>
         </div>
         <div id="promos">
-            <div id="retail_jobs_container">
-                <script id="retail_jobs_template" type="x-tmpl-mustache/text">
+            <div id="promos_container">
+                <script id="promos_template" type="x-tmpl-mustache/text">
                     <div class="widget widget-promotion">
                         <div class="widget_left_panel">
                             <div class="element element-12">
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="widget_right_panel">
-                            <a href="/promotions/lansdowne-lansdowne-place-claire-s-free-ear-piercing-everyday-20-off-your-next-purchase"><p class="text text-33">FREE EAR PIERCING - EVERYDAY!</p></a>
+                            <a href="/promotions/{{}}"><p class="text text-33">FREE EAR PIERCING - EVERYDAY!</p></a>
                             <a href="/stores/lansdowne-claire-s-boutique"><p class="text text-34">Claire's </p></a>
                             <p class="text text-27">STARTS Mar 01 - ENDS Dec 31</p>
                             <p class="text text-28">{{description}}</p>
