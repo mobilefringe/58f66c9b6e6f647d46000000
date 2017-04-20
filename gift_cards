@@ -11,7 +11,7 @@
             </div>
         </a>
         <a href="/new_stores">
-            <div class="side_btn clearfix active">
+            <div class="side_btn clearfix">
               <p class="text"><b>NEW STORES</b></p>
               <div class="image"></div>
             </div>
@@ -23,7 +23,7 @@
             </div>
         </a>
         <a href="/gift_cards"> 
-            <div class="side_btn clearfix">     
+            <div class="side_btn clearfix active">     
               <p class="text">GIFT CARDS</p>
               <div class="image"></div>
             </div>
