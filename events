@@ -52,7 +52,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var events = getPromotionsList().sortBy(function(o){ return o.start_date });
+            var events = getEventsList().sortBy(function(o){ return o.start_date });
             console.log(events);
             var published_events = [];
             $.each( events , function( key, val ){
