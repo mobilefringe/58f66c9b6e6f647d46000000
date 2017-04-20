@@ -300,18 +300,11 @@ function renderJobDetails(container, template, collection){
     $.each( item_list , function( key, val ) {
         if (val.jobable_type == "Store") {
             var store_details = getStoreDetailsByID(val.jobable_id);
-            val.store_detail_btn = store_details.slug;
+            val.store_slug = store_details.slug;
             val.store_name = store_details.name;
-            if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
-            }
-            else{
-                val.image_url = store_details.store_front_url_abs;
-            }
         }
         else{
             val.store_name = "Lansdowne Place";
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
         }
         
         var end = moment(val.end_date).tz(getPropertyTimeZone());
