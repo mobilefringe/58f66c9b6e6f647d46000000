@@ -30,6 +30,94 @@ function renderBanner(banner_template,home_banner,banners){
     $(home_banner).html(item_rendered.join(''));
 }
 
+function renderEvents(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    $.each( collection , function( key, val ) {
+        if (val.eventable_type == "Store") {
+            var store_details = getStoreDetailsByID(val.eventable_id);
+            val.store_detail_btn = store_details.slug ;
+            val.store_name = store_details.name;
+            val.image_url = store_details.store_front_url_abs;
+        }
+        else{
+            val.store_name = "Dixie Outlet";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+        }
+        if(val.event_image_url_abs.indexOf('missing.png') < 0){
+            val.logo = val.event_image_url_abs;
+        }
+        else{
+            if(val.image_url.indexOf('missing.png') < 0){
+                val.logo = val.image_url;
+            }
+            else{
+                val.logo = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            }
+        }
+        var show_date = moment(val.show_on_web_date);
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        if (start.format("DMY") == end.format("DMY")){
+            val.dates = start.format("MMM D")
+        }
+        else{
+            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
+        }
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    $(container).html(item_rendered.join(''));
+}
+
+function renderEventDetails(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    item_list.push(collection);
+    $.each( item_list , function( key, val ) {
+        if (val.eventable_type == "Store") {
+            var store_details = getStoreDetailsByID(val.eventable_id);
+            val.store_detail_btn = store_details.slug;
+            val.store_name = store_details.name;
+            if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
+                val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            }
+            else{
+                val.image_url = store_details.store_front_url_abs;
+            }
+        }
+        else{
+            val.store_name = "Dixie Outlet";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+        }
+        
+        if (val.tags.indexOf("#living_room") >= 0){
+            val.store_name = "The Living Room";
+        }
+        
+        if(val.event_image_url_abs.indexOf('missing.png') > -1){
+            val.promo_image_show="display:none";
+        }
+        
+        var show_date = moment(val.show_on_web_date);
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        if (start.format("DMY") == end.format("DMY")){
+            val.dates = start.format("MMM D")
+        }
+        else{
+            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
+        }
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    $(container).html(item_rendered.join(''));
+}
+
 function renderFeatureItems(container, template, collection){
     var item_list = [];
     var item_rendered = [];
@@ -76,7 +164,29 @@ function renderGeneral(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-
+function renderHomeHours(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    item_list.push(collection);    
+    $.each( item_list , function( key, val ) {
+        val.day = get_day(val.day_of_week);
+        var d = new Date();
+        val.month = get_month(d.getMonth());
+        val.weekday = addZero(d.getDate());
+        if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
+            var open_time = in_my_time_zone(moment(val.open_time), "h:mma");
+            var close_time = in_my_time_zone(moment(val.close_time), "h:mma");
+            val.h = open_time + " - " + close_time;
+        } else {
+            val.h = "Closed";
+        }
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    $(container).html(item_rendered.join(''));
+}
 
 function renderHours(container, template, collection, type){
     var item_list = [];
@@ -220,8 +330,6 @@ function renderJobDetails(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-
-
 function renderPromotions(container, template, collection){
     var item_list = [];
     var item_rendered = [];
@@ -258,7 +366,6 @@ function renderPromotions(container, template, collection){
     });
     $(container).html(item_rendered.join(''));
 }
-
 
 function renderPromoDetails(container, template, collection){
     var item_list = [];
@@ -333,163 +440,6 @@ function renderNewStores(container, template, collection){
         }
         var repo_rendered = Mustache.render(template_html,val);
         item_rendered.push(repo_rendered);
-    });
-    $(container).html(item_rendered.join(''));
-}
-
-function renderStoreDetailsHours(container, template, collection){
-    var item_list = [];
-    var item_rendered = [];
-    var template_html = $(template).html();
-    Mustache.parse(template_html); 
-    $.each( collection , function( key, val ) {
-        switch(val.day_of_week) {
-            case 0:
-                val.day = "Sunday";
-                break;
-            case 1:
-                val.day = "Monday";
-                break;
-            case 2:
-                val.day = "Tuesday";
-                break;
-            case 3:
-                val.day = "Wednesday";
-                break;
-            case 4:
-                val.day = "Thursday";
-                break;
-            case 5:
-                val.day = "Friday";
-                break;
-            case 6:
-                val.day = "Saturday";
-                break;
-            
-        }
-        var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
-        var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
-       
-        if (val.is_closed == true){
-            val.hour_string = "Closed"
-        } else {
-            val.hour_string = open_time + " - " + close_time;
-        }
-        var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
-    });
-    $(container).html(item_rendered.join(''));
-}
-
-
-function renderEvents(container, template, collection){
-    var item_list = [];
-    var item_rendered = [];
-    var template_html = $(template).html();
-    Mustache.parse(template_html); 
-    $.each( collection , function( key, val ) {
-        if (val.eventable_type == "Store") {
-            var store_details = getStoreDetailsByID(val.eventable_id);
-            val.store_detail_btn = store_details.slug ;
-            val.store_name = store_details.name;
-            val.image_url = store_details.store_front_url_abs;
-        }
-        else{
-            val.store_name = "Dixie Outlet";
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
-        }
-        if(val.event_image_url_abs.indexOf('missing.png') < 0){
-            val.logo = val.event_image_url_abs;
-        }
-        else{
-            if(val.image_url.indexOf('missing.png') < 0){
-                val.logo = val.image_url;
-            }
-            else{
-                val.logo = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
-            }
-        }
-        var show_date = moment(val.show_on_web_date);
-        var start = moment(val.start_date).tz(getPropertyTimeZone());
-        var end = moment(val.end_date).tz(getPropertyTimeZone());
-        if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMM D")
-        }
-        else{
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
-        }
-        var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
-    });
-    $(container).html(item_rendered.join(''));
-}
-
-function renderEventDetails(container, template, collection){
-    var item_list = [];
-    var item_rendered = [];
-    var template_html = $(template).html();
-    Mustache.parse(template_html); 
-    item_list.push(collection);
-    $.each( item_list , function( key, val ) {
-        if (val.eventable_type == "Store") {
-            var store_details = getStoreDetailsByID(val.eventable_id);
-            val.store_detail_btn = store_details.slug;
-            val.store_name = store_details.name;
-            if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
-            }
-            else{
-                val.image_url = store_details.store_front_url_abs;
-            }
-        }
-        else{
-            val.store_name = "Dixie Outlet";
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
-        }
-        
-        if (val.tags.indexOf("#living_room") >= 0){
-            val.store_name = "The Living Room";
-        }
-        
-        if(val.event_image_url_abs.indexOf('missing.png') > -1){
-            val.promo_image_show="display:none";
-        }
-        
-        var show_date = moment(val.show_on_web_date);
-        var start = moment(val.start_date).tz(getPropertyTimeZone());
-        var end = moment(val.end_date).tz(getPropertyTimeZone());
-        if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMM D")
-        }
-        else{
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
-        }
-        var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
-    });
-    $(container).html(item_rendered.join(''));
-}
-
-function renderHomeHours(container, template, collection){
-    var item_list = [];
-    var item_rendered = [];
-    var template_html = $(template).html();
-    Mustache.parse(template_html);   // optional, speeds up future uses
-    item_list.push(collection);    
-    $.each( item_list , function( key, val ) {
-        val.day = get_day(val.day_of_week);
-        var d = new Date();
-        val.month = get_month(d.getMonth());
-        val.weekday = addZero(d.getDate());
-        if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-            var open_time = in_my_time_zone(moment(val.open_time), "h:mma");
-            var close_time = in_my_time_zone(moment(val.close_time), "h:mma");
-            val.h = open_time + " - " + close_time;
-        } else {
-            val.h = "Closed";
-        }
-        var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
     });
     $(container).html(item_rendered.join(''));
 }
@@ -613,5 +563,49 @@ function renderStoreDetails(container, template, collection, slug){
     });
     
     $(container).show();
+    $(container).html(item_rendered.join(''));
+}
+
+function renderStoreDetailsHours(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    $.each( collection , function( key, val ) {
+        switch(val.day_of_week) {
+            case 0:
+                val.day = "Sunday";
+                break;
+            case 1:
+                val.day = "Monday";
+                break;
+            case 2:
+                val.day = "Tuesday";
+                break;
+            case 3:
+                val.day = "Wednesday";
+                break;
+            case 4:
+                val.day = "Thursday";
+                break;
+            case 5:
+                val.day = "Friday";
+                break;
+            case 6:
+                val.day = "Saturday";
+                break;
+            
+        }
+        var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
+        var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
+       
+        if (val.is_closed == true){
+            val.hour_string = "Closed"
+        } else {
+            val.hour_string = open_time + " - " + close_time;
+        }
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
     $(container).html(item_rendered.join(''));
 }
