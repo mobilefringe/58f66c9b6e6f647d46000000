@@ -752,7 +752,8 @@ input[type="checkbox"], input[type="radio"]{
     min-height: 26px;
     padding: 0px 0px 8px 0px;
     margin: 0px;
-    font: 1.905em/1.38 SerifaBT-Roman;
+    font-size: 19.9949px;
+    font-family: SerifaBT-Roman;
     color: black;
 }
 /********************************************************/
