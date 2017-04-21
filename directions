@@ -58,7 +58,7 @@
         init(e);
         function renderAll(){
             var prop_details = getPropertyDetails();
-            renderPropertyDetails('#map_container', '#map_template', prop_details);
+            renderSimple('#map_container', '#map_template', prop_details);
         
             var prefix = get_prefix();
             var pages_json = prefix + "/pages/lansdowne-directions.json"
