@@ -73,17 +73,13 @@
             	<script id="holiday_template" type="x-tmpl-mustache/text">
             	    <div class="">
                         <div class="row hour_div">
-                    
-            		            <div class="col-xs-8">
-            		                <span>{{ formatted_date }}</span>
-            		                <span>{{ holiday_name }}</span>
-            					    
-            				    </div>
-            					<div class="col-xs-4">
-                					<div align="right">{{ h }}</div>
-                				</div>
-                
-                			
+        		            <div class="col-xs-8">
+        		                <span>{{ formatted_date }}</span>
+        		                <span>{{ holiday_name }}</span>
+        				    </div>
+        					<div class="col-xs-4">
+            					<div align="right">{{ h }}</div>
+            				</div>
             			</div>
             	    </div>
                 </script>
