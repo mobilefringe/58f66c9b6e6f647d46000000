@@ -490,13 +490,15 @@ header{
     height:40px;    
 }
 .store_list_header {
-    font:1.7em/1.38 SerifaBT-Roman;
-    color:#000;
-    clear:both;
-    text-align:center;
-    padding:11px;
-    border-top:1px solid #d9d9d9;
-    border-bottom:1px solid #d9d9d9;
+    padding: 11px;
+    font-family: SerifaBT-Roman;
+    font-size: 17.8432px;
+    color: #000;
+    clear: both;
+    text-align: center;
+    
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
 }
 .storelist-table td{
     font:400 1.7em/1.38 Franklin Gothic Book,FranklinGothic-Book;
