@@ -27,8 +27,8 @@
 .custom_spl_banner img{
     width:inherit
 }
-.content {
-    display: none;
+.yield {
+    visibility: hidden;
 }
 /* *** LOADER *** */
 .modal-backdrop {
