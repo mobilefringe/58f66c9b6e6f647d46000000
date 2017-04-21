@@ -50,17 +50,20 @@
     </div>    
 </div>
 <script>
-    $(document).ready(function(){
-        init();
-
-        function renderPage(){
-            var hours = getPropertyHours();
-            renderHours('#hours_container','#hours_template', hours, 'reg_hours');
-            renderHours('#holiday_container','#holiday_template', hours, 'holiday_hours'); 
-        
-            show_content();
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/lansdowne-directions.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title);
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
         }
-        
-        loadMallDataCached(renderPage);
-    });
+        loadMallDataCached(renderAll); 
+    })
 </script>
