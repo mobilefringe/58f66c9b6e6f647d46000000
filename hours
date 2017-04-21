@@ -4,31 +4,31 @@
         <div class="element element-13">
             <img alt="visiting" src="https://www.mallmaverick.com/system/site_images/photos/000/003/774/original/img_aboutus.jpg?1409776029" />
         </div>
-        <a  href="/hours"> 
+        <a  href="#"> 
             <div class="side_btn clearfix active">     
                 <p class="text">HOURS</p>
                 <div class="image"></div>
             </div>
         </a>
-        <a  href="/pages/lansdowne-directions"> 
+        <a  href="/directions"> 
             <div class="side_btn clearfix ">     
                 <p class="text">DIRECTION</p>
                 <div class="image"></div>
             </div>
         </a>
-        <a  href="/pages/lansdowne-services"> 
+        <a  href="/services"> 
             <div class="side_btn clearfix ">     
                 <p class="text">SERVICES</p>
                 <div class="image"></div>
             </div>
         </a>
-        <a  href="/pages/lansdowne-tourism"> 
+        <a  href="/tourism"> 
             <div class="side_btn clearfix ">     
                 <p class="text">TOURISM</p>
                 <div class="image"></div>
             </div>
         </a>
-        <a  href="/pages/lansdowne-security"> 
+        <a  href="/security"> 
             <div class="side_btn clearfix ">     
                 <p class="text">SECURITY</p>
                 <div class="image"></div>
