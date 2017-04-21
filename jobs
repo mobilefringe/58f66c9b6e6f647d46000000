@@ -57,7 +57,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var jobs = getJobsList();
+            var jobs = getJobsList().sortBy(function(o){ return o.store_name});;
             console.log(jobs)
             var mall_published_jobs = [];
             var retailer_published_jobs = [];
@@ -77,7 +77,7 @@
                 } 
             });
             if(retailer_published_jobs.length > 0){
-                retailer_published_jobs.sortBy(function(o){ return o.store_name});
+                // retailer_published_jobs.sortBy(function(o){ return o.store_name});
                 renderJobs("#retail_jobs_container","#retail_jobs_template", retailer_published_jobs);
                 $("#retail_jobs").show();
             }
