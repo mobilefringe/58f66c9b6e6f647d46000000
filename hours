@@ -40,229 +40,39 @@
             <img alt ="banner" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492699066000/Hours.jpg">
         </div>
         <div class="title clearfix">
-          <div class="element"></div>
-          <p class="text">HOURS</p>
-          <div class="element element-11"></div>
+            <div class="element"></div>
+            <p class="text">HOURS</p>
+            <div class="element element-11"></div>
         </div> 
         <div class="page-content">
+        
+            <div id="hours_container">
+                <script id="hours_template" type="x-tmpl-mustache/text">
+            		<div class="drop-down-row {{active_class}} {{todays_hours}}">
+            			<div class="pull-left" align="left" style="font-weight:bold {{today}}">{{day}}</div>
+            			<div class="right-right" align="right">{{ h }}</div>
+            		</div>
+            	</script>
+            </div>
+        
             <table role='presentation' >
-                    
-    		        <tr>
-    		            <td><strong>Sunday</strong></td>
-    		            <td>11:00 AM -  5:00 PM</td>
-    		        </tr>
-    		        
-    		        <tr>
-    		            <td><strong>Monday</strong></td>
-    		            <td> 9:30 AM -  9:00 PM</td>
-    		        </tr>
-    		        
-    		        <tr>
-    		            <td><strong>Tuesday</strong></td>
-    		            <td> 9:30 AM -  9:00 PM</td>
-    		        </tr>
-    		        
-    		        <tr>
-    		            <td><strong>Wednesday</strong></td>
-    		            <td> 9:30 AM -  9:00 PM</td>
-    		        </tr>
-    		        
-    		        <tr>
-    		            <td><strong>Thursday</strong></td>
-    		            <td> 9:30 AM -  9:00 PM</td>
-    		        </tr>
-    		        
-    		        <tr>
-    		            <td><strong>Friday</strong></td>
-    		            <td> 9:30 AM -  9:00 PM</td>
-    		        </tr>
-    		        
-    		        <tr>
-    		            <td><strong>Saturday</strong></td>
-    		            <td> 9:30 AM -  6:00 PM</td>
-    		        </tr>
-    		    
-            </table>
-            <p>Upcoming Holiday Hours</p>
-            <table role='presentation' class="hour_div">
-                
-                    <tr>
-                        <td>
-                            02/20/17<strong>  Family Day</strong>
-                        </td>        
-                        <td>
-                        
-                            Closed
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            04/14/17<strong>  Good Friday</strong>
-                        </td>        
-                        <td>
-                        
-                            Closed
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            04/16/17<strong>  Easter Sunday</strong>
-                        </td>        
-                        <td>
-                        
-                            Closed
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            05/22/17<strong>  Victoria Day</strong>
-                        </td>        
-                        <td>
-                        
-                            Closed
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            07/01/17<strong>  Canada Day</strong>
-                        </td>        
-                        <td>
-                        
-                            Closed
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            08/07/17<strong>  Civic Holiday</strong>
-                        </td>        
-                        <td>
-                        
-                            10:00 AM -  5:00 PM
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            09/04/17<strong>  Labour Day</strong>
-                        </td>        
-                        <td>
-                        
-                            Closed
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            10/09/17<strong>  Thanksgiving Day</strong>
-                        </td>        
-                        <td>
-                        
-                            Closed
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            11/24/17<strong>  Black Friday</strong>
-                        </td>        
-                        <td>
-                        
-                             7:00 AM -  9:00 PM
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            11/25/17<strong>  Holiday Hours starting (Monday to Saturday) Nov. 25th </strong>
-                        </td>        
-                        <td>
-                        
-                             9:30 AM -  9:00 PM
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            11/26/17<strong>  Holiday Hours (Sundays) starting Nov. 26th </strong>
-                        </td>        
-                        <td>
-                        
-                            10:00 AM -  6:00 PM
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            12/24/17<strong>  Christmas Eve</strong>
-                        </td>        
-                        <td>
-                        
-                             8:00 AM -  5:00 PM
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            12/25/17<strong>  Christmas Day </strong>
-                        </td>        
-                        <td>
-                        
-                            Closed
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            12/26/17<strong>  Boxing Day </strong>
-                        </td>        
-                        <td>
-                        
-                             8:00 AM -  6:00 PM
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            12/31/17<strong>  New Years Eve </strong>
-                        </td>        
-                        <td>
-                        
-                             9:30 AM -  5:00 PM
-                            
-                        </td>  
-                    </tr>
-                
-                    <tr>
-                        <td>
-                            01/01/18<strong>  New Years Day </strong>
-                        </td>        
-                        <td>
-                        
-                            Closed
-                            
-                        </td>  
-                    </tr>
-                
+		        <tr>
+		            <td><strong>Sunday</strong></td>
+		            <td>11:00 AM -  5:00 PM</td>
+		        </tr>
             </table>
         </div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">HOLIDAY HOURS & CLOSURES</p>
+            <div class="element element-11"></div>
+        </div>
+
+        <table role='presentation' class="hour_div">
+            <tr>
+                <td>02/20/17<strong>  Family Day</strong></td>        
+                <td>Closed</td>  
+            </tr>
+        </table>
     </div>    
 </div>
