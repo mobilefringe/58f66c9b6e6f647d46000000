@@ -489,7 +489,7 @@ header{
 .storelist-table tr{
     height:40px;    
 }
-.storelist-table th{
+.store_list_header {
     font:1.7em/1.38 SerifaBT-Roman;
     color:#000;
     clear:both;
