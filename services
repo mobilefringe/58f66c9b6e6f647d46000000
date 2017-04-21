@@ -1,0 +1,76 @@
+<div class="content clearfix">
+    <div class="left-panel visible-desktop">
+        <p class="page-title">VISITING</p>
+        <div class="element element-13">
+            <img alt="visiting" src="https://www.mallmaverick.com/system/site_images/photos/000/003/774/original/img_aboutus.jpg?1409776029" />
+        </div>
+        <a  href="/hours"> 
+            <div class="side_btn clearfix ">     
+                <p class="text">HOURS</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a  href="/directions"> 
+            <div class="side_btn clearfix">     
+                <p class="text">DIRECTIONS</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a  href="#"> 
+            <div class="side_btn clearfix active">     
+                <p class="text">SERVICES</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a  href="/tourism"> 
+            <div class="side_btn clearfix">     
+                <p class="text">TOURISM</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a  href="/security"> 
+            <div class="side_btn clearfix">     
+                <p class="text">SECURITY</p>
+                <div class="image"></div>
+            </div>
+        </a>
+    </div>
+    <div class="right-panel right-panel-tab active" id="current_events">
+        <div id="map_container">
+            <script id="map_template" type="x-tmpl-mustache/text">
+                <iframe class="hidden-xs" src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="405" frameborder="0" allowfullscreen></iframe> 
+                <iframe class="visible-xs-inline-block" src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+            </script>
+        </div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">DIRECTIONS</p>
+            <div class="element element-11"></div>
+        </div> 
+        <div class="page-content">
+            <div id="mm_page_content"></div>
+        </div>
+    </div>    
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var prop_details = getPropertyDetails();
+            renderSimple('#map_container', '#map_template', prop_details);
+        
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/lansdowne-directions.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title);
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
