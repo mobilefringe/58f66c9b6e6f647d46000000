@@ -880,8 +880,6 @@ input[type="checkbox"], input[type="radio"]{
         text-align: right;
     }
     .holiday_date {
-        margin-right: 10px;
-        width: 72px;
     }
 }
 /********************************************************/
