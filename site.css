@@ -879,6 +879,9 @@ input[type="checkbox"], input[type="radio"]{
     .time {
         text-align: right;
     }
+    .holiday_date {
+        margin-right: 10px;
+    }
 }
 /********************************************************/
 /* mobile */
