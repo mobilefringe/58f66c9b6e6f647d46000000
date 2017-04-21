@@ -16,14 +16,14 @@
                 <div class="image"></div>
             </div>
         </a>
-        <a  href="#"> 
-            <div class="side_btn clearfix active">     
+        <a  href="/services"> 
+            <div class="side_btn clearfix">     
                 <p class="text">SERVICES</p>
                 <div class="image"></div>
             </div>
         </a>
-        <a  href="/tourism"> 
-            <div class="side_btn clearfix">     
+        <a  href="#"> 
+            <div class="side_btn clearfix active">     
                 <p class="text">TOURISM</p>
                 <div class="image"></div>
             </div>
