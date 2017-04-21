@@ -85,6 +85,7 @@
                     published_events.push(val);
                 } else {
                     past_events.push(val);
+                    console.log(past_events)
                 }
             });
             if(published_events.length > 0){
