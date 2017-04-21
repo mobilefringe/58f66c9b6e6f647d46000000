@@ -43,7 +43,7 @@
         <div class="text text-30 category-panel">
             <div id="category_container">
     			<script id="category_template" type="x-tmpl-mustache/text">
-    			    <a href="#2189" class="storelist_btn_category"> Home Accessories </a>
+    			    <a href="#{{id}}" class="storelist_btn_category">{{name}}</a>
                 </script>
             </div>
         </div>
