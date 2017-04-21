@@ -780,7 +780,7 @@ input[type="checkbox"], input[type="radio"]{
     display: block;
 }
 
-.page-content p {
+.page-content p, .page-content ul {
     font-family: "Franklin Gothic Book", FranklinGothic-Book;
     font-size: 16px;
     line-height: 1.38;
