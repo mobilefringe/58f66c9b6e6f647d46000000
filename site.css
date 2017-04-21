@@ -500,7 +500,7 @@ header{
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
 }
-.storelist-table td{
+.store_list_content{
     padding: 8px;
     font-family: "Franklin Gothic Book", FranklinGothic-Book;
     font-weight:400;
