@@ -45,29 +45,6 @@
                 </script>
             </div>
         </div>
-        <div class="title clearfix">
-            <div class="element"></div>
-            <p class="text">PAST EVENTS</p>
-            <div class="element element-11"></div>
-        </div>
-
-        <div id="past_events_container">
-            <script id="past_events_template" type="x-tmpl-mustache/text">
-                <div class="widget widget-promotion">
-                    <div class="widget_left_panel">
-                        <div class="element element-12">
-                            <img src="{{image_url}}" alt="{{name}}"/>
-                        </div>
-                    </div>
-                    <div class="widget_right_panel">
-                        <a href="/promotions/{{slug}}"><p class="text text-33">{{name}}</p></a>
-                        <p class="text text-27">{{dates}}</p>
-                        <p class="text text-28">{{description}}</p>
-                    </div>
-                </div>
-            </script>
-        </div>
-
     </div>
 </div>
 <script>
