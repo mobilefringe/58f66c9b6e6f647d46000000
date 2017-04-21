@@ -74,8 +74,9 @@
                     <div class="row">
                 
         		            <div class="col-xs-6">
-        		                <div style="font-weight:bold">{{ holiday_name }}</div>
-        					    <div>{{ formatted_date }}</div>
+        		                <span>{{ formatted_date }}</span>
+        		                <span>{{ holiday_name }}</span>
+        					    
         				    </div>
         					<div class="col-xs-6">
             					<div align="right">{{ h }}</div>
