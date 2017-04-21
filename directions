@@ -1,0 +1,66 @@
+<div class="content clearfix">
+    <div class="left-panel visible-desktop">
+        <p class="page-title">VISITING</p>
+        <div class="element element-13">
+            <img alt="visiting" src="https://www.mallmaverick.com/system/site_images/photos/000/003/774/original/img_aboutus.jpg?1409776029" />
+        </div>
+        <a  href="/hours"> 
+            <div class="side_btn clearfix ">     
+                <p class="text">HOURS</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a  href="/directions"> 
+            <div class="side_btn clearfix active">     
+                <p class="text">DIRECTIONS</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a  href="/services"> 
+            <div class="side_btn clearfix ">     
+                <p class="text">SERVICES</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a  href="/tourism"> 
+            <div class="side_btn clearfix ">     
+                <p class="text">TOURISM</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a  href="/security"> 
+            <div class="side_btn clearfix ">     
+                <p class="text">SECURITY</p>
+                <div class="image"></div>
+            </div>
+        </a>
+    </div>
+    <div class="right-panel right-panel-tab active" id="current_events">
+        <div class="detail-banner">
+            <img alt ="banner" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492699066000/Hours.jpg">
+        </div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">DIRECTIONS</p>
+            <div class="element element-11"></div>
+        </div> 
+        <div class="page-content">
+            <div id="mm_page_content"></div>
+        </div>
+    </div>    
+</div>
+<script>
+    $(document).ready(function(){
+        init();
+
+        function renderPage(){
+            var hours = getPropertyHours();
+            renderHours('#hours_container','#hours_template', hours, 'reg_hours');
+            renderHours('#holiday_container','#holiday_template', hours, 'holiday_hours'); 
+        
+            show_content();
+        }
+        
+        loadMallDataCached(renderPage);
+    });
+</script>
