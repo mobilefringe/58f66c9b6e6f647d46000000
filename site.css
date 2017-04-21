@@ -466,6 +466,10 @@ header{
 .page-title{
     width:100%;    
     margin:22px 0 0 2.1943573667%;
+    p {
+        font-family: SerifaBT-Roman;
+        font-size: 19.2392px;
+    }
 }
 .map{
     margin:0px;  
