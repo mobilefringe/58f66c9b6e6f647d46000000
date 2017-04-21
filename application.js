@@ -216,37 +216,34 @@ function renderHours(container, template, collection, type){
                 if (val.open_time && val.close_time && val.is_closed == false){
                     var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.close_time = close_time.format("h:mm A");
                     val.h = open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
                 } else {
                     val.h = "Closed";
                 }
-                
                 item_list.push(val);
             }
         });
         collection = [];
         collection = item_list;
     }
-    
-    // if (type == "holiday_hours") {
-    //     $.each( collection , function( key, val ) {
-    //         if (!val.store_id && val.is_holiday == true) {
-    //             holiday = moment(val.holiday_date);
-    //             val.formatted_date = in_my_time_zone(holiday, "MMM D");
-    //             if (val.open_time && val.close_time && val.is_closed == false){
-    //                 var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
-    //                 var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
-    //                 val.h = open_time + " - " + close_time;   
-    //             } else {
-    //                 val.h = "Closed";
-    //             }
-    //             item_list.push(val);
-    //         }
-    //     });
-    //     collection = [];
-    //     collection = item_list;
-    // }
+    if (type == "holiday_hours") {
+        $.each( collection , function( key, val ) {
+            if (!val.store_id && val.is_holiday == true) {
+                holiday = moment(val.holiday_date);
+                val.formatted_date = in_my_time_zone(holiday, "MMM D");
+                if (val.open_time && val.close_time && val.is_closed == false){
+                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                    val.h = open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
+                } else {
+                    val.h = "Closed";
+                }
+                item_list.push(val);
+            }
+        });
+        collection = [];
+        collection = item_list;
+    }
     
     $.each( collection , function( key, val ) {
         var rendered = Mustache.render(template_html,val);
