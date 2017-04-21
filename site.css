@@ -867,6 +867,17 @@ input[type="checkbox"], input[type="radio"]{
 .flex-control-nav {
     display: none;
 }
+
+.hours {
+    max-width: 75%;
+    .day {
+        font-weight: bold;
+        
+    }
+    .time {
+        text-align: right;
+    }
+}
 /********************************************************/
 /* mobile */
 
