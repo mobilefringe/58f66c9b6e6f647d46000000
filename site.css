@@ -345,10 +345,10 @@ a.anchor-offset{
 .btn_signup .text{
     margin: 4px 0 0 8px;
 }
-.storelist-table .phone-tag,
-.storelist-table .promo-tag{
-    width:auto;
-    height:17px;
+.phone-tag,
+.promo-tag {
+    width: auto;
+    height: 17px;
     margin-bottom: -2px;
     padding: 0 4px;
 }
