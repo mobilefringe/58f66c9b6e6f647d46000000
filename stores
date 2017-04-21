@@ -174,7 +174,7 @@
                 }
             });
             
-            var map = $('#mapsvg_store_detail').mapSvg({
+            var map = $('#mapsvg_main').mapSvg({
                 source: getSVGMapURL(),    // Path to SVG map
                 disableAll: true,
                 // height: 1740,
