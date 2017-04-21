@@ -68,6 +68,25 @@
             <div class="element element-11"></div>
         </div>
 
+        <div id="holiday_container">
+        	<script id="holiday_template" type="x-tmpl-mustache/text">
+        	    <div class="">
+                    <div class="row">
+                
+        		            <div class="col-xs-6">
+        		                <div style="font-weight:bold">{{ holiday_name }}</div>
+        					    <div>{{ formatted_date }}</div>
+        				    </div>
+        					<div class="col-xs-6">
+            					<div align="right">{{ h }}</div>
+            				</div>
+            
+            			
+        			</div>
+        	    </div>
+            </script>
+        </div>
+
         <table role='presentation' class="hour_div">
             <tr>
                 <td>02/20/17<strong>  Family Day</strong></td>        
