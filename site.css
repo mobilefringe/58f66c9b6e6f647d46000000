@@ -30,6 +30,9 @@
 .yield {
     visibility: hidden;
 }
+.caps {
+    text-transform: uppercase;
+}
 /* *** LOADER *** */
 .modal-backdrop {
     background-color: hsla(0, 0%, 0%, 0.2);
