@@ -47,11 +47,6 @@
                 </script>
             </div>
         </div>
-                
-            
-                
-            
-        </div>
     </div>
     <div class="right-panel">
         <div id="mapsvg_main" class="visible-desktop"></div>
