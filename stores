@@ -53,10 +53,10 @@
         <div class="storelist-table storelist-table-alpha" id="store_list_container">
             <script id="store_list_template" type="x-tmpl-mustache/text">
                 <div class="store_list_content">
-                    <div class="row" style="{{show}}">
+                    <div class="" style="{{show}}">
                         <a id="{{initial}}" class="anchor-offset"></a>{{initial}}
                     </div>
-                    <div class="row">
+                    <div class="">
                         <div class="col-md-6">
                             <a href="/stores/{{slug}}">{{name}}</a>
                         <div>
