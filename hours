@@ -48,9 +48,9 @@
         
             <div id="hours_container">
                 <script id="hours_template" type="x-tmpl-mustache/text">
-            		<div class="hour">
-            			<div class="pull-left">{{day}}</div>
-            			<div class="pull-right">{{ h }}</div>
+            		<div class="row">
+            			<div class="col-md-6">{{day}}</div>
+            			<div class="col-md-6">{{ h }}</div>
             		</div>
             	</script>
             </div>
