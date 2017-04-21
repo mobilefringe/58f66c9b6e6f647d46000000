@@ -57,10 +57,10 @@
                         <a id="{{initial}}" class="anchor-offset"></a>{{initial}}
                     </div>
                     <div class="row">
-                        <div>
+                        <div class="col-md-6">
                             <a href="/stores/{{slug}}">{{name}}</a>
                         <div>
-                        <div class="">
+                        <div class="col-md-6">
                             <span style="{{promotion_exist}}">
                                 <img alt="Sale Tag" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492800938000/tag_promo_360.png"/>
                             </span>
