@@ -50,32 +50,27 @@
     </div>
     <div class="right-panel">
         <div id="mapsvg_main" class="visible-desktop"></div>
-        <table class="storelist-table storelist-table-alpha active">
-            <tbody>
-                                            
-                    
-                    
-                    
-                        <th colspan='3'>
-                            <a class="anchor-offset" name='A'></a> 
-                            A
-                        </th>
-                    
-                    
-                    <tr onclick="window.location='/stores/lansdowne-aerie'">
-                        <td>
-                            <a href="/stores/lansdowne-aerie">Aerie </a><br/>
-                        </td>
-                        <td>
-                            
-                            
-                        </td>
-                        <td>
-                            <a href="tel:705-755-0275"><img alt="phone" class="phone-tag" src="https://www.mallmaverick.com/system/site_images/photos/000/003/889/original/phone.png?1410376240" /><p class="visible-desktop">705-755-0275</p></a>
-                        </td>                            
-                    </tr>
-            </tbody>
-        </table>
+        <div class="storelist-table storelist-table-alpha" id="store_list_container">
+            <script id="store_list_template" type="x-tmpl-mustache/text">
+                <div class="store_list_content">
+                    <div class="" style="{{show}}">
+                        <a id="{{initial}}" class="anchor-offset"></a>{{initial}}
+                    </div>
+                    <div class="">
+                        <a href="/stores/{{slug}}">{{name}}</a>
+                    </div>
+                    <div class="pull-right stores_row stores_row_phone">
+                        <span style="{{promotion_exist}}">
+                            <img alt="" src="//www.mallmaverick.com/system/site_images/photos/000/000/771/original/btn_promo.png?1381264332"/>
+                        </span>
+                        <span class="store_phone hidden-xs"><a href="tel:{{phone}}">{{phone}}</a></span>
+                        <span><a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}">
+                            <img ALT="store.phone" src="//www.mallmaverick.com/system/site_images/photos/000/000/834/original/icon_call_stores.png?1381872730" />
+                        </a></span>
+                    </div>
+                </div>
+            </script>
+        </div>
     </div>
 </div>
 <script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
