@@ -145,9 +145,7 @@
         init();
 
         function renderPage(){
-            // var hours = getPropertyHours();
-            // renderHours('#hours_container','#hours_template', hours, 'reg_hours');
-            // renderHours('#holiday_container','#holiday_template', hours, 'holiday_hours');
+            var stores = getStoresList();
             
             $( ".side_btn_alpha" ).click(function() {
                 $(".alpha-panel").slideToggle("fast");
@@ -166,20 +164,32 @@
                 $(".storelist-table-category").addClass( "active" );
             });
 
-            var map = getSVGMapURL();    
-            $('#mapsvg_main').mapSvg({
-                source: map,    // Path to SVG map
-                colors: {stroke: '#aaaaaa', selected: -20, hover: "#d0e4ff"},
-                   disableAll: false,
-                regions: {
-                        
-                            
-                        		"stores_x5F_1_x5F_32":{
-                                    tooltip:"<img class='tooltip_img' src='https://www.mallmaverick.com/system/stores/store_fronts/000/015/326/original/Aerie.jpg?1452742234'/><label class='store_name_map'>Aerie </label>",
-                                attr:{
-                						href:'/stores/lansdowne-aerie'
-                					}
-                				},
+            regions = {}
+            $.each(stores, function(key, val) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    obj = {};
+                    obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
+                    obj["attr"] = {}
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            
+            var map = $('#mapsvg_store_detail').mapSvg({
+                source: getSVGMapURL(),    // Path to SVG map
+                disableAll: true,
+                // height: 1740,
+                // width: 3200,
+                regions: regions,
+                tooltipsMode:'custom',
+                loadingText: "loading...",
+                zoom: true,
+                zoomButtons: {'show': true,'location': 'right' },
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,10],
+                viewBox:[350,-180,1600,870]
+            });
         
             show_content();
         }
