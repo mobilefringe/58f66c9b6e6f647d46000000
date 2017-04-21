@@ -87,7 +87,11 @@
         init();
 
         function renderPage(){
+            var categories = getStoreCategories();
+            renderGeneral('#category_container', '#category_template', categories);
             var stores = getStoresList();
+            renderStoreList('#store_list_container','#store_list_template', stores, "stores");
+            
             
             $( ".side_btn_alpha" ).click(function() {
                 $(".alpha-panel").slideToggle("fast");
