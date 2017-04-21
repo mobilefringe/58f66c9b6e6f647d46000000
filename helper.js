@@ -15,6 +15,6 @@ function init() {
 }
 
 function show_content(){
-    $('.yield').fadeIn();
+    $('.content').fadeIn();
     $(".modal-backdrop").remove();
 }
