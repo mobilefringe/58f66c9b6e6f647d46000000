@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="widget_right_panel">
-                            <a href="/promotions/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                            <a href="/events/{{slug}}"><p class="text text-33">{{name}}</p></a>
                             <p class="text text-27">{{dates}}</p>
                             <p class="text text-28">{{description}}</p>
                         </div>
