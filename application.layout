@@ -177,7 +177,7 @@
             {{yield}}
         </div>
         
-        <p id="back-top" class="hidden-phone">
+        <p id="back-top" class="hidden-phone" style="display: block;">
             <a href="#"><img alt="Back to top" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492615213000/backtotop_360.png"></a>    
         </p>
 
