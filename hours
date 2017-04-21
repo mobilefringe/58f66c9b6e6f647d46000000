@@ -71,7 +71,7 @@
         <div id="holiday_container">
         	<script id="holiday_template" type="x-tmpl-mustache/text">
         	    <div class="">
-                    <div class="row">
+                    <div class="row hour_div">
                 
         		            <div class="col-xs-6">
         		                <span>{{ formatted_date }}</span>
@@ -87,13 +87,6 @@
         	    </div>
             </script>
         </div>
-
-        <table role='presentation' class="hour_div">
-            <tr>
-                <td>02/20/17<strong>  Family Day</strong></td>        
-                <td>Closed</td>  
-            </tr>
-        </table>
     </div>    
 </div>
 <script>
