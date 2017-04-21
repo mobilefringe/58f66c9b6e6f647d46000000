@@ -869,7 +869,7 @@ input[type="checkbox"], input[type="radio"]{
 }
 
 .hours {
-    max-width: 75%;
+    max-width: 80%;
     font-family: "Franklin Gothic Book", FranklinGothic-Book;
     font-size: 16px;
     .day {
