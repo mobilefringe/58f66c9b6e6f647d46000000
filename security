@@ -23,7 +23,7 @@
             </div>
         </a>
         <a  href="/tourism"> 
-            <div class="side_btn clearfix active">     
+            <div class="side_btn clearfix">     
                 <p class="text">TOURISM</p>
                 <div class="image"></div>
             </div>
