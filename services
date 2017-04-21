@@ -51,9 +51,6 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var prop_details = getPropertyDetails();
-            renderSimple('#map_container', '#map_template', prop_details);
-        
             var prefix = get_prefix();
             var pages_json = prefix + "/pages/lansdowne-services.json"
             $.getJSON(pages_json).done(function(data) {
