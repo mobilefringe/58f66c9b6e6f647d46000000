@@ -67,7 +67,7 @@
             	    <div class="">
                         <div class="row hours">
         		            <div class="col-xs-8 day">
-        		                <span>{{ formatted_date }}</span>
+        		                <span class="holiday_date">{{ formatted_date }}</span>
         		                <span>{{ holiday_name }}</span>
         				    </div>
         					<div class="col-xs-4 time">
