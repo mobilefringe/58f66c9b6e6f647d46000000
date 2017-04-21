@@ -50,6 +50,8 @@
     </div>
     <div class="right-panel">
         <div id="mapsvg_main" class="visible-desktop"></div>
+        
+        
         <div class="storelist-table storelist-table-alpha">
             <div class="store_list" id="store_list_container">
                 <script id="store_list_template" type="x-tmpl-mustache/text">
