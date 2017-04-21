@@ -56,7 +56,7 @@
             <div class="store_list" id="store_list_container">
                 <script id="store_list_template" type="x-tmpl-mustache/text">
                     <div class="store_list_content">
-                        <div class="" style="{{show}}">
+                        <div class="store_list_header" style="{{show}}">
                             <a class="anchor-offset" id="{{initial}}"></a>{{initial}}
                         </div>
                         <div class="">
