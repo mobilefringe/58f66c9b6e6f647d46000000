@@ -176,7 +176,8 @@
             
             var map = $('#mapsvg_main').mapSvg({
                 source: getSVGMapURL(),    // Path to SVG map
-                disableAll: true,
+                colors: {stroke: '#aaaaaa', selected: -20, hover: "#d0e4ff"},
+                disableAll: false,
                 // height: 1740,
                 // width: 3200,
                 regions: regions,
