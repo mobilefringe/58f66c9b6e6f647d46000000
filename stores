@@ -187,8 +187,8 @@
                 pan:true,
                 cursor:'pointer',
                 responsive:true,
-                zoomLimit: [0,10],
-                viewBox:[350,-180,1600,870]
+                zoomLimit: [0, 5],
+                // viewBox:[350,-180,1600,870]
             });
         
             show_content();
