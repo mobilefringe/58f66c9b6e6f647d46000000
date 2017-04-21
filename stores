@@ -57,7 +57,7 @@
                 <script id="store_list_template" type="x-tmpl-mustache/text">
                     <div class="store_list_content">
                         <div class="" style="{{show}}">
-                            <a id="{{initial}}"></a>{{initial}}
+                            <a class="anchor-offset" id="{{initial}}"></a>{{initial}}
                         </div>
                         <div class="">
                             <a href="/stores/{{slug}}">{{name}}</a>
