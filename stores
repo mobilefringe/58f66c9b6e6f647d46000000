@@ -132,3 +132,22 @@
                             <a href="tel:705-755-0275"><img alt="phone" class="phone-tag" src="https://www.mallmaverick.com/system/site_images/photos/000/003/889/original/phone.png?1410376240" /><p class="visible-desktop">705-755-0275</p></a>
                         </td>                            
                     </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        init();
+
+        function renderPage(){
+            // var hours = getPropertyHours();
+            // renderHours('#hours_container','#hours_template', hours, 'reg_hours');
+            // renderHours('#holiday_container','#holiday_template', hours, 'holiday_hours'); 
+        
+            show_content();
+        }
+        
+        loadMallDataCached(renderPage);
+    });
+</script>
