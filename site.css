@@ -254,12 +254,13 @@ a.anchor-offset{
     top:189px;
     width:auto;
 }
-.text-39,.job_detail_description p,.promo_detail_description p{
+.text-39, .job_detail_description p, .promo_detail_description p {
     float: left;
     padding: 0 0 8px 0;
     margin: 0;
     width: 100%;
     min-height: 26px;
+    font-family: FranklinGothic-Book;
     font-size: 17.9901px;
     line-height: 1.38;
     color: #000000;    
