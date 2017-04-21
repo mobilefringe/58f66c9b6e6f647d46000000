@@ -93,13 +93,11 @@ function renderEventDetails(container, template, collection){
         //     val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
         // }
         
-        if (val.tags.indexOf("#living_room") >= 0){
-            val.store_name = "The Living Room";
-        }
         
-        if(val.event_image_url_abs.indexOf('missing.png') > -1){
-            val.promo_image_show="display:none";
-        }
+        
+        // if(val.event_image_url_abs.indexOf('missing.png') > -1){
+        //     val.promo_image_show="display:none";
+        // }
         
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
