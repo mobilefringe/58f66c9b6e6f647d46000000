@@ -45,6 +45,29 @@
                 </script>
             </div>
         </div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">PAST EVENTS</p>
+            <div class="element element-11"></div>
+        </div>
+        <div id="promos">
+            <div id="past_events_container">
+                <script id="past_events_template" type="x-tmpl-mustache/text">
+                    <div class="widget widget-promotion">
+                        <div class="widget_left_panel">
+                            <div class="element element-12">
+                                <img src="{{image_url}}" alt="{{name}}"/>
+                            </div>
+                        </div>
+                        <div class="widget_right_panel">
+                            <a href="/promotions/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                            <p class="text text-27">{{dates}}</p>
+                            <p class="text text-28">{{description}}</p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
     </div>
 </div>
 <script>
@@ -54,18 +77,23 @@
             var events = getEventsList().sortBy(function(o){ return o.start_date });
             console.log(events);
             var published_events = [];
+            var past_events = [];
             $.each( events , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
                 if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                     published_events.push(val);
-                } 
+                } else {
+                    past_events.push(val);
+                }
             });
             if(published_events.length > 0){
                 renderEvents("#promos_container","#promos_template", published_events);
-            }
-            else{
+            } else {
                 $('#no_promos').show()
+            }
+            if(past_events.length > 0){
+                renderEvents("#past_events_container","#past_events_template", past_events);
             }
             show_content();
         }
