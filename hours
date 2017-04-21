@@ -66,11 +66,13 @@
             	<script id="holiday_template" type="x-tmpl-mustache/text">
             	    <div class="">
                         <div class="row hours">
-        		            <div class="col-xs-8 day">
+        		            <div class="col-xs-3 day">
         		                <span class="holiday_date">{{ formatted_date }}</span>
+        		            </div>
+        		            <div class="col-xs-6 day">
         		                <span>{{ holiday_name }}</span>
         				    </div>
-        					<div class="col-xs-4 time">
+        					<div class="col-xs-3 time">
             					<div>{{ h }}</div>
             				</div>
             			</div>
