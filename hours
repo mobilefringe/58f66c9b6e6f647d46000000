@@ -49,7 +49,7 @@
             <div id="hours_container">
                 <script id="hours_template" type="x-tmpl-mustache/text">
             		<div class=" {{active_class}} {{todays_hours}}">
-            			<div class="pull-left" align="left" style="font-weight:bold {{today}}">{{day}}</div>
+            			<div class="pull-left">{{day}}</div>
             			<div class="right-right" align="right">{{ h }}</div>
             		</div>
             	</script>
