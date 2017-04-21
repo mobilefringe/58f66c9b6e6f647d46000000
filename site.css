@@ -592,7 +592,7 @@ header{
     width: 10px;
     height: 5px;
     margin: 24px 0 0 7%;
-    background-image: url(/system/site_images/photos/000/003/797/original/icon_blackback_down.png?1409847067);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492796399000/icon_blackback_down.png);
 }
 
 .side_btn:hover,.side_btn.active{background-color: #636571;}
