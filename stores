@@ -136,6 +136,10 @@
         </table>
     </div>
 </div>
+<script type="text/javascript" src="/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
 <script>
     $(document).ready(function(){
         init();
@@ -143,7 +147,39 @@
         function renderPage(){
             // var hours = getPropertyHours();
             // renderHours('#hours_container','#hours_template', hours, 'reg_hours');
-            // renderHours('#holiday_container','#holiday_template', hours, 'holiday_hours'); 
+            // renderHours('#holiday_container','#holiday_template', hours, 'holiday_hours');
+            
+            $( ".side_btn_alpha" ).click(function() {
+                $(".alpha-panel").slideToggle("fast");
+            });
+            $( ".side_btn_category" ).click(function() {
+                $(".category-panel").slideToggle("fast");
+            });
+
+    
+            $( ".storelist_btn_alpha" ).click(function() {
+                $(".storelist-table-category").removeClass("active");
+                $(".storelist-table-alpha").addClass( "active" );
+            });
+            $( ".storelist_btn_category" ).click(function() {
+                $(".storelist-table-alpha").removeClass("active");
+                $(".storelist-table-category").addClass( "active" );
+            });
+
+            var map = getSVGMapURL();    
+            $('#mapsvg_main').mapSvg({
+                source: map,    // Path to SVG map
+                colors: {stroke: '#aaaaaa', selected: -20, hover: "#d0e4ff"},
+                   disableAll: false,
+                regions: {
+                        
+                            
+                        		"stores_x5F_1_x5F_32":{
+                                    tooltip:"<img class='tooltip_img' src='https://www.mallmaverick.com/system/stores/store_fronts/000/015/326/original/Aerie.jpg?1452742234'/><label class='store_name_map'>Aerie </label>",
+                                attr:{
+                						href:'/stores/lansdowne-aerie'
+                					}
+                				},
         
             show_content();
         }
