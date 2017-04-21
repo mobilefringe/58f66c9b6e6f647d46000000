@@ -357,7 +357,8 @@ body {
   width: 21.6253443526%;
   min-height: 24px;
   margin: 8px 0 0 39.2561983471%;
-  font: 1.5em/1.38 SerifaBT-Roman;
+  font-size: 15.744px; 
+  font-family: SerifaBT-Roman;
   text-align: center;
   color: rgb(0,0,0);
 }
