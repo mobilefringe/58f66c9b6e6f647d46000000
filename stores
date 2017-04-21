@@ -88,6 +88,7 @@
 
         function renderPage(){
             var categories = getStoreCategories();
+            console.log(categories);
             renderGeneral('#category_container', '#category_template', categories);
             var stores = getStoresList();
             renderStoreList('#store_list_container','#store_list_template', stores, "stores");
