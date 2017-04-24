@@ -351,6 +351,7 @@ a.anchor-offset{
     height: 17px;
     margin-bottom: -2px;
     padding: 0 4px;
+    vertical-align: top;
 }
 .btn_search{
     cursor:pointer;
