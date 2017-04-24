@@ -39,6 +39,7 @@
             <div class="element element-11"></div>
         </div>    
         <div class="page-content">
+            <div id="mm_page_content"></div>
         </div>
     </div>
 </div>
