@@ -1,0 +1,67 @@
+<div class="content clearfix">
+    <div class="left-panel visible-desktop">
+        <p class="page-title">ABOUT US</p>
+        <div class="element element-13">
+            <img alt="About Us" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492794107000/img_aboutus.jpg" />
+        </div>
+        <a href="/contact_us"> 
+            <div class="side_btn clearfix active">     
+                <p class="text">CONTACT US</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a href="#"> 
+            <div class="side_btn clearfix ">     
+                <p class="text">LEASING INFO</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a href="/green_initiative"> 
+            <div class="side_btn clearfix ">     
+                <p class="text">GREEN INITIATIVE</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a href="/community"> 
+            <div class="side_btn clearfix ">     
+                <p class="text">COMMUNITY</p>
+                <div class="image"></div>
+            </div>
+        </a>
+    </div>
+    <div class="right-panel right-panel-tab active" id="current_events">
+        <div class="detail-banner">
+            <img src="http://cdn.mallmaverick.com/system/site_images/photos/000/015/891/original/Contact_Us_Page.jpg?1452011858" />
+        </div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">CONTACT US</p>
+            <div class="element element-11"></div>
+        </div>    
+        <div class="page-content">
+            <div id="mm_page_content"></div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var prop_details = getPropertyDetails();
+            renderSimple('#map_container', '#map_template', prop_details);
+        
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/lansdowne-leasing-info.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title);
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
