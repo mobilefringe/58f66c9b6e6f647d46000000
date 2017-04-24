@@ -506,7 +506,19 @@ header{
     font-weight:400;
     font-size: 17.8432px;
     color: #000;
-
+}
+.store_name, .store_promo, .store_phone {
+    display: inline-block;
+}
+.store_name {
+    width: 50%;
+}
+.store_promo {
+    width: 10%;
+}
+.store_phone {
+    width: 40%;
+    text-align: right;
 }
 .storelist-table td:last-child{
     text-align:right;    
