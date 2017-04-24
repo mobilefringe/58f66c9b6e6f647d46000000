@@ -132,13 +132,13 @@
             });
 
     
-            $( ".storelist_btn_alpha" ).click(function() {
+            $(".storelist_btn_alpha").click(function() {
                 $(".storelist-table-category").removeClass("active");
-                $(".storelist-table-alpha").addClass( "active" );
+                $(".storelist-table-alpha").addClass("active");
             });
-            $( ".storelist_btn_category" ).click(function() {
+            $(".storelist_btn_category").click(function() {
                 $(".storelist-table-alpha").removeClass("active");
-                $(".storelist-table-category").addClass( "active" );
+                $(".storelist-table-category").addClass("active");
             });
 
             regions = {}
