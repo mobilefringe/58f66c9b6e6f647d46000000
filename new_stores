@@ -79,6 +79,7 @@
             } else {
                 $("#no_stores").show();
             }
+            show_content();
         }
         loadMallData(renderAll); 
     });
