@@ -646,7 +646,8 @@ body {
   width: 100%;
   min-height: 5px;
   margin: 14px 0 0 1.3584117032%;
-  font: 1.619em/1.58 Franklin Gothic Medium,FranklinGothic-Medium, Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", FranklinGothic-Medium, Arial, sans-serif;
+  font-size: 16.993px;
   text-align: center;
   color: rgb(0,0,0);
 }
