@@ -52,8 +52,8 @@
         <div id="mapsvg_main" class="visible-desktop"></div>
 
         <div class="storelist-table-alpha active">
-            <div class="store_list" id="store_list_container">
-                <script id="store_list_template" type="x-tmpl-mustache/text">
+            <div class="store_list" id="store_list_alpha_container">
+                <script id="store_list_alpha_template" type="x-tmpl-mustache/text">
                     <div class="store_list_content">
                         <div class="store_list_header" style="{{show}}">
                             <a class="anchor-offset" id="{{initial}}"></a>{{initial}}
@@ -80,8 +80,8 @@
         </div>
         
         <div class="storelist-table-category">
-            <div class="store_list" id="store_list_container">
-                <script id="store_list_template" type="x-tmpl-mustache/text">
+            <div class="store_list" id="store_list_cat_container">
+                <script id="store_list_cat_template" type="x-tmpl-mustache/text">
                     <div class="store_list_content">
                         <div class="store_list_header" style="{{show}}">
                             <a class="anchor-offset" id="{{initial}}"></a>{{initial}}
