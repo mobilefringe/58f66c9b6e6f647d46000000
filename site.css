@@ -552,6 +552,9 @@ header{
 .category-panel a{
     padding: 2px 0px;
 }
+.store_list_btn_category {
+    font-size: 12px;
+}
 
 .right-panel.right-panel-tab{display:none;}
 .right-panel.right-panel-tab.active {display:block;}
