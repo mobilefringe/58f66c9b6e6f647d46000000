@@ -106,7 +106,7 @@
                         }
                 });
             });
-            
+            show_content();
         }
         loadMallData(renderAll); 
     });
