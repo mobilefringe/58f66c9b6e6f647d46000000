@@ -512,15 +512,7 @@ function renderStoreDetails(container, template, collection, slug){
         // val.category_list = getCategoriesNamesByStoreSlug(slug);
         var cat_list = val.categories;
         val.category_list = getCategoryDetails(cat_list);
-        val.map_x_coordinate = val.x_coordinate - 19;
-        val.map_y_coordinate = val.y_coordinate - 58;
-        val.property_map = getPropertyDetails().mm_host + getPropertyDetails().map_url;
-        if (val.website != null && val.website.length > 0){
-            val.show = "display:inline-block";
-        }
-        else{
-            val.show = "display:none";
-        }
+        
         if (val.phone != null && val.phone.length > 0){
             val.phone_show = "display:inline-block";
         }
@@ -528,28 +520,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.phone_show = "display:none";
         }
         
-        if (val.twitter != null && val.twitter.length > 0){
-            val.twitter_show = "display:inline-block";
-        }
-        else{
-            val.twitter_show = "display:none";
-        }
         
-        if (val.twitter_show == "display:none" && val.phone_show == "display:none" ){
-            val.show_line = "display:none";
-        }
-        else{
-            val.show_line = "display:block";
-        }
-        if((val.twitter == null || val.twitter == "") && (val.facebook == "" || val.facebook == null)){
-            val.hide_social = "display:none;";
-        }
-        if (val.facebook != null && val.facebook.length > 0){
-            val.facebook_show = "display:inline-block";
-        }
-        else{
-            val.facebook_show = "display:none";
-        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
