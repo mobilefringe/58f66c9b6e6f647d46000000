@@ -59,15 +59,15 @@
                         <div class="store_list_header" style="{{show}}">
                             <a class="anchor-offset" id="{{initial}}"></a>{{initial}}
                         </div>
-                        <div class="store_list_info">
+                        <div class="store_list_info store_name">
                             <a href="/stores/{{slug}}">{{name}}</a>
                         </div>
-                        <div class="store_list_info">
+                        <div class="store_list_info store_promo">
                             <span style="{{promotion_exist}}">
                                 <img class="promo-tag" alt="Sales Tag" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492800938000/tag_promo_360.png"/>
                             </span>
                         </div>
-                        <div class="store_list_info">
+                        <div class="store_list_info store_phone">
                             <span class="store_phone hidden-xs"><img class="phone-tag" alt="phone" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492801811000/phone.png"/><a href="tel:{{phone}}">{{phone}}</a></span>
                             <span><a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}">
                                 
