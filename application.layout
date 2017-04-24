@@ -25,9 +25,10 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
         <link href="/standardize.css" rel="stylesheet">
+        <link href="/application.css" rel="stylesheet"> 
         <link href="/index-grid.css" rel="stylesheet">
         <link href="/index.css" rel="stylesheet">
-        <link href="/application.css" rel="stylesheet">
+        
         <link href="/site.css" rel="stylesheet">
         
         <!-- js-->
