@@ -122,6 +122,7 @@
             renderGeneral('#category_container', '#category_template', categories);
             var stores = getStoresList();
             renderStoreList('#store_list_alpha_container','#store_list_alpha_template', stores, "stores");
+            renderStoreList('#store_list_cat_container','#store_list_cat_template', stores, "stores");
             
             
             $( ".side_btn_alpha" ).click(function() {
