@@ -52,7 +52,6 @@
         init(e);
         function renderAll(){
             var events = getEventsList().sortBy(function(o){ return o.start_date });
-            console.log(events);
             var published_events = [];
             var past_events = [];
             $.each( events , function( key, val ){
@@ -62,7 +61,6 @@
                     published_events.push(val);
                 } else {
                     past_events.push(val);
-                    console.log(past_events)
                 }
             });
             if(published_events.length > 0){
