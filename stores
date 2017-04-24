@@ -50,7 +50,6 @@
     </div>
     <div class="right-panel">
         <div id="mapsvg_main" class="visible-desktop"></div>
-
         <div class="storelist-table storelist-table-alpha active">
             <div class="store_list" id="store_list_alpha_container">
                 <script id="store_list_alpha_template" type="x-tmpl-mustache/text">
@@ -76,7 +75,6 @@
                 </script>
             </div>
         </div>
-        
         <div class="storelist-table storelist-table-category">
             <div class="store_list" id="store_list_cat_container">
                 <script id="store_list_cat_template" type="x-tmpl-mustache/text">
@@ -102,7 +100,6 @@
                 </script>
             </div>
         </div>
-        
     </div>
 </div>
 <script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
