@@ -5,25 +5,25 @@
             <img alt="About Us" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492794107000/img_aboutus.jpg" />
         </div>
         <a href="/contact_us"> 
-            <div class="side_btn clearfix active">     
+            <div class="side_btn clearfix">     
                 <p class="text">CONTACT US</p>
                 <div class="image"></div>
             </div>
         </a>
         <a href="#"> 
-            <div class="side_btn clearfix ">     
+            <div class="side_btn clearfix active">     
                 <p class="text">LEASING INFO</p>
                 <div class="image"></div>
             </div>
         </a>
         <a href="/green_initiative"> 
-            <div class="side_btn clearfix ">     
+            <div class="side_btn clearfix">     
                 <p class="text">GREEN INITIATIVE</p>
                 <div class="image"></div>
             </div>
         </a>
         <a href="/community"> 
-            <div class="side_btn clearfix ">     
+            <div class="side_btn clearfix">     
                 <p class="text">COMMUNITY</p>
                 <div class="image"></div>
             </div>
