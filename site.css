@@ -995,3 +995,9 @@ input[type="checkbox"], input[type="radio"]{
         float:none;
     }
 } 
+
+@media screen and (max-width: 425px){
+    .store_phone {
+        width: 15%;
+    }
+}
