@@ -59,7 +59,7 @@
                         <div class="store_list_header" style="{{show}}">
                             <a class="anchor-offset" id="{{initial}}"></a>{{initial}}
                         </div>
-                        <div class="store_list_info">
+                        <div class="store_list_info pull-left">
                             <a href="/stores/{{slug}}">{{name}}</a>
                         </div>
                         <div class="store_list_info pull-right">
