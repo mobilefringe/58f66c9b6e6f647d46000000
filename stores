@@ -82,7 +82,7 @@
                 <script id="store_list_cat_template" type="x-tmpl-mustache/text">
                     <div class="store_list_content">
                         <div class="store_list_header" style="{{show}}">
-                            <a class="anchor-offset" id="{{initial}}"></a>{{initial}}
+                            <a class="anchor-offset" id="{{id}}"></a>{{name}}
                         </div>
                         <div class="store_list_info">
                             <div class="store_name">
