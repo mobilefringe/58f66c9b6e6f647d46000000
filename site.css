@@ -511,13 +511,13 @@ header{
     display: inline-block;
 }
 .store_name {
-    width: 50%;
+    width: 60%;
 }
 .store_promo {
     width: 60px;
 }
 .store_phone {
-    width: 40%;
+    width: 90%;
     text-align: right;
 }
 .storelist-table td:last-child{
