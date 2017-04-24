@@ -511,7 +511,7 @@ function renderStoreDetails(container, template, collection, slug){
         }
         // val.category_list = getCategoriesNamesByStoreSlug(slug);
         var cat_list = val.categories;
-        val.categories = getCategoryDetails(cat_list);
+        val.category_list = getCategoryDetails(cat_list);
         val.map_x_coordinate = val.x_coordinate - 19;
         val.map_y_coordinate = val.y_coordinate - 58;
         val.property_map = getPropertyDetails().mm_host + getPropertyDetails().map_url;
