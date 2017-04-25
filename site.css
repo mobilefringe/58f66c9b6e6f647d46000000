@@ -239,7 +239,8 @@ a.anchor-offset{
 }
 #newsletter-form select{
     border: 1px solid #cccccc;
-    width:206px;
+    width: 206px;
+    line-height: normal;
 }
 ._container-1{
     z-index:32;    
