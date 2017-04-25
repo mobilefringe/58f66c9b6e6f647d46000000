@@ -41,7 +41,8 @@
             
             var feature_items = getFeatureList();
             renderFeatureItems('#feature_container', '#feature_template', feature_items);
-            // show_content();
+            
+            show_content();
             
             $('.flexslider').flexslider({
                 animation: "slide",
