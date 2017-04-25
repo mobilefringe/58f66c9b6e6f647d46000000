@@ -573,7 +573,7 @@ header{
     padding:16px 10px 16px 0px;
 }
 .widget_right_panel{
-    width:80%;
+    width: 75%;
     display:inline-block;
     float:left;
     padding:16px 10px;
@@ -994,7 +994,7 @@ input[type="checkbox"], input[type="radio"]{
         height:60px;
     }
     .widget_right_panel{
-        padding:8px 0px 8px 10px;
+        padding: 8px 0px 8px 10px;
     }
     .content{
         padding:0px;
