@@ -759,6 +759,8 @@ input[type="checkbox"], input[type="radio"]{
 }
 .widget.widget-detail{
     display: block;
+}
+.widget.widget-detail img {
     text-align: center;
 }
 .widget-detail .widget_right_panel{
