@@ -323,7 +323,8 @@ a.anchor-offset{
 .element-5{
     height:135px;
 }
-#subForm span{
+#subForm span {
+    font-family: "Franklin Gothic Book", FranklinGothic-Book;
     font-size: 9.33333px;
 }
 .fill_in{
