@@ -1002,6 +1002,12 @@ input[type="checkbox"], input[type="radio"]{
     .element-9{
         float:none;
     }
+    #mapsvg_main {
+        position: absolute !important;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
 } 
 
 @media screen and (max-width: 425px){
