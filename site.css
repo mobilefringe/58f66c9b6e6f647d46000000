@@ -1015,6 +1015,6 @@ input[type="checkbox"], input[type="radio"]{
         width: 15%;
     }
     #store_details_container {
-        margin-top: 375px;
+        margin-top: 110%;
     }
 }
