@@ -36,6 +36,9 @@
         </a>
     </div>
     <div class="right-panel right-panel-tab active">
+        <div class="detail-banner">
+            <img src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1493154791000/Security.jpg" alt="Security"/>
+        </div>
         <div class="title clearfix">
             <div class="element"></div>
             <p class="text">SECURITY</p>
