@@ -1014,4 +1014,7 @@ input[type="checkbox"], input[type="radio"]{
     .store_phone {
         width: 15%;
     }
+    #store_details_container {
+        margin-top: 93.5%;
+    }
 }
