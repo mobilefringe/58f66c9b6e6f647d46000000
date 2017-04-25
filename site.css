@@ -758,7 +758,8 @@ input[type="checkbox"], input[type="radio"]{
     margin-top: 15px;
 }
 .widget.widget-detail{
-    display:block;
+    display: block;
+    text-align: center;
 }
 .widget-detail .widget_right_panel{
     width:100%;
