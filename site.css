@@ -1021,5 +1021,6 @@ input[type="checkbox"], input[type="radio"]{
     }
     .hours {
         max-width: 100%;
+        font-size: 12px;
     }
 }
