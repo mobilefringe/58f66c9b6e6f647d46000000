@@ -393,7 +393,7 @@ function renderNewStores(container, template, collection){
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
         if(val.store_front_url.indexOf('missing.png') < 0){
-            val.store_front_url = "background: url(val.store_front_url_abs)";
+            val.store_front_url = "background: url(" + val.store_front_url_abs + ")";
         } else {
             val.store_front_url = "background: url(//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg);";
         }
