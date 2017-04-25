@@ -419,7 +419,8 @@ body {
   width: 134px;
   height: 134px;
   margin: 0px;
-  background-color: rgb(222, 222, 222);
+  background-color: #fff;
+  border: 1px solid rgb(222, 222, 222);
 }
 
 .element-3 {
