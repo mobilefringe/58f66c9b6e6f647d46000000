@@ -49,8 +49,8 @@
             <div id="hours_container">
                 <script id="hours_template" type="x-tmpl-mustache/text">
             		<div class="row hours">
-            			<div class="col-md-6 day">{{day}}</div>
-            			<div class="col-md-6 time">{{ h }}</div>
+            			<div class="col-xs-6 day">{{day}}</div>
+            			<div class="col-xs-6 time">{{ h }}</div>
             		</div>
             	</script>
             </div>
