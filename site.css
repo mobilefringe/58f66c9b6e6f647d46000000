@@ -635,7 +635,7 @@ header{
 }
 
 .element-12{
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;    
 }
