@@ -1019,4 +1019,7 @@ input[type="checkbox"], input[type="radio"]{
     #store_details_container {
         margin-top: 110%;
     }
+    .hours {
+        width: 100%;
+    }
 }
