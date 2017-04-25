@@ -248,7 +248,6 @@ function renderHours(container, template, collection, type){
     $.each( collection , function( key, val ) {
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
-
     });
     
     $(container).show();
