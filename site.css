@@ -403,13 +403,13 @@ a.anchor-offset{
 .menu-phone-list ul {
     margin: 0;
 }
-a.text-34,a.text-35{
+a.text-34, a.text-35{
     font: 12pt/1.48 SerifaBT-Roman;
     color: #000;
     text-align: center;
     line-height: 21px;
     text-transform: uppercase;
-    padding: 13px 5px;
+    padding: 10px 5px;
     display: block;
 }
 a.text-35{
