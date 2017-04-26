@@ -78,7 +78,7 @@
                                         <li><a class="text-34" href='/stores' target='_self'>store directory</a></li>
                                         <li><a class="text-34" href='/new_stores' target='_self'>new stores</a></li>
                                         <li><a class="text-34" href='/coming_soon_stores' target='_self'>coming soon</a></li>
-                                        <li><a class="text-34" href='/gift-cards' target='_self'>gift cards</a></li>
+                                        <li><a class="text-34" href='/gift_cards' target='_self'>gift cards</a></li>
                                         <li><a class="text-34" href='/newsletter' target='_self'>newsletter sign up</a></li>
                                     </ul>
                                 </li>  
@@ -123,7 +123,7 @@
                                     <li><a href='/stores' target='_self'>store directory</a></li>
                                     <li><a href='/new_stores' target='_self'>new stores</a></li>
                                     <li><a href='/coming_soon_stores' target='_self'>coming soon</a></li>
-                                    <li><a href='/gift-cards' target='_self'>gift cards</a></li>
+                                    <li><a href='/gift_cards' target='_self'>gift cards</a></li>
                                     <li><a href='/newsletter' target='_self'>newsletter sign up</a></li>
                                 </ul>
                             </li>  
@@ -217,7 +217,7 @@
                             <a href='/stores' target='_self'><p>store directory</p></a>
                             <a href='/new_stores' target='_self'><p>new stores</p></a>
                             <a href='/coming_soon_stores' target='_self'><p>coming soon</p></a>
-                            <a href='/gift-cards' target='_self'><p>gift cards</p></a>
+                            <a href='/gift_cards' target='_self'><p>gift cards</p></a>
                             <a href='/newsletter' target='_self'><p>newsletter sign up</p></a>
                         </div>
                     </div>
