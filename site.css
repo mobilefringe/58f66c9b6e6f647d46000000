@@ -216,8 +216,9 @@ a.anchor-offset{
     top: -65px; 
     visibility: hidden;
 }
-.tooltip_img{
-    width:100px;
+.tooltip_img {
+    width: 100px;
+    text-align: center;
 }
 /* Newsletter form */
 .form_btn{
