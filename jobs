@@ -70,6 +70,8 @@
                 } else {
                     today = moment();
                     webDate = moment(val.show_on_web_date);
+                    var store_name = getStoreDetailsByID(val.jobable_id).name;
+                    console.log(store_name);
                     if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                         retailer_published_jobs.push(val);
                     }     
