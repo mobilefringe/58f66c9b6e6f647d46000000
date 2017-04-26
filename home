@@ -6,7 +6,7 @@
                 <script id="event_template" type="x-tmpl-mustache/text">
                     <a href="/events/{{slug}}"><p class="text text-21">{{name}}</p></a>
         	        <div class="text text-22">
-        	            <p>STARTS May 01 - ENDS May 01</p>
+        	            <p>{{dates}}</p>
         	        </div>
                 </script>
             </div>	       
