@@ -112,6 +112,28 @@ function renderEventDetails(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
+function renderEventSingle(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    
+    var show_date = moment(val.show_on_web_date);
+    var start = moment(val.start_date).tz(getPropertyTimeZone());
+    var end = moment(val.end_date).tz(getPropertyTimeZone());
+    if (start.format("DMY") == end.format("DMY")){
+        val.dates = start.format("MMM D");
+    }
+    else{
+        val.dates = "STARTS " + start.format("MMM D") + " - ENDS " + end.format("MMM D");
+    }
+        
+    var repo_rendered = Mustache.render(template_html, collection);
+    item_rendered.push(repo_rendered);
+
+    $(container).html(item_rendered.join(''));
+}
+
 function renderFeatureItems(container, template, collection){
     var item_list = [];
     var item_rendered = [];
