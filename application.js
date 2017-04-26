@@ -82,7 +82,7 @@ function renderEventDetails(container, template, collection){
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+                val.image_url = "//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg";
             }
             else{
                 val.image_url = store_details.store_front_url_abs;
@@ -470,7 +470,7 @@ function renderStoreList(container, template, collection, type){
             }
             
         }
-        //var categories = getStoreCategories();
+        
         var current_initial = val.name[0];
         val.cat_list = val.categories.join(',')
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
@@ -482,18 +482,20 @@ function renderStoreList(container, template, collection, type){
             store_initial = current_initial;
             val.show = "display:block;";
         }
-        if(val.is_coming_soon_store == true){
-            val.coming_soon_store = "display:inline";
-        }
-        else{
-            val.coming_soon_store = "display:none";
-        }
-        if(val.is_new_store == true){
-            val.new_store = "display:inline";
-        }
-        else{
-            val.new_store = "display:none";
-        }
+        
+        // if(val.is_coming_soon_store == true){
+        //     val.coming_soon_store = "display:inline";
+        // }
+        // else{
+        //     val.coming_soon_store = "display:none";
+        // }
+        // if(val.is_new_store == true){
+        //     val.new_store = "display:inline";
+        // }
+        // else{
+        //     val.new_store = "display:none";
+        // }
+        
         if (val.promotions.length > 0){
             val.promotion_exist = "display:inline";
             var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
@@ -504,17 +506,16 @@ function renderStoreList(container, template, collection, type){
         else{
             val.promotion_exist = "display:none";
         }
+        
         if(val.phone.length < 1){
             val.phone_exist = "display:none";
         }
+        
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
         item_rendered.push(rendered);
-
     });
-    
-    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
@@ -526,11 +527,11 @@ function renderStoreDetails(container, template, collection, slug){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492633527000/img_default.jpg";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
-        // val.category_list = getCategoriesNamesByStoreSlug(slug);
+
         var cat_list = val.categories;
         val.category_list = getCategoryDetails(cat_list);
         
@@ -541,12 +542,9 @@ function renderStoreDetails(container, template, collection, slug){
             val.phone_show = "display:none";
         }
         
-        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
-    
-    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
