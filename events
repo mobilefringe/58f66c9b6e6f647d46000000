@@ -32,9 +32,7 @@
                 <script id="promos_template" type="x-tmpl-mustache/text">
                     <div class="widget widget-promotion">
                         <div class="widget_left_panel">
-                            <div class="element element-12">
-                                <img src="{{image_url}}" alt="{{name}}"/>
-                            </div>
+                            <div class="element element-12" style="{{image_url}}"></div>
                         </div>
                         <div class="widget_right_panel">
                             <a href="/events/{{slug}}"><p class="text text-33">{{name}}</p></a>
