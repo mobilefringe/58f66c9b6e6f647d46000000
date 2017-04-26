@@ -1016,6 +1016,9 @@ input[type="checkbox"], input[type="radio"]{
 } 
 
 @media screen and (max-width: 425px){
+    .col-xs-3, .col-xs-4, .col-xs-5 {
+        padding: 0 10px;
+    }
     .store_phone {
         width: 15%;
     }
