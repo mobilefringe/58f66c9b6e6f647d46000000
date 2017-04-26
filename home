@@ -36,6 +36,8 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var events = getEventsList().sortBy(function(o){ return o.show_on_web_date});
+            console.log(events);
             var banners = getBanners();
             renderBanner('#banner_template', '#home_banner', banners);
             
