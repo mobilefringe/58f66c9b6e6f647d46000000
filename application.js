@@ -118,14 +118,14 @@ function renderEventSingle(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     
-    var show_date = moment(val.show_on_web_date);
-    var start = moment(val.start_date).tz(getPropertyTimeZone());
-    var end = moment(val.end_date).tz(getPropertyTimeZone());
+    var show_date = moment(collection.show_on_web_date);
+    var start = moment(collection.start_date).tz(getPropertyTimeZone());
+    var end = moment(collection.end_date).tz(getPropertyTimeZone());
     if (start.format("DMY") == end.format("DMY")){
-        val.dates = start.format("MMM D");
+        collection.dates = start.format("MMM D");
     }
     else{
-        val.dates = "STARTS " + start.format("MMM D") + " - ENDS " + end.format("MMM D");
+        collection.dates = "STARTS " + start.format("MMM D") + " - ENDS " + end.format("MMM D");
     }
         
     var repo_rendered = Mustache.render(template_html, collection);
