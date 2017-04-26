@@ -71,14 +71,12 @@
                     today = moment();
                     webDate = moment(val.show_on_web_date);
                     var store_name = getStoreDetailsByID(val.jobable_id).name;
-                    console.log(store_name);
                     if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                         val.store_name = store_name;
                         retailer_published_jobs.push(val);
                     }     
                 } 
             });
-            console.log(retailer_published_jobs);
             var retail_jobs = retailer_published_jobs.sortBy(function(o){ return o.store_name});
             if(retail_jobs.length > 0){
                 renderJobs("#retail_jobs_container","#retail_jobs_template", retail_jobs);
