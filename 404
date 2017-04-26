@@ -1,15 +1,5 @@
 <div class="content clearfix">
     <div class="left-panel visible-desktop">
-        <p class="page-title caps"></p>
-        <div class="element element-13">
-            <img alt="What's New" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492636399000/img_whatsnew.jpg" />
-        </div>
-        <a href="/stores">
-            <div class="side_btn clearfix">
-                <p class="text caps"></p>
-                <div class="image"></div>
-            </div>
-        </a>
     </div>
     <div class="right-panel">
         <h1>Sorry we can't find the page you're looking for</h1>
