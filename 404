@@ -1,9 +1,5 @@
 <div class="content clearfix">
-    <div class="left-panel visible-desktop">
-    </div>
-    <div class="right-panel">
-        <p class="text text-33">Sorry we can't find the page you're looking for</p>
-    </div>
+    <p class="text text-33">Sorry we can't find the page you're looking for</p>
 </div>
 <script>
     $(document).ready(function(e){
