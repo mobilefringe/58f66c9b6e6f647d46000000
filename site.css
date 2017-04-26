@@ -485,6 +485,7 @@ header{
 .store_name_map {
     margin: 0;
     font-size: 12px;
+    text-align: center;
 }
 .storelist-table{
     width:100%;  
