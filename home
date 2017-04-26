@@ -55,7 +55,7 @@
                 animation: "slide",
                 smoothHeight: true
             });
-            $('.flex-next').html("");
+            // $('.flex-next').html("");
         }
         loadMallData(renderAll); 
     });
