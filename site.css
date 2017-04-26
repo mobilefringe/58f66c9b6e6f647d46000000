@@ -760,10 +760,6 @@ input[type="checkbox"], input[type="radio"]{
 .widget.widget-detail{
     display: block;
 }
-.widget.widget-detail img {
-    margin: 0 auto;
-    display: block;
-}
 .widget-detail .widget_right_panel{
     width:100%;
 }
@@ -1026,5 +1022,9 @@ input[type="checkbox"], input[type="radio"]{
     .hours {
         max-width: 100%;
         font-size: 12px;
+    }
+    .widget.widget-detail img {
+        margin: 0 auto;
+        display: block;
     }
 }
