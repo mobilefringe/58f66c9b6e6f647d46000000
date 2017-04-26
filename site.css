@@ -400,6 +400,9 @@ a.anchor-offset{
     background-color: #fff;
     display:none;
 }
+.menu-phone-list ul {
+    margin: 0;
+}
 a.text-34,a.text-35{
     font: 12pt/1.48 SerifaBT-Roman;
     color: #000;
