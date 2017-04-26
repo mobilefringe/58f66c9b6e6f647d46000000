@@ -32,8 +32,6 @@ function init() {
             }
         });
     }
-
-
 }
 
 function show_content(){
