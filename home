@@ -2,10 +2,14 @@
     <div class="left-panel">
 	    <div class="event clearfix">
 	        <p class="text text-20">EVENTS</p>
-            <a href="/events/lansdowne-canada-150-art-installation-reveal"><p class="text text-21">Canada 150 Art Installation Reveal </p></a>
-	        <div class="text text-22">
-	            <p>STARTS May 01 - ENDS May 01</p>
-	        </div>
+            <div id="event_container">
+                <script id="event_template" type="x-tmpl-mustache/text">
+                    <a href="/events/lansdowne-canada-150-art-installation-reveal"><p class="text text-21">Canada 150 Art Installation Reveal </p></a>
+        	        <div class="text text-22">
+        	            <p>STARTS May 01 - ENDS May 01</p>
+        	        </div>
+                </script>
+            </div>	       
             <img alt="Line" class="image" src="https://www.mallmaverick.com/system/site_images/photos/000/003/624/original/line_shadow.png?1409152676">
 	    </div>
 	    
