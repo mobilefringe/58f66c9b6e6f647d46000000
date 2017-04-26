@@ -4,7 +4,7 @@
 	        <p class="text text-20">EVENTS</p>
             <div id="event_container">
                 <script id="event_template" type="x-tmpl-mustache/text">
-                    <a href="/events/lansdowne-canada-150-art-installation-reveal"><p class="text text-21">Canada 150 Art Installation Reveal </p></a>
+                    <a href="/events/{{slug}}"><p class="text text-21">{{name}}</p></a>
         	        <div class="text text-22">
         	            <p>STARTS May 01 - ENDS May 01</p>
         	        </div>
@@ -12,7 +12,6 @@
             </div>	       
             <img alt="Line" class="image" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1493218135000/line_shadow.png">
 	    </div>
-	    
 	    <div class="gift-card clearfix" id="feature_container">
             <script id="feature_template" type="x-tmpl-mustache/text">
                 <p class="text">{{name}}</p>
@@ -44,7 +43,7 @@
             console.log(events);
             var current_event = events[0];
             console.log(current_event);
-            
+            renderEventSingle('#event_container', '#event_template', current_event);
             var banners = getBanners();
             renderBanner('#banner_template', '#home_banner', banners);
             
