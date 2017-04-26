@@ -591,9 +591,10 @@ body {
 
 .text-22, .text-22 p {
   clear: both;
-  width: 180px;
+  /*width: 180px;*/
   min-height: 20px;
-  margin: 10px 0 0 8.3333333333%;
+  /*margin: 10px 0 0 8.3333333333%;*/
+  margin: 10px 0 0 0;
   font-size: 11.9969px;
   line-height: 1;
   color: rgb(0,0,0);
