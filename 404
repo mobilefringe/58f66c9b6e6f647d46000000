@@ -1,11 +1,6 @@
 <div class="content clearfix">
-    <div class="title clearfix">
-        <div class="element"></div>
-        <p class="text">OOOPS!</p>
-        <div class="element element-11"></div>
-    </div>
     <div class="widget_right_panel">
-        <p class="text text-33">We can't find the page you're looking for!</p>
+        <p class="text text-33">Sorry, we can't find the page you're looking for!</p>
     </div>
 </div>
 <script>
