@@ -38,6 +38,7 @@
         function renderAll(){
             var events = getEventsList().sortBy(function(o){ return o.show_on_web_date}).reverse();
             console.log(events);
+            var current_event = events[0];
             
             var banners = getBanners();
             renderBanner('#banner_template', '#home_banner', banners);
