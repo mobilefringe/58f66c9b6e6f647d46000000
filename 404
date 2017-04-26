@@ -2,7 +2,7 @@
     <div class="left-panel visible-desktop">
     </div>
     <div class="right-panel">
-        <h1>Sorry we can't find the page you're looking for</h1>
+        <p class="text text-33">Sorry we can't find the page you're looking for</p>
     </div>
 </div>
 <script>
