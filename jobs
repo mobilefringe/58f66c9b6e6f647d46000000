@@ -73,6 +73,7 @@
                     var store_name = getStoreDetailsByID(val.jobable_id).name;
                     console.log(store_name);
                     if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        val.store_name = store_name;
                         retailer_published_jobs.push(val);
                     }     
                 } 
