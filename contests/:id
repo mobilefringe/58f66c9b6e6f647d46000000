@@ -39,7 +39,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 margin_30">
-                        <label>
+                        <label class="contest_rules">
                             <input id="agree_terms" type="checkbox" name="contest[rules]" required data-validation="required"/> 
                             I have read and agree to the <a href="//google.com" target="_blank">Terms and Conditions</a> for the contest entry.
                         </label>
