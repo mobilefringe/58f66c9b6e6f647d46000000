@@ -112,11 +112,12 @@
 }
 .contest-static-banner{}
 .form-page-container {
-    border-top: thin solid lightgray;
-    // width: 80%;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    border-top: 1px solid lightgray;
+    // width: 80%;
+    
 }
 #contest_form{
     // width: 574px;
