@@ -103,11 +103,12 @@
 
 /***** game time contest ******/
 
-.contest-container{
-    width:574px;
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
+.contest-container {
+    padding-top: 20px;
+    width: 574px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .contest-static-banner{}
 .form-page-container {
