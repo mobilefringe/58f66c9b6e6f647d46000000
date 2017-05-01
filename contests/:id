@@ -43,12 +43,11 @@
                             <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
                             I have read and agree to the <a href="//google.com" target="_blank">Terms and Conditions</a> for the contest entry.
                         </label>
-                        
                         <label>
                             <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
                             I would like to receive email communication on events, contests, and store promotions from {{property_name}}.
                         </label>
-                        <br/><br/>
+                        <br/>
                         <input class="contact_btn" name="commit" type="submit" value="Submit"/>
                         <br /><br />
                         <p class="" id="succes_msg" style="display:none">Thank you! Your entry has been received.</p>
