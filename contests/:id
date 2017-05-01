@@ -41,7 +41,7 @@
                     <div class="col-md-12 margin_30">
                         <label>
                             <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
-                            I agree to receive newsletters from {{property_name}}. You can unsubscribe anytime.
+                            I would like to receive email communication on events, contests, and store promotions from {{property_name}}.
                         </label>
                         <p>For more details about personal privacy, please read our <a href="/pages/costamesa-privacy-policy" target="_blank">Privacy Policy.</a></p>
                         <input class="contact_btn" name="commit" type="submit" value="Submit"/>
