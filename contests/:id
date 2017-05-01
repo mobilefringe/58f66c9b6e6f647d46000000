@@ -69,6 +69,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var contest_details = getContestBySlug(slug);
+            console.log(contest_details);
             show_content();
         }
         loadMallDataCached(renderAll); 
