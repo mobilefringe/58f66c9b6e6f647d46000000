@@ -142,13 +142,14 @@
     height:35px;
     }
 
-.contact_btn{
-    background:#4078b1;
-    color:white;
-    margin-bottom:30px;
-    height:40px;
-    width:100px !important;
-    font-size:15.5px;
+.contact_btn,
+.contest_btn {
+    margin-bottom: 30px;
+    height: 40px;
+    width: 100px !important;
+    background: #4078b1;
+    color: white;
+    font-size: 15.5px;
 }
 .checkbox_label{
     font-size:13.5px;
