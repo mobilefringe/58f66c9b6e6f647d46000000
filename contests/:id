@@ -40,21 +40,18 @@
                     </div>
                 </div> 
                 </br>
-                <div class="form-row" style="margin-bottom:0">
-                    <div class="form-field-set" style="width:90%">
-                        <input type="checkbox" id="newsletter_check" name="contest[newsletter]" style="width:25px;height:25px"/><p class="checkbox_label">I would like to receive email communication on events, contests, and store promotions from Landsdowne Place.</p> 
-                    </div>
-                </div>
-                <div class="form-row" style="margin-bottom:0">
-                    <div class="form-field-set" style="width:90%">
-                        <input type="checkbox" id="tenant_check" name="contest[tennant]" style="width:25px;height:25px"/><p class="checkbox_label">I would like to receive email communication from Boathouse.</p> 
-                    </div>
-                </div>
                 <div class="form-row">
                     <div class="form-field-set" style="width:90%;margin-bottom:15px">
                         <input type="checkbox" id="agree" name="contest[agree]"  style="width:25px;height:25px"/><p class="checkbox_label">I have read and agree to the <a href="https://www.mallmaverick.com/system/site_images/photos/000/027/681/original/Boathouse_Ballot.pdf?1491321612" target="_blank" style="text-decoration:underline">Terms and Conditions</a> for the contest entry.</p> 
                     </div>
                 </div>
+                <div class="form-row" style="margin-bottom:0">
+                    <div class="form-field-set" style="width:90%">
+                        <input type="checkbox" id="newsletter_check" name="contest[newsletter]" style="width:25px;height:25px"/><p class="checkbox_label">I would like to receive email communication on events, contests, and store promotions from Landsdowne Place.</p> 
+                    </div>
+                </div>
+                
+                
                 </br>
                  
                <input class="contact_btn" name="commit" type="submit" value="Submit"/>   
