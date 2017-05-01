@@ -50,61 +50,7 @@
                     </div>
                 </div>
             </form>
-                    
-                    
-                <form accept-charset="UTF-8" action="/newsletter_no_captcha" enctype="multipart/form-data" id="contest_form" method="post">
-                    <input id="property_id" name="contest[property_id]" style="display:none" value="57"/>
-                    <input id="contest_id" name="contest[contest_id]" style="display:none" value="45" />
-                    
-                    <div class="form-row">
-                        <div class="form-field-set">
-                           <p>FIRST NAME*</p><input id="first_name" name="contest[first_name]" /> 
-                        </div>
-                        <div class="form-field-set" style="margin-right:0">
-                            <p>LAST NAME*</p> <input id="last_name" name="contest[last_name]" /> 
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-field-set">
-                            <p>PHONE*</p> <input id="phone" name="contest[phone]" onKeyPress="return numbersonly(this, event)"/>
-                        </div>
-                        <div class="form-field-set" style="margin-right:0">
-                            <p>EMAIL*</p> <input id="email" name="contest[email]" /> 
-                            <input id="fieldEmail" name="cm-ttklhr-ttklhr" type="email" style="display:none" value=""/> 
-                            <input id="fieldEmail2" name="cm-junih-junih" type="email" style="display:none" value=""/> 
-                        </div>
-                    </div>
-    
-                     <div class="form-row" style="margin-bottom:0">
-                        <div class="form-field-set" style="width:48%">
-                            <p>AGE*</p> <input id="age" name="contest[age]"  style="width:80px" onKeyPress="return numbersonly(this, event)"/>  
-                        </div>
-                        <div class="form-field-set" style="margin-right:0;width:48%">
-                            <p>POSTAL CODE*</p> <input id="zip" name="contest[postal_code]"  style="width:97px"/>  
-                        </div>
-                    </div> 
-                    </br>
-                    <div class="form-row">
-                        <div class="form-field-set" style="width:90%;margin-bottom:15px">
-                            <input type="checkbox" id="agree" name="contest[agree]"  style="width:25px;height:25px"/><p class="checkbox_label">I have read and agree to the <a href="https://www.mallmaverick.com/system/site_images/photos/000/027/681/original/Boathouse_Ballot.pdf?1491321612" target="_blank" style="text-decoration:underline">Terms and Conditions</a> for the contest entry.</p> 
-                        </div>
-                    </div>
-                    <div class="form-row" style="margin-bottom:0">
-                        <div class="form-field-set" style="width:90%">
-                            <input type="checkbox" id="newsletter_check" name="contest[newsletter]" style="width:25px;height:25px"/><p class="checkbox_label">I would like to receive email communication on events, contests, and store promotions from Landsdowne Place.</p> 
-                        </div>
-                    </div>
-                    
-                    
-                    </br>
-                     
-                   <input class="contact_btn" name="commit" type="submit" value="Submit"/>   
-                </form>
-            </div>
         </div>
-    </div>
-    
     </script>
 </div>
 <script>
@@ -120,3 +66,53 @@
         loadMallDataCached(renderAll); 
     })
 </script>
+
+<!--<form accept-charset="UTF-8" action="/newsletter_no_captcha" enctype="multipart/form-data" id="contest_form" method="post">-->
+<!--                    <input id="property_id" name="contest[property_id]" style="display:none" value="57"/>-->
+<!--                    <input id="contest_id" name="contest[contest_id]" style="display:none" value="45" />-->
+                    
+<!--                    <div class="form-row">-->
+<!--                        <div class="form-field-set">-->
+<!--                           <p>FIRST NAME*</p><input id="first_name" name="contest[first_name]" /> -->
+<!--                        </div>-->
+<!--                        <div class="form-field-set" style="margin-right:0">-->
+<!--                            <p>LAST NAME*</p> <input id="last_name" name="contest[last_name]" /> -->
+<!--                        </div>-->
+<!--                    </div>-->
+                    
+<!--                    <div class="form-row">-->
+<!--                        <div class="form-field-set">-->
+<!--                            <p>PHONE*</p> <input id="phone" name="contest[phone]" onKeyPress="return numbersonly(this, event)"/>-->
+<!--                        </div>-->
+<!--                        <div class="form-field-set" style="margin-right:0">-->
+<!--                            <p>EMAIL*</p> <input id="email" name="contest[email]" /> -->
+<!--                            <input id="fieldEmail" name="cm-ttklhr-ttklhr" type="email" style="display:none" value=""/> -->
+<!--                            <input id="fieldEmail2" name="cm-junih-junih" type="email" style="display:none" value=""/> -->
+<!--                        </div>-->
+<!--                    </div>-->
+    
+<!--                     <div class="form-row" style="margin-bottom:0">-->
+<!--                        <div class="form-field-set" style="width:48%">-->
+<!--                            <p>AGE*</p> <input id="age" name="contest[age]"  style="width:80px" onKeyPress="return numbersonly(this, event)"/>  -->
+<!--                        </div>-->
+<!--                        <div class="form-field-set" style="margin-right:0;width:48%">-->
+<!--                            <p>POSTAL CODE*</p> <input id="zip" name="contest[postal_code]"  style="width:97px"/>  -->
+<!--                        </div>-->
+<!--                    </div> -->
+<!--                    </br>-->
+<!--                    <div class="form-row">-->
+<!--                        <div class="form-field-set" style="width:90%;margin-bottom:15px">-->
+<!--                            <input type="checkbox" id="agree" name="contest[agree]"  style="width:25px;height:25px"/><p class="checkbox_label">I have read and agree to the <a href="https://www.mallmaverick.com/system/site_images/photos/000/027/681/original/Boathouse_Ballot.pdf?1491321612" target="_blank" style="text-decoration:underline">Terms and Conditions</a> for the contest entry.</p> -->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="form-row" style="margin-bottom:0">-->
+<!--                        <div class="form-field-set" style="width:90%">-->
+<!--                            <input type="checkbox" id="newsletter_check" name="contest[newsletter]" style="width:25px;height:25px"/><p class="checkbox_label">I would like to receive email communication on events, contests, and store promotions from Landsdowne Place.</p> -->
+<!--                        </div>-->
+<!--                    </div>-->
+                    
+                    
+<!--                    </br>-->
+                     
+<!--                   <input class="contact_btn" name="commit" type="submit" value="Submit"/>   -->
+<!--                </form>-->
