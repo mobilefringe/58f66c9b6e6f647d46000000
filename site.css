@@ -165,6 +165,9 @@
     margin-bottom: 0;
     margin-top: -20px;
 }
+#newsletter_signup + .help-block {
+    margin-top: 0;
+}
 /********* @0 vic popups ***********/
 .mfp-content{
     width: 550px !important;
