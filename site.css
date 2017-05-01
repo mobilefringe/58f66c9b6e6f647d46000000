@@ -159,7 +159,7 @@
 }
 .form-control {
     margin-top: 5px;
-    margin-bottom: 25px !important;
+    margin-bottom: 0 !important;
 }
 .help-block{
     margin-bottom: -20px;
