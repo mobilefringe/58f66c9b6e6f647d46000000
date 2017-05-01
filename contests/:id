@@ -1,4 +1,4 @@
-<div class="contest-container">
+<div class="contest-container" id="contest_container">
     <script id="contest_template" type="x-tmpl-mustache/text">
         <img class="contest-static-banner" src="https://www.mallmaverick.com/system/contests/photos/000/000/045/original/7180_LDP_WebsiteGraphicDecWebContest.jpg?1417454387">    
     
@@ -61,10 +61,26 @@
             var slug = pathArray[pathArray.length-1];
             var contest_details = getContestBySlug(slug);
             console.log(contest_details);
+            renderContest('#')
             show_content();
         }
         loadMallDataCached(renderAll); 
     })
+    
+    function renderContest(container, template, collection){
+        var item_list = [];
+        var item_rendered = [];
+        var template_html = $(template).html();
+        Mustache.parse(template_html);   // optional, speeds up future uses
+    
+        collection.alt_photo_url = getImageURL(collection.photo_url);
+        collection.property_name = getPropertyDetails().name;
+        var rendered = Mustache.render(template_html,collection);
+        item_rendered.push(rendered);
+        
+        $(container).show();
+        $(container).html(item_rendered.join(''));
+    }
 </script>
 
 <!--<form accept-charset="UTF-8" action="/newsletter_no_captcha" enctype="multipart/form-data" id="contest_form" method="post">-->
