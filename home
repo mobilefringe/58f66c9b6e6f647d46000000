@@ -39,7 +39,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var events = getEventsList().sortBy(function(o){ return o.end_date}).reverse();
+            var events = getEventsList().sortBy(function(o){ return o.end_date});
             var current_event = events[0];
             renderEventSingle('#event_container', '#event_template', current_event);
             
