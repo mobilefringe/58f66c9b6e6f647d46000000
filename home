@@ -52,8 +52,7 @@
             show_content();
             
             $('.flexslider').flexslider({
-                animation: "slide",
-                smoothHeight: true
+                animation: "slide"
             });
             $('.flex-next').html("");
         }
