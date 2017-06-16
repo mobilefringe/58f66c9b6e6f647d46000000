@@ -166,11 +166,11 @@
                         </ul>
                     </div>
                     <div class="social clearfix visible-desktop">
-                        <a target="_blank" href="//www.facebook.com/LansdownePlaceMall"><img alt="Facebook" class="social_fb" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611648000/social_fb.png"></a>
-                        <a target="_blank" href="//twitter.com/#!/LansdownePlace"><img alt="Twitter" class="social_twit" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611648000/social_twit.png"></a>
-                        <a target="_blank" href="//www.youtube.com/watch?v=KvJ8mMafz0k"><img alt="Youtube" class="social_youtube" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611650000/social_youtube.png"></a>
-                        <a target="_blank" href="//pinterest.com/lansdownemall/"><img alt="Pinterest" class="social_pin" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611648000/social_pin.png"></a>
-                        <a target="_blank" href="//instagram.com/lansdowneplace"><img alt="Instagram" class="social_instagram" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611647000/social_instagram.png"></a>
+                        <a target="_blank" href="https://www.facebook.com/LansdownePlaceMall"><img alt="Facebook" class="social_fb" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611648000/social_fb.png"></a>
+                        <a target="_blank" href="https://twitter.com/LansdownePlace"><img alt="Twitter" class="social_twit" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611648000/social_twit.png"></a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=KvJ8mMafz0k"><img alt="Youtube" class="social_youtube" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611650000/social_youtube.png"></a>
+                        <a target="_blank" href="https://pinterest.com/lansdownemall/"><img alt="Pinterest" class="social_pin" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611648000/social_pin.png"></a>
+                        <a target="_blank" href="https://instagram.com/lansdowneplace"><img alt="Instagram" class="social_instagram" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492611647000/social_instagram.png"></a>
                     </div>
                 </div>
                 <div class="grey-line grey-line-1"></div>
@@ -195,7 +195,7 @@
                     <p class="text text-2">BE THE FIRST TO KNOW</p>
                     <p class="text text-3" id="newsletter_message">Sign up to get email updates on the exclusive offers and events!<br></p>
                     <div class="signup clearfix">
-                        <form action=http://mobilefringe.createsend.com/t/d/s/junih/ method="post" id="subForm">
+                        <form action=//mobilefringe.createsend.com/t/d/s/junih/ method="post" id="subForm">
                             <label for="fieldEmail" style="display:none"> subscribe email </label>
                             <input id="fieldEmail" name="cm-junih-junih" required class="element element-3" />  
                             <div class="btn_signup clearfix">
