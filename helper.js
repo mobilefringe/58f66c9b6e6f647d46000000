@@ -32,6 +32,8 @@ function init() {
             }
         });
     }
+    
+    blog_searcher();
 }
 
 function show_content(){
