@@ -208,13 +208,23 @@
                     		<br />
                         </form>        
                     </div>
-                    <div class="search clearfix">
-                        <input title="Search" class="element element-1" id="search_keyword" onkeydown="if (event.keyCode ==13) search_site()"/>
-                        <div TABINDEX='20' class="btn_search clearfix" ONKEYPRESS="search_site();" onclick="search_site();">
-                            <div class="element"></div>
-                            <img alt="Search" class="image" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1497622244000/icon_search.png">
-                        </div>
-                     </div>
+                    <div class="site_searcher_div">
+                        <label class="top_form_control no_margin">
+                            <i class="custom_i fa fa-search"></i>
+                            <input type="text" placeholder="Search" id="site_search" />
+                            <i id="close_search" class="fa fa-times-circle"></i>
+                        </label>
+                        <div class="site_search_results" id="search_results_stores"></div>
+                        <div class="site_search_results" id="search_results_events"></div>
+                        <div class="site_search_results" id="search_results_promotions"></div>
+                    </div>
+                    <!--<div class="search clearfix">-->
+                    <!--    <input title="Search" class="element element-1" id="search_keyword" onkeydown="if (event.keyCode ==13) search_site()"/>-->
+                    <!--    <div TABINDEX='20' class="btn_search clearfix" ONKEYPRESS="search_site();" onclick="search_site();">-->
+                    <!--        <div class="element"></div>-->
+                    <!--        <img alt="Search" class="image" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1497622244000/icon_search.png">-->
+                    <!--    </div>-->
+                    <!-- </div>-->
                 </div>
                 <div class="element element-5 visible-desktop"></div>
                 <div class="element element-6 visible-desktop"></div>
