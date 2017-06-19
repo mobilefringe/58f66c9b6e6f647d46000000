@@ -47,8 +47,7 @@ function init() {
                 if (data.Status === 400) {
                     alert("Please try again later.");
                 } else { // 200
-                    $('#subForm').trigger('reset');
-                    $("#success_subscribe").fadeIn();
+                    window.location.href = '/pages/lansdowne-thank-you';
                 }
             });
     });
