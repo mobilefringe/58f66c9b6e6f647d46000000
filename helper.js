@@ -33,7 +33,7 @@ function init() {
         });
     }
     
-    $('#subForm').submit(function (e) {
+    $('#subForm').submit(function(e) {
         if ($("#agree_terms").prop("checked") != true){
             alert("Please agree to the term and conditions.");
             $("#agree_terms").focus();
