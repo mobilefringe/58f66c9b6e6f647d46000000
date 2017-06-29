@@ -235,6 +235,7 @@ function renderHours(container, template, collection, type){
                         val.day = "Saturday";
                         break;
                 }
+                console.log(val.day );
                 if (val.open_time && val.close_time && val.is_closed == false){
                     var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                     var close_time = moment(val.close_time).tz(getPropertyTimeZone());
