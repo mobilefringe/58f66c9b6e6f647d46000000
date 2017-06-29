@@ -210,7 +210,6 @@ function renderHours(container, template, collection, type){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     if (type == "reg_hours") {
-         console.log("yo sup");
         $.each( collection , function( key, val ) {
             if (!val.store_id && val.is_holiday === false) {
                 switch(val.day_of_week) {
