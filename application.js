@@ -205,6 +205,7 @@ function renderHomeHours(container, template, collection){
 }
 
 function renderHours(container, template, collection, type){
+    console.log)"yo sup");
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
