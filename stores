@@ -1,0 +1,171 @@
+<div class="content clearfix">
+    <div class="left-panel">
+        <div class="page-title visible-desktop">
+            <p>STORE</p>
+            <p>DIRECTORY</p>
+        </div>
+        <div class="side_btn clearfix side_btn_alpha">
+            <p class="text">SELECT STORES A - Z</p>
+            <div class="image image_down"></div>
+        </div>
+        <div class="text text-30 alpha-panel">
+              <a href="#A" class="storelist_btn_alpha">A</a>
+              <a href="#B" class="storelist_btn_alpha">B</a>
+              <a href="#C" class="storelist_btn_alpha">C</a>
+              <a href="#D" class="storelist_btn_alpha">D</a>
+              <a href="#E" class="storelist_btn_alpha">E</a>
+              <a href="#F" class="storelist_btn_alpha">F</a>
+              <a href="#G" class="storelist_btn_alpha">G</a>
+              <a href="#H" class="storelist_btn_alpha">H</a>
+              <a href="#I" class="storelist_btn_alpha">I</a>
+              <a href="#J" class="storelist_btn_alpha">J</a>
+              <a href="#K" class="storelist_btn_alpha">K</a>
+              <a href="#L" class="storelist_btn_alpha">L</a>
+              <a href="#M" class="storelist_btn_alpha">M</a>
+              <a href="#N" class="storelist_btn_alpha">N</a>
+              <a href="#O" class="storelist_btn_alpha">O</a>
+              <a href="#P" class="storelist_btn_alpha">P</a>
+              <a href="#Q" class="storelist_btn_alpha">Q</a>
+              <a href="#R" class="storelist_btn_alpha">R</a>
+              <a href="#S" class="storelist_btn_alpha">S</a>
+              <a href="#T" class="storelist_btn_alpha">T</a>
+              <a href="#U" class="storelist_btn_alpha">U</a>
+              <a href="#V" class="storelist_btn_alpha">V</a>
+              <a href="#W" class="storelist_btn_alpha">W</a>
+              <a href="#X" class="storelist_btn_alpha">X</a>
+              <a href="#Y" class="storelist_btn_alpha">Y</a>
+              <a href="#Z" class="storelist_btn_alpha">Z</a>
+        </div>
+        <div class="side_btn clearfix side_btn_category">
+            <p class="text">CATEGORIES</p>
+            <div class="image image_down"></div>
+        </div>
+        <div class="text text-30 category-panel">
+            <div id="category_container">
+    			<script id="category_template" type="x-tmpl-mustache/text">
+    			    <a href="#{{id}}" class="storelist_btn_category">{{name}}</a>
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="right-panel">
+        <div id="mapsvg_main" class="visible-desktop"></div>
+        <div class="storelist-table storelist-table-alpha active">
+            <div class="store_list" id="store_list_alpha_container">
+                <script id="store_list_alpha_template" type="x-tmpl-mustache/text">
+                    <div class="store_list_content">
+                        <div class="store_list_header" style="{{show}}">
+                            <a class="anchor-offset" id="{{initial}}"></a>{{initial}}
+                        </div>
+                        <div class="store_list_info">
+                            <div class="store_name">
+                                <a href="/stores/{{slug}}">{{name}}</a>
+                            </div>
+                            <div class="store_promo">
+                                <a href="/stores/{{slug}}"><span style="{{promotion_exist}}">SALE</span></a>
+                            </div>
+                            <div class="store_phone">
+                                <span class="hidden-xs"><img class="phone-tag" alt="phone" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492801811000/phone.png"/><a href="tel:{{phone}}">{{phone}}</a></span>
+                                <span><a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}"><img class="phone-tag" alt="phone" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492801811000/phone.png"/></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+        <div class="storelist-table storelist-table-category">
+            <div class="store_list" id="store_list_cat_container">
+                <script id="store_list_cat_template" type="x-tmpl-mustache/text">
+                    <div class="store_list_content">
+                        <div class="store_list_header" style="{{show}}">
+                            <a class="anchor-offset" id="{{block}}"></a>{{header}}
+                        </div>
+                        <div class="store_list_info">
+                            <div class="store_name">
+                                <a href="/stores/{{slug}}">{{name}}</a>
+                            </div>
+                            <div class="store_promo">
+                                <a href="/stores/{{slug}}"><span style="{{promotion_exist}}">SALE</span></a>
+                            </div>
+                            <div class="store_phone">
+                                <span class="hidden-xs"><img class="phone-tag" alt="phone" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492801811000/phone.png"/><a href="tel:{{phone}}">{{phone}}</a></span>
+                                <span><a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script>
+    $(document).ready(function(){
+        init();
+
+        function renderPage(){
+            var categories = getStoreCategories();
+            var category_list = [];
+            $.each( categories, function( key, val ){
+                if (val.store_ids != null) {
+                    category_list.push(val);
+                } 
+            });
+            renderGeneral('#category_container', '#category_template', category_list);
+            var stores = getStoresList();
+            renderStoreList('#store_list_alpha_container','#store_list_alpha_template', stores, "stores");
+            renderStoreListCatetories('#store_list_cat_container','#store_list_cat_template', category_list, stores);
+            
+            
+            $( ".side_btn_alpha" ).click(function() {
+                $(".alpha-panel").slideToggle("fast");
+            });
+            $( ".side_btn_category" ).click(function() {
+                $(".category-panel").slideToggle("fast");
+            });
+
+    
+            $(".storelist_btn_alpha").click(function() {
+                $(".storelist-table-category").removeClass("active");
+                $(".storelist-table-alpha").addClass("active");
+            });
+            $(".storelist_btn_category").click(function() {
+                $(".storelist-table-alpha").removeClass("active");
+                $(".storelist-table-category").addClass("active");
+            });
+
+            regions = {}
+            $.each(stores, function(key, val) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    obj = {};
+                    obj["popover"] = "<img class='tooltip_img' src='" + val.store_front_url_abs + "'/><label class='store_name_map'>" + val.name + "</label>"
+                    obj["attr"] = {}
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            
+            var map = $('#mapsvg_main').mapSvg({
+                source: getSVGMapURL(),    // Path to SVG map
+                colors: {stroke: '#aaaaaa', selected: -20, hover: "#d0e4ff"},
+                disableAll: false,
+                regions: regions,
+                tooltipsMode:'custom',
+                loadingText: "loading...",
+                zoom: true,
+                zoomButtons: {'show': true,'location': 'right' },
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0, 5],
+                // viewBox:[350,-180,1600,870]
+            });
+        
+            show_content();
+        }
+        
+        loadMallDataCached(renderPage);
+    });
+</script>
