@@ -49,7 +49,6 @@
         </div>
         <div id="coming_soon_container">
             <script id="coming_soon_template" type="x-tmpl-mustache/text">
-                
                 <div class="widget widget-promotion">
                     <div class="widget_left_panel">
                         <div class="element element-12" style="{{store_front_url}}"></div>
@@ -75,7 +74,6 @@
                     coming_soon.push(val);
                 } 
             });
-            console.log(coming_soon)
             if(coming_soon.length > 0){
                 renderNewStores('#coming_soon_container', '#coming_soon_template', coming_soon);
                 $("#coming_soon").show();
