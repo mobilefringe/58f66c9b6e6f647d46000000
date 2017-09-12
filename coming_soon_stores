@@ -44,7 +44,7 @@
             <p class="text">COMING SOON STORES</p>
             <div class="element element-11"></div>
         </div>
-        <div id="no_stores">
+        <div id="no_stores" class="hidden_now">
             <p class="text text-28">There are no new stores to highlight. Please check back soon.</p>
         </div>
         <div id="coming_soon_container">
