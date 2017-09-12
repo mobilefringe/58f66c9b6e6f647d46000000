@@ -45,7 +45,7 @@
             <div class="element element-11"></div>
         </div>
         <div id="no_stores" class="hidden_now">
-            <p class="text text-28">There are no new stores to highlight. Please check back soon.</p>
+            <p class="text text-28">There are no stores coming soon to Lansdowne Place. Please check back soon.</p>
         </div>
         <div id="coming_soon_container">
             <script id="coming_soon_template" type="x-tmpl-mustache/text">
