@@ -555,8 +555,7 @@ function renderStoreList(container, template, collection, type){
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
             val.initial = "";
             val.show = "display:none;";
-        }
-        else{
+        } else {
             val.initial = current_initial;
             store_initial = current_initial;
             val.show = "display:block;";
