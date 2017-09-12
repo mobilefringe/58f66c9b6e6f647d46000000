@@ -631,8 +631,7 @@ function renderStoreDetails(container, template, collection, slug){
         
         if (val.phone != null && val.phone.length > 0){
             val.phone_show = "display:inline-block";
-        }
-        else{
+        } else {
             val.phone_show = "display:none";
         }
         
@@ -670,7 +669,6 @@ function renderStoreDetailsHours(container, template, collection){
             case 6:
                 val.day = "Saturday";
                 break;
-            
         }
         var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
         var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
