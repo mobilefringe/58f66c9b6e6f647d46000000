@@ -1,0 +1,113 @@
+<div class="content clearfix">
+    <div class="left-panel visible-desktop">
+        <p class="page-title">SHOPPING</p>
+        <div class="element element-13">
+            <img alt="What's New" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492636399000/img_whatsnew.jpg" />
+        </div>
+        <a href="/stores">
+            <div class="side_btn clearfix">
+              <p class="text">STORE DIRECTORY</p>
+              <div class="image"></div>
+            </div>
+        </a>
+        <a href="/new_stores">
+            <div class="side_btn clearfix">
+              <p class="text">NEW STORES</p>
+              <div class="image"></div>
+            </div>
+        </a>
+        <a href="/coming_soon_stores"> 
+            <div class="side_btn clearfix ">     
+              <p class="text">COMING SOON</p>
+              <div class="image"></div>
+            </div>
+        </a>
+        <a href="/gift_cards"> 
+            <div class="side_btn clearfix">     
+              <p class="text">GIFT CARDS</p>
+              <div class="image"></div>
+            </div>
+        </a>
+        <a href="/newsletter"> 
+            <div class="side_btn clearfix active">     
+              <p class="text">NEWSLETTER SIGNUP</p>
+              <div class="image"></div>
+            </div>
+        </a>
+    </div>
+    <div class="right-panel">
+        <div class="detail-banner">
+            <img alt="New Stores" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492696998000/VIC_Newsletter_Sign_Up_Banner.jpg">
+        </div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">NEWSLETTER SIGN UP</p>
+            <div class="element element-11"></div>
+        </div>
+        <div class="page-content" id="newsletter-form">
+            <center>
+                <form action="http://mobilefringe.createsend.com/t/d/s/junih/" method="post" id="newsletterForm">
+                    <p>
+                        <label for="fieldName">Name</label>
+                        <input id="fieldName" name="cm-name" type="text" />
+                    </p>
+                    <p>
+                        <label for="fieldEmail_newletter">Email</label>
+                        <input id="fieldEmail_newletter" name="cm-junih-junih" type="email" required />
+                    </p>
+                    <p>
+                        <label for="fieldsirx">Phone</label>
+                        <input id="fieldsirx" name="cm-f-sirx" type="text" />
+                    </p>
+                    <p>
+                        <label for="fieldsirm">Postal</label>
+                        <input id="fieldsirm" name="cm-f-sirm" type="text" />
+                    </p>
+                    <p>
+                        <label for="fieldsirc">Gender</label>
+                        <select id="fieldsirc" name="cm-fo-sirc">
+                            <option selected>Select One</option>
+                            <option value="262373">Male</option>
+                            <option value="262374">Female</option>
+                        </select>
+                    </p>
+                    <p style="font-size:12px;">
+                        <span><input title="Agree terms" type="checkbox" class="info_check" id="agree_terms_newletter" /> I agree to receive newsletters from Lansdowne Place</span>
+                    </p>
+                    <p>
+                        <button class="form_btn" type="submit">Subscribe</button>
+                    </p>
+                </form>
+            </center>
+        </div>       
+    </div>    
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            
+            $('#newsletterForm').submit(function (e) {
+                if ($("#agree_terms_newletter").prop("checked") != true){
+                    alert("Please agree to the term and conditions.");
+                    $("#agree_terms_newletter").focus();
+                    return false;
+                }
+                e.preventDefault();
+                $.getJSON(
+                    this.action + "?callback=?",
+                    $(this).serialize(),
+                    function (data) {
+                        if (data.Status === 400) {
+                            alert("Please try again later.");
+                        } else { // 200
+                            alert("Thank you for subscribing to our newsletter.");
+                        }
+                });
+            });
+            show_content();
+        }
+        loadMallData(renderAll); 
+    });
+</script>
