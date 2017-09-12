@@ -75,7 +75,7 @@
                     new_stores.push(val);
                 } 
             });
-            if(new_stores.length > 10){
+            if(new_stores.length > 0){
                 renderNewStores('#new_store_container', '#new_store_template', new_stores);
             } else {
                 $("#no_stores").show();
