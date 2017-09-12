@@ -44,6 +44,9 @@
             <p class="text">NEW STORES</p>
             <div class="element element-11"></div>
         </div>
+        <div id="no_stores" class="hidden_now">
+            <p class="text text-28">There are no new stores at Lansdowne Place. Please check back soon.</p>
+        </div>
         <div id="new_store_container">
             <script id="new_store_template" type="x-tmpl-mustache/text">
                 <div class="widget widget-promotion">
