@@ -1,0 +1,84 @@
+<div class="content clearfix">
+    <div class="left-panel visible-desktop">
+        <p class="page-title">SHOPPING</p>
+        <div class="element element-13">
+            <img alt="What's New" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492636399000/img_whatsnew.jpg" />
+        </div>
+        <a href="/stores">
+            <div class="side_btn clearfix">
+              <p class="text">STORE DIRECTORY</p>
+              <div class="image"></div>
+            </div>
+        </a>
+        <a href="/new_stores">
+            <div class="side_btn clearfix active">
+              <p class="text">NEW STORES</p>
+              <div class="image"></div>
+            </div>
+        </a>
+        <a href="/coming_soon_stores"> 
+            <div class="side_btn clearfix ">     
+              <p class="text">COMING SOON</p>
+              <div class="image"></div>
+            </div>
+        </a>
+        <a href="/gift_cards"> 
+            <div class="side_btn clearfix">     
+              <p class="text">GIFT CARDS</p>
+              <div class="image"></div>
+            </div>
+        </a>
+        <a href="/newsletter"> 
+            <div class="side_btn clearfix">     
+              <p class="text">NEWSLETTER SIGNUP</p>
+              <div class="image"></div>
+            </div>
+        </a>
+    </div>
+    <div class="right-panel">
+        <div class="detail-banner">
+            <img alt="New Stores" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492696704000/New_Stores.jpg">
+        </div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">NEW STORES</p>
+            <div class="element element-11"></div>
+        </div>
+        <div id="new_store_container">
+            <script id="new_store_template" type="x-tmpl-mustache/text">
+                <div class="widget widget-promotion">
+                    <div class="widget_left_panel">
+                        <div class="element element-12" style="{{store_front_url}}"></div>
+                    </div>
+                    <div class="widget_right_panel">
+                        <a href="/stores/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                        <p class="text text-27" style="{{show}}">{{open}}</p>
+                        <p class="text text-28">{{description}}</p>
+                    </div>
+                </div>
+            </script>
+        </div>        
+    </div>    
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var new_stores_list = getNewStoresList();
+            var new_stores = [];
+            $.each(new_stores_list, function(key, val){
+                if(val.is_new_store === true && val.is_coming_soon_store === false){
+                    new_stores.push(val);
+                } 
+            });
+            if(new_stores.length > 0){
+                renderNewStores('#new_store_container', '#new_store_template', new_stores);
+            } else {
+                $("#no_stores").show();
+            }
+            show_content();
+        }
+        loadMallData(renderAll); 
+    });
+</script>
