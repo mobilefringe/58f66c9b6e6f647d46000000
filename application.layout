@@ -212,14 +212,7 @@
                 <img alt="Back to top" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492615213000/backtotop_360.png">
             </a>    
         </p>
-        
-        <!-- BC FIRE BANNER -->
-        <div class="trim_screen">
-            <a id="track_link" href="https://donate.redcross.ca/ea-action/action?ea.client.id=1951&ea.campaign.id=74010&_ga=2.186858216.1395117015.1499699609-1123211371.1499699609" target="_blank">
-                <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/5841df6b6e6f640488010000/image/jpeg/1499956420000/bc_fire_banner.jpg" alt=""/>
-            </a>
-        </div>
-    
+
         <footer class="_container _container-1 clearfix">
             <div class="footer_content clearfix">
                 <div class="fill_in clearfix">
@@ -297,10 +290,5 @@
             <p class="text text-13">© 2017 Lansdowne Place | <a href="/pages/lansdowne-privacy-policy">PRIVACY POLICY</a> | <a href="https://www.mallmaverick.com/retail_users/sign_in"><u><b>TENANT LOGIN</b></u></a> | POWERED BY <a href="//www.mallmaverick.com" target="_block">MALL MAVERICK</a></p> 
             <div class="element element-8"></div>
         </footer>
-        <script>
-            $("#track_link").click( function() {
-                trackOutboundLink('https://donate.redcross.ca/ea-action/action?ea.client.id=1951&ea.campaign.id=74010&_ga=2.186858216.1395117015.1499699609-1123211371.1499699609');
-            });
-        </script> 
     </body>
 </html>
