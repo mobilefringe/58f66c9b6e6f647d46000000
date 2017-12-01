@@ -293,8 +293,8 @@
             </div>
             <div class="element element-7"></div>
             <div>
-                <p class="text text-13">© 2017 Lansdowne Place | <a href="/pages/lansdowne-privacy-policy">PRIVACY POLICY</a> | <a href="https://www.mallmaverick.com/retail_users/sign_in"><u><b>TENANT LOGIN</b></u></a> | POWERED BY <a href="//www.mallmaverick.com" target="_block">MALL MAVERICK</a>
-                </p> 
+                <div class="text text-13">© 2017 Lansdowne Place | <a href="/pages/lansdowne-privacy-policy">PRIVACY POLICY</a> | <a href="https://www.mallmaverick.com/retail_users/sign_in"><u><b>TENANT LOGIN</b></u></a> | POWERED BY <a href="//www.mallmaverick.com" target="_block">MALL MAVERICK</a>
+                </div> 
                 <div class="vic_logo visible-desktop">
                     <a href="http://www.cushmanwakefield.ca/" target="_blank">
                         <img src="//codecloud.cdn.speedyrails.net/sites/59b7e9ff6e6f6446310a0000/image/png/1509374558000/CW Logos-_CW_Blackredlogo.png" style="width:75px"/>
