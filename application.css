@@ -10861,6 +10861,9 @@ input[type="file"] {
     .map_area .span9 {
         width: 100%
     }
+    .vic_logo{
+        right: 280px;
+    }
 }
 
 @media (max-width: 480px) {
