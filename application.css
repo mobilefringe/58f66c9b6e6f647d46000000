@@ -10230,7 +10230,12 @@ button {
 }
 .vic_logo{
     margin: 5px auto; //0px 20px;
-    text-align: right;
+    // text-align: right;
+        position: absolute;
+    top: 176px;
+    right: 280px;
+    width: 140px;
+    z-index: 999;
 }
 .banner {
     width: 100%;
