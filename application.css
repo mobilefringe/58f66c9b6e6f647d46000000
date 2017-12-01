@@ -10234,7 +10234,7 @@ button {
         position: absolute;
     top: 176px;
     // right: 280px;
-        left: 870px;
+    left: 870px;
     width: 140px;
     z-index: 999;
 }
