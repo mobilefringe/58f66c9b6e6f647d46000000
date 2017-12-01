@@ -10229,13 +10229,16 @@ button {
     font-size: 8pt
 }
 .vic_logo{
-    margin: 5px auto; //0px 20px;
-    // text-align: right;
-        position: absolute;
-    top: 176px;
-    right: 280px;
-    width: 140px;
-    z-index: 999;
+    width: 75px;
+    display: inline-block;
+    margin-left: 20px;
+    // margin: 5px auto; //0px 20px;
+    // // text-align: right;
+    //     position: absolute;
+    // top: 176px;
+    // right: 280px;
+    // width: 140px;
+    // z-index: 999;
 }
 .banner {
     width: 100%;
@@ -10860,9 +10863,6 @@ input[type="file"] {
     }
     .map_area .span9 {
         width: 100%
-    }
-    .vic_logo{
-        right: 150px;
     }
 }
 
