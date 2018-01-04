@@ -1,6 +1,6 @@
 <div class="content clearfix">
     <div class="left-panel">
-	    <div class="event clearfix">
+	    <div id="currentEvents" class="event clearfix">
 	        <p class="text text-20">EVENTS</p>
             <div id="event_container">
                 <script id="event_template" type="x-tmpl-mustache/text">
@@ -43,6 +43,8 @@
             if(events.length > 0){
                 var current_event = events[0];
                 renderEventSingle('#event_container', '#event_template', current_event);
+            } else {
+                $("#currentEvents").hide();
             }
             
             var banners = getBanners();
