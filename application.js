@@ -118,7 +118,7 @@ function renderEventSingle(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     
-    var show_date = moment(collection.show_on_web_date);
+    // var show_date = moment(collection.show_on_web_date);
     var start = moment(collection.start_date).tz(getPropertyTimeZone());
     var end = moment(collection.end_date).tz(getPropertyTimeZone());
     if (start.format("DMY") == end.format("DMY")){
