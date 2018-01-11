@@ -212,11 +212,11 @@
             </a>    
         </p>
         <!-- Rohingya Crisis BANNER -->
-        <div class="trim_screen">
-            <a id="track_link" href="https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/" target="_blank">
-                <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b936416e6f64562d010000/image/jpeg/1510252672000/Rohingya_en.jpg" alt=""/>
-            </a>
-        </div>
+        <!--<div class="trim_screen">-->
+        <!--    <a id="track_link" href="https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/" target="_blank">-->
+        <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b936416e6f64562d010000/image/jpeg/1510252672000/Rohingya_en.jpg" alt=""/>-->
+        <!--    </a>-->
+        <!--</div>-->
         <footer class="_container _container-1 clearfix">
             <div class="footer_content clearfix">
                 <div class="fill_in clearfix">
