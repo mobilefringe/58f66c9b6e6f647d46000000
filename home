@@ -43,7 +43,12 @@
             console.log(events)
             if(events.length > 0){
                 var current_event = events[0];
-                renderEventSingle('#event_container', '#event_template', current_event);
+                today = moment();
+                webDate = moment(current_event.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                
+                    renderEventSingle('#event_container', '#event_template', current_event);
+                }
             } else {
                 $("#currentEvents").hide();
             }
