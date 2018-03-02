@@ -40,7 +40,6 @@
         init(e);
         function renderAll(){
             var events = getEventsList().sortBy(function(o){ return o.show_on_web_date});
-            console.log(events)
             if(events.length > 0){
                 var current_event = events[0];
                 today = moment();
