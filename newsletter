@@ -72,7 +72,7 @@
                         </select>
                     </p>
                     <p style="font-size:12px;">
-                        <span><input title="Agree terms" type="checkbox" class="info_check" id="agree_terms_newletter" /> I agree to receive newsletters from Lansdowne Place</span>
+                        <span><input title="Agree terms" type="checkbox" class="info_check" id="agree_terms_newletter" required /> I agree to receive newsletters from Lansdowne Place</span>
                     </p>
                     <p>
                         <button class="form_btn" type="submit">Subscribe</button>
@@ -88,24 +88,24 @@
         init(e);
         function renderAll(){
             
-            $('#newsletterForm').submit(function (e) {
-                if ($("#agree_terms_newletter").prop("checked") != true){
-                    alert("Please agree to the term and conditions.");
-                    $("#agree_terms_newletter").focus();
-                    return false;
-                }
-                e.preventDefault();
-                $.getJSON(
-                    this.action + "?callback=?",
-                    $(this).serialize(),
-                    function (data) {
-                        if (data.Status === 400) {
-                            alert("Please try again later.");
-                        } else { // 200
-                            alert("Thank you for subscribing to our newsletter.");
-                        }
-                });
-            });
+            // $('#newsletterForm').submit(function (e) {
+            //     if ($("#agree_terms_newletter").prop("checked") != true){
+            //         alert("Please agree to the term and conditions.");
+            //         $("#agree_terms_newletter").focus();
+            //         return false;
+            //     }
+            //     e.preventDefault();
+            //     $.getJSON(
+            //         this.action + "?callback=?",
+            //         $(this).serialize(),
+            //         function (data) {
+            //             if (data.Status === 400) {
+            //                 alert("Please try again later.");
+            //             } else { // 200
+            //                 alert("Thank you for subscribing to our newsletter.");
+            //             }
+            //     });
+            // });
             show_content();
         }
         loadMallData(renderAll); 
