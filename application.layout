@@ -137,7 +137,7 @@
                                         <li><a class="text-34" href='/contact_us' target='_self'>contact us</a></li>
                                         <li><a class="text-34" href='/leasing' target='_self'>leasing information</a></li>
                                         <li><a class="text-34" href='/pages/lansdowne-temporary-leasing' target='_self'>specialty leasing</a></li>
-                                        <li><a class="text-34" href='/green_initiative' target='_self'>green initiative act</a></li>
+                                        <li><a class="text-34" href='/green_initiative' target='_self'>act green initiatives</a></li>
                                         <li><a class="text-34" href='/community' target='_self'>community</a></li>
                                     </ul>
                                 </li>  
@@ -182,7 +182,7 @@
                                     <li><a href='/contact_us' target='_self'>contact us</a></li>
                                     <li><a href='/leasing' target='_self'>leasing information</a></li>
                                     <li><a href='/pages/lansdowne-temporary-leasing' target='_self'>specialty leasing</a></li>
-                                    <li><a href='/green_initiative' target='_self'>green initiative act</a></li>
+                                    <li><a href='/green_initiative' target='_self'>act green initiatives</a></li>
                                     <li><a href='/community' target='_self'>community</a></li>
                                 </ul>
                             </li>  
@@ -284,7 +284,7 @@
                             <a href='/contact_us' target='_self'><p>contact us</p></a>
                             <a href='/leasing' target='_self'><p>leasing information</p></a>
                             <a href='/pages/lansdowne-temporary-leasing' target='_self'><p>specialty leasing</p></a>
-                            <a href='/green_initiative' target='_self'><p>green initiative</p></a>
+                            <a href='/green_initiative' target='_self'><p>act green initiatives</p></a>
                             <a href='/community' target='_self'><p>community</p></a>
                         </div>
                     </div>
