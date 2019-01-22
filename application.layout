@@ -231,7 +231,7 @@
                             </div>
                             <br/>
                             <span>
-                                <input title="checkbox" type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Lansdowne Place
+                                <input title="checkbox" type="checkbox" class="info_check" id="agree_terms" required /> I agree to receive newsletters from Lansdowne Place
                             </span>
                     		<br />
                         </form>        
@@ -302,15 +302,7 @@
                 </div> 
                 
             </div>
-            
-            
-            
             <div class="element element-8"></div>
         </footer>
-        <!--<script>-->
-        <!--    $("#track_link").click( function() {-->
-        <!--        trackOutboundLink('https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/');-->
-        <!--    });-->
-        <!--</script>-->
     </body>
 </html>
