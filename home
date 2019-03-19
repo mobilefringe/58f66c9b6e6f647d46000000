@@ -1,0 +1,69 @@
+<div class="content clearfix">
+    <div class="left-panel">
+	    <div id="currentEvents" class="event clearfix">
+	        <p class="text text-20">EVENTS</p>
+            <div id="event_container">
+                <script id="event_template" type="x-tmpl-mustache/text">
+                    <a href="/events/{{slug}}"><p class="text text-21">{{name}}</p></a>
+        	        <div class="text text-22">
+        	            <p>{{dates}}</p>
+        	        </div>
+                </script>
+            </div>	       
+            <img alt="Line" class="image" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1493218135000/line_shadow.png">
+	    </div>
+	    <div class="gift-card clearfix" id="feature_container">
+            <script id="feature_template" type="x-tmpl-mustache/text">
+                <p class="text">{{name}}</p>
+    	        <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    <img class="image" src="{{image_url}}" alt="{{name}}">
+                </a>
+            </script>    
+        </div>
+	</div>
+	<div class="right-panel">
+	    <div class="flexslider trim_screen">
+            <ul class="slides" id="home_banner">
+                <script id="banner_template" type="x-tmpl-mustache/text">
+                    <li>
+                        <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                            <img alt="banner" src="{{image_url}}" />
+                        </a>
+                    </li>
+                </script>
+            </ul>
+        </div>
+	</div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var events = getEventsList().sortBy(function(o){ return o.show_on_web_date});
+            if(events.length > 0){
+                var current_event = events[0];
+                today = moment();
+                webDate = moment(current_event.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    renderEventSingle('#event_container', '#event_template', current_event);
+                } else {
+                    $("#currentEvents").hide();
+                }
+            }
+            
+            var banners = getBanners();
+            renderBanner('#banner_template', '#home_banner', banners);
+            
+            var feature_items = getFeatureList();
+            renderFeatureItems('#feature_container', '#feature_template', feature_items);
+            
+            show_content();
+            
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+            $('.flex-next').html("next");
+        }
+        loadMallData(renderAll); 
+    });
+</script>
