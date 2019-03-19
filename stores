@@ -66,7 +66,7 @@
                             </div>
                             <div class="store_phone">
                                 <span class="hidden-xs"><img class="phone-tag" alt="phone" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492801811000/phone.png"/><a href="tel:{{phone}}">{{phone}}</a></span>
-                                <span><a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}"><img class="phone-tag" alt="phone" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492801811000/phone.png"/></a></span>
+                                <span><a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}" aria-label="{{phone}}"><img class="phone-tag" alt="phone" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492801811000/phone.png"/></a></span>
                             </div>
                         </div>
                     </div>
