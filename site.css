@@ -1062,7 +1062,7 @@ input[type="checkbox"], input[type="radio"]{
     }
 }
 
-#mm_page_content {
+#mm_page_content strong {
     color: #da0000;
 }
 /********************************************************/
