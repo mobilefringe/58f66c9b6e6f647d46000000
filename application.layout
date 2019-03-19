@@ -82,10 +82,11 @@
                     <img alt="logo" class="lp_logo" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492544930000/lansdownelogo.png">
                 </a>
                 <div class="site_searcher_div">
-                    <label for="site_search" class="top_form_control no_margin" aria-label="Search"></label>
-                    <i class="custom_i fa fa-search"></i>
-                    <input type="text" placeholder="Search" id="site_search" />
-                    <i id="close_search" class="fa fa-times-circle"></i>
+                    <label for="site_search" class="top_form_control no_margin" aria-label="Search">
+                        <i class="custom_i fa fa-search"></i>
+                        <input type="text" placeholder="Search" id="site_search" />
+                        <i id="close_search" class="fa fa-times-circle"></i>
+                    </label>
                     <div class="site_search_results" id="search_results_stores"></div>
                     <div class="site_search_results" id="search_results_events"></div>
                     <div class="site_search_results" id="search_results_promotions"></div>
