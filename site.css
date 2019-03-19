@@ -1061,6 +1061,10 @@ input[type="checkbox"], input[type="radio"]{
         width: 85px;
     }
 }
+
+#mm_page_content {
+    color: #da0000;
+}
 /********************************************************/
 /* mobile */
 
