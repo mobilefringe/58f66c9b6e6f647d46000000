@@ -995,6 +995,9 @@ input[type="checkbox"], input[type="radio"]{
     width:100%;
     text-transform: uppercase;
     margin:6px 0px 0px 0px;
+    p {
+        font-size: 12px;
+    }
 }
 .text-34{
     float: left;
