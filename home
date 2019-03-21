@@ -62,7 +62,7 @@
             $('.flexslider').flexslider({
                 animation: "slide"
             });
-            $('.flex-next').html("");
+            $('.flex-next').html("next");
         }
         loadMallData(renderAll); 
     });
