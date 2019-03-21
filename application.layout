@@ -232,7 +232,7 @@
                             </div>
                             <br/>
                             <span>
-                                <label for="agree_terms">Agree to terms</label>
+                                <label for="agree_terms" style="display:none">Agree to terms</label>
                                 <input type="checkbox" class="info_check" id="agree_terms" required /> I agree to receive newsletters from Lansdowne Place
                             </span>
                     		<br />
