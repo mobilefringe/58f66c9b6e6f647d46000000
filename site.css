@@ -577,9 +577,6 @@ header{
 
 .quick_map{
     height:142px;    
-    p {
-        font-size: 12px;
-    }
 }
 
 .text a,.text a:visited,.text a:hover,.text a:active {
