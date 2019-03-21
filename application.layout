@@ -232,7 +232,7 @@
                             </div>
                             <br/>
                             <span>
-                                <input title="checkbox" type="checkbox" class="info_check" id="agree_terms" required /> I agree to receive newsletters from Lansdowne Place
+                                <input type="checkbox" class="info_check" id="agree_terms" required /> I agree to receive newsletters from Lansdowne Place
                             </span>
                     		<br />
                         </form>        
