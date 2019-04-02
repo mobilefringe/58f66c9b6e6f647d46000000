@@ -304,5 +304,10 @@
             </div>
             <div class="element element-8"></div>
         </footer>
+        <script>
+        $("#track_link").click( function() {
+            trackOutboundLink('http://bit.ly/cyclone-idai-cushman-wakefield');
+        });
+        </script>
     </body>
 </html>
