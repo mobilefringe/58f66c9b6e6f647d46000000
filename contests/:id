@@ -1,0 +1,127 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<div class="contest-container" id="contest_container">
+    <script id="contest_template" type="x-tmpl-mustache/text">
+        <img class="contest-static-banner" src="https://www.mallmaverick.com/{{photo_url}}">    
+        <div class="form-page-container">
+            <form id="contest_form">
+                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}"/>
+                <input type="hidden" name="cm-name" id="cm-name" />
+                <div class="row ">
+                    <div class="col-md-6 margin_30">
+                        <label for="first_name">First Name*</label>  
+                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required"/>
+                    </div>
+                    <div class="col-md-6 margin_30">
+                        <label for="last_name">Last Name*</label>  
+                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required"/>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 margin_30">
+                        <label for="phone_number">Phone*</label>  
+                        <input class="form-control" id="phone_number" name="contest[phone]" type="text" required data-validation="required"/>
+                    </div>
+                    <div class="col-md-6 margin_30">
+                        <label for="email">Email*</label> 
+                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 margin_30">
+                        <label for="age">Age*</label> 
+                        <input class="form-control" id="age" name="contest[age]" type="text" required data-validation="required"/>
+                    </div>
+                    <div class="col-md-6 margin_30">
+                        <label for="postal_code">Postal Code*</label> 
+                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 margin_30">
+                        <label class="contest_rules">
+                            <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required"/> 
+                            I have read and agree to the <a href="/pages/lansdowne-rules-and-regulations" target="_blank">Terms and Conditions</a> for the contest entry.
+                        </label>
+                        <label>
+                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
+                            I would like to receive email communication on events, contests, and store promotions from {{property_name}}.
+                        </label>
+                        <br/>
+                        <input class="contest_btn" name="commit" type="submit" value="Submit"/>
+                        <br /><br />
+                        <p class="" id="succes_msg" style="display:none">Thank you! Your entry has been received.</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </script>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var contest_details = getContestBySlug(slug);
+            console.log(contest_details);
+            renderContest('#contest_container', '#contest_template', contest_details);
+            show_content();
+            
+            $.validate();
+            $('#contest_form').submit(function(e){
+                e.preventDefault();
+                $('.contest_btn').prop('disabled', true);
+                submit_contest(slug);
+            });
+        }
+        loadMallDataCached(renderAll); 
+    })
+    
+    function renderContest(container, template, collection){
+        var item_list = [];
+        var item_rendered = [];
+        var template_html = $(template).html();
+        Mustache.parse(template_html);   // optional, speeds up future uses
+    
+        collection.alt_photo_url = getImageURL(collection.photo_url);
+        collection.property_name = getPropertyDetails().name;
+        var rendered = Mustache.render(template_html,collection);
+        item_rendered.push(rendered);
+        
+        $(container).show();
+        $(container).html(item_rendered.join(''));
+    }
+    
+    function submit_contest(slug) {
+        var contest_entry = {};
+        var contest_data = {};
+        contest_data.first_name = $('#first_name').val();
+        contest_data.last_name = $('#last_name').val();
+        contest_data.email = $('#email').val();
+        contest_data.phone = $('#phone_number').val();
+        contest_data.postal_code = $('#postal_code').val();
+        contest_data.age = $('#age').val();
+        contest_data.gender = $('#gender').val();
+        contest_data.newsletter = $('#newsletter_signup').prop("checked");
+        
+        contest_entry.contest = contest_data;
+        
+        var propertyDetails = getPropertyDetails();
+        var host = propertyDetails.mm_host.replace("http:", "");
+        var action = host + "/contests/" + slug + "/create_js_entry"
+        $.ajax({
+            url : action,
+            type: "POST",
+            data : contest_entry,
+            success: function(data){
+               $('#succes_msg').show();
+               $('.contest_btn').prop('disabled', false);
+               $('#contest_form').trigger('reset');
+            },
+            error: function (data){
+                alert('An error occured while processing your request. Please try again later!')
+            }
+        });
+    }
+</script>
