@@ -134,6 +134,12 @@
     font-size: 25px;
     cursor: pointer;
     background-color: #fff;
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transformm: translate(-50%, -50%);
+    }
 }
 /* SEARCH */
 .site_searcher_div, #store_search_results {
