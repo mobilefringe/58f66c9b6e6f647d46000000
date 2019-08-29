@@ -1226,4 +1226,7 @@ input[type="checkbox"], input[type="radio"]{
         margin: 0 auto;
         display: block;
     }
+    .popup_home{
+        width: 80%;
+    }
 }
