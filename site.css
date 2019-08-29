@@ -125,6 +125,16 @@
     max-width:100%;
     max-height:100%;
 }
+
+.close_popup{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 2px 5px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fff;
+}
 /* SEARCH */
 .site_searcher_div, #store_search_results {
     position: absolute;
