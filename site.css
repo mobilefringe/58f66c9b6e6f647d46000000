@@ -109,11 +109,11 @@
 /* *** */
 
 /* POP UP */
-.custom_backdrop{
-    opacity: 0.8;
-    background: #fff;
-    text-align: center;
+.custom_backdrop {
+    opacity: 0.75;
+    background: #000;
 }
+
 .popup_home {
     position: absolute;
     top: 50%;
