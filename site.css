@@ -131,12 +131,13 @@
     max-height: 100%;
 }
 
-.close_popup{
+.close_popup {
+    padding: 5px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     top: 5px;
     right: 5px;
-    padding: 2px 5px;
-    font-size: 25px;
     cursor: pointer;
     background-color: #FFF;
     &:before {
@@ -146,6 +147,7 @@
         transform: translate(-50%, -50%);
     }
 }
+
 /* SEARCH */
 .site_searcher_div, #store_search_results {
     position: absolute;
