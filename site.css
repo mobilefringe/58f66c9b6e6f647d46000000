@@ -109,6 +109,11 @@
 /* *** */
 
 /* POP UP */
+.custom_backdrop{
+    opacity: 0.8;
+    background: #fff;
+    text-align: center;
+}
 .popup_home {
     position: absolute;
     top: 50%;
@@ -133,7 +138,7 @@
     padding: 2px 5px;
     font-size: 25px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #FFF;
     &:before {
         position: absolute;
         top: 50%;
