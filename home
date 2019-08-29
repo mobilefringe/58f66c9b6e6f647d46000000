@@ -1,3 +1,9 @@
+<div class="popup_home hidden_now">
+    <a href="#">
+        <img src="#" alt="pop up" />
+    </a>
+    <i class="fa fa-remove close_popup"></i>
+</div>
 <div class="content clearfix">
     <div class="left-panel">
 	    <div id="currentEvents" class="event clearfix">
@@ -58,6 +64,25 @@
             renderFeatureItems('#feature_container', '#feature_template', feature_items);
             
             show_content();
+            
+            // POP-UP
+            if ($.cookie("popup_viewed") != "true") {
+                $.cookie("popup_viewed", "true", { expires: 1 });
+                var popup = getPopups()[0];
+                if (popup != undefined){
+                    $('.popup_home a').attr('href', popup.photo_link)
+                    $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
+                    $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+                    $('.popup_home').show()
+                    $("body").addClass('no_scroll');
+                }
+            }
+            
+            $('.close_popup, .custom_backdrop').click(function(){
+                $(".modal-backdrop").remove();
+		        $(".popup_home").remove();
+		        $("body").removeClass('no_scroll');
+            });
             
             $('.flexslider').flexslider({
                 animation: "slide"
