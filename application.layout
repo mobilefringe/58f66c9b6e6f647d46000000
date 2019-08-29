@@ -38,7 +38,7 @@
         <script src="//www.google.com/recaptcha/api.js"></script>
         <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
         <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
-        
+        <script src="//s3.amazonaws.com/kodekloud/sites/59b7e9ff6e6f6446310a0000/text/javascript/1566244334794/jquery.cookie.min.js"></script>
         <!--MallMaverick SDK-->
         <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
         <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
