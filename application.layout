@@ -220,8 +220,8 @@
         
             <div class="footer_content clearfix">
                 <!--SECURE JAVASCRIPT PIXEL CODE START-->
-    <script src="https://acuityplatform.com/Adserver/pxlj/5297924941768075264?" type="text/javascript" ></script>
-    <!--SECURE JAVASCRIPT PIXEL CODE END-->   
+                <script src="https://acuityplatform.com/Adserver/pxlj/5297924941768075264?" type="text/javascript" ></script>
+                <!--SECURE JAVASCRIPT PIXEL CODE END-->   
                 <div class="fill_in clearfix">
                     <p class="text text-2">BE THE FIRST TO KNOW</p>
                     <p class="text text-3" id="newsletter_message">Sign up to get email updates on the exclusive offers and events!<br></p>
