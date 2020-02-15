@@ -211,11 +211,11 @@
                 <img alt="Back to top" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/png/1492615213000/backtotop_360.png">
             </a>    
         </p>
-        <div class="trim_screen">
-            <a id="track_link" href="https://www.wires.org.au/" target="_blank">
-                <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b7e9ff6e6f6446310a0000/image/jpeg/1578946028000/958x500.jpg" alt=""/>
-            </a>
-        </div>
+        <!--<div class="trim_screen">-->
+        <!--    <a id="track_link" href="https://www.wires.org.au/" target="_blank">-->
+        <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b7e9ff6e6f6446310a0000/image/jpeg/1578946028000/958x500.jpg" alt=""/>-->
+        <!--    </a>-->
+        <!--</div>-->
         <footer class="_container _container-1 clearfix">
         
             <div class="footer_content clearfix">
