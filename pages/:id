@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-<div id="covid_content" class="content clearfix">
+<div id="covid_content" class="content clearfix display_none">
     <div id="">
         <div class="page-content">
             <div id="mm_page_content"></div>
@@ -53,7 +53,9 @@
             
             // check if top header should be shown 
             if (slug == 'lansdowne-covid-19-update') {
-                $("#detail-banner").hide();
+                $("#regular_content").hide();
+                
+                $("#covid_content").show();
             }
             
             show_content();
