@@ -1,4 +1,4 @@
-<div class="content clearfix">
+<div id="regular_content" class="content clearfix">
     <div class="left-panel visible-desktop">
         <p class="page-title caps"></p>
         <div class="element element-13">
@@ -20,6 +20,13 @@
             <p class="text caps"></p>
             <div class="element element-11"></div>
         </div>
+        <div class="page-content">
+            <div id="mm_page_content"></div>
+        </div>
+    </div>
+</div>
+<div id="covid_content" class="content clearfix">
+    <div id="">
         <div class="page-content">
             <div id="mm_page_content"></div>
         </div>
