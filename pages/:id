@@ -27,6 +27,11 @@
 </div>
 <div id="covid_content" class="content clearfix hidden_now">
     <div id="">
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text caps"></p>
+            <div class="element element-11"></div>
+        </div>
         <div class="page-content">
             <div id="mm_page"></div>
         </div>
