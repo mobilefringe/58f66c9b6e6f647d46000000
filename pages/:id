@@ -37,6 +37,13 @@
         </div>
     </div>
 </div>
+
+<style>
+    .title .element {
+        width: 100%;
+    }
+</style>
+
 <script>
     $(document).ready(function(e){
         init(e);
