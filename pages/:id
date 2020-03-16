@@ -28,7 +28,7 @@
 <div id="covid_content" class="content clearfix hidden_now">
     <div id="">
         <div class="page-content">
-            <div id="mm_page_content"></div>
+            <div id="mm_page"></div>
         </div>
     </div>
 </div>
@@ -45,6 +45,7 @@
                 $('.side_btn p').html(data.title);
                 $('.title p').html(data.title);
                 $('#mm_page_content').html(data.body);
+                $('#mm_page').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
