@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-<div id="covid_content" class="content clearfix display_none">
+<div id="covid_content" class="content clearfix hidden_now">
     <div id="">
         <div class="page-content">
             <div id="mm_page_content"></div>
