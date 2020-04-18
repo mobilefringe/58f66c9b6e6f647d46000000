@@ -1,7 +1,7 @@
 0<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <div class="contest-container" id="contest_container">
     <script id="contest_template" type="x-tmpl-mustache/text">
-        <img class="contest-static-banner" src="https://www.mallmaverick.com/{{photo_url}}">    
+        <img class="contest-static-banner" src="https://www.assets.mallmaverick.com/{{photo_url}}">    
         <div class="form-page-container">
             <form id="contest_form">
                 <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
