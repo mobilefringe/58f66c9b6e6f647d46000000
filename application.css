@@ -11068,9 +11068,12 @@ div.actions {
  */
 
 @font-face {
+    // font-family: 'FontAwesome';
+    // src: url("https://www.mallmaverick.com/assets/fontawesome-webfont-567a00db9a8adb4e9d459e695af8affc.eot");
+    // src: url("https://www.mallmaverick.com/assets/fontawesome-webfont-567a00db9a8adb4e9d459e695af8affc.eot?#iefix") format("embedded-opentype"), url("https://www.mallmaverick.com/assets/fontawesome-webfont-c6e8364a34d118de9ef8f43f2b6b6f7b.woff") format("woff"), url("https://www.mallmaverick.com/assets/fontawesome-webfont-dbff97316399320970a5c9245cb63ee6.ttf") format("truetype"), url("https://www.mallmaverick.com/assets/fontawesome-webfont-d46104091853932dab05b10452ffe827.svg#fontawesomeregular") format("svg");
     font-family: 'FontAwesome';
-    src: url("https://www.mallmaverick.com/assets/fontawesome-webfont-567a00db9a8adb4e9d459e695af8affc.eot");
-    src: url("https://www.mallmaverick.com/assets/fontawesome-webfont-567a00db9a8adb4e9d459e695af8affc.eot?#iefix") format("embedded-opentype"), url("https://www.mallmaverick.com/assets/fontawesome-webfont-c6e8364a34d118de9ef8f43f2b6b6f7b.woff") format("woff"), url("https://www.mallmaverick.com/assets/fontawesome-webfont-dbff97316399320970a5c9245cb63ee6.ttf") format("truetype"), url("https://www.mallmaverick.com/assets/fontawesome-webfont-d46104091853932dab05b10452ffe827.svg#fontawesomeregular") format("svg");
+    src: url("//codecloud.cdn.speedyrails.net/sites/59b7e9ff6e6f6446310a0000//1587608812000/fontawesome-webfont-567a00db9a8adb4e9d459e695af8affc.eot");
+    format("embedded-opentype"), url(//codecloud.cdn.speedyrails.net/sites/59b7e9ff6e6f6446310a0000/application/font-woff/1587608887000/fontawesome-webfont-c6e8364a34d118de9ef8f43f2b6b6f7b.woff") format("woff"), url("//codecloud.cdn.speedyrails.net/sites/59b7e9ff6e6f6446310a0000//1587608897000/fontawesome-webfont-dbff97316399320970a5c9245cb63ee6.ttf") format("truetype");
     font-weight: normal;
     font-style: normal
 }
