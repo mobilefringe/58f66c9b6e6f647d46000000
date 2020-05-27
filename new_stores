@@ -2,8 +2,7 @@
     <div class="left-panel visible-desktop">
         <p class="page-title">SHOPPING</p>
         <div class="element element-13">
-            <!--<img class="inside_banner" alt="What's New" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492636399000/img_whatsnew.jpg" />-->
-            <img class="inside_banner">
+            <img alt="What's New" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492636399000/img_whatsnew.jpg" />
         </div>
         <a href="/stores">
             <div class="side_btn clearfix">
@@ -38,7 +37,8 @@
     </div>
     <div class="right-panel">
         <div class="detail-banner">
-            <img alt="New Stores" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492696704000/New_Stores.jpg">
+            <!--<img alt="New Stores" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492696704000/New_Stores.jpg">-->
+            <img class="inside_banner">
         </div>
         <div class="title clearfix">
             <div class="element"></div>
