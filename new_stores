@@ -73,7 +73,7 @@
             if (banner_repo) {
                 var banner_image = banner_repo.images[0].image_url;
                 if (banner_image) {
-                    $(".inside_banner").attr({ "src": "'" +  banner_image + "'" });
+                    $(".inside_banner").attr({ "src": banner_image});
                 }
             }
             var new_stores_list = getNewStoresList();
