@@ -50,7 +50,6 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            <img class="inside_banner">
             var banner_repo = getRepoDetailsByName("Promotions Banner");
             if (banner_repo) {
                 var banner_image = banner_repo.images[0].image_url;
