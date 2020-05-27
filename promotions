@@ -1,0 +1,80 @@
+<div class="content clearfix">
+    <div class="left-panel visible-desktop">
+        <p class="page-title">PROMOS & EVENTS</p>
+        <div class="element element-13">
+            <img src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492636399000/img_whatsnew.jpg" />
+        </div>
+        <a href="#"> 
+            <div class="side_btn clearfix active">     
+                <p class="text">PROMOTIONS</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a href="/events"> 
+            <div class="side_btn clearfix">     
+                <p class="text">EVENTS</p>
+                <div class="image"></div>
+            </div>
+        </a>
+    </div>
+    <div class="right-panel">
+        <div class="detail-banner"><img class="inside_banner"></div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">PROMOTIONS</p>
+            <div class="element element-11"></div>
+        </div>
+        <div id="no_jobs" class="hidden_now title">
+            <p class="text">There are currently no promostions available. Please check back soon.</p>
+        </div>
+        <div id="promos">
+            <div id="promos_container">
+                <script id="promos_template" type="x-tmpl-mustache/text">
+                    <div class="widget widget-promotion">
+                        <div class="widget_left_panel">
+                            <div class="element element-12" style="{{image_url}}"></div>
+                        </div>
+                        <div class="widget_right_panel">
+                            <a href="/promotions/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                            <a href="/stores/{{store_detail_btn}}"><p class="text text-34">{{store_name}}</p></a>
+                            <p class="text text-27">{{dates}}</p>
+                            <p class="text text-28">{{description}}</p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            <img class="inside_banner">
+            var banner_repo = getRepoDetailsByName("Promotions Banner");
+            if (banner_repo) {
+                var banner_image = banner_repo.images[0].image_url;
+                if (banner_image) {
+                    $(".inside_banner").attr({ "src": banner_image});
+                }
+            }
+            var promotions = getPromotionsList().sortBy(function(o){ return o.start_date });
+            var published_promos = [];
+            $.each( promotions , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos.push(val);
+                } 
+            });
+            if(published_promos.length > 0){
+                renderPromotions("#promos_container","#promos_template", published_promos);
+            }
+            else{
+                $('#no_promos').show()
+            }
+            show_content();
+        }
+        loadMallData(renderAll); 
+    });
+</script>
