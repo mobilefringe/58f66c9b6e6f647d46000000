@@ -18,7 +18,7 @@
         </a>
     </div>
     <div class="right-panel">
-        <div class="detail-banner"><img class="inside_banner"></div>
+        <div class="detail-banner"><img class="inside_banner" alt=""></div>
         <div class="title clearfix">
             <div class="element"></div>
             <p class="text">PROMOTIONS</p>
