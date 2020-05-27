@@ -2,7 +2,7 @@
     <div class="left-panel visible-desktop">
         <p class="page-title">SHOPPING</p>
         <div class="element element-13">
-            <img alt="What's New" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492636399000/img_whatsnew.jpg" />
+            <img class="inside_banner" alt="What's New" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492636399000/img_whatsnew.jpg" />
         </div>
         <a href="/stores">
             <div class="side_btn clearfix">
@@ -68,6 +68,13 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var banner_repo = getRepoDetailsByName("Inner Pages Banner");
+            if (banner_repo) {
+                var banner_image = banner_repo.images[0].image_url;
+                if (banner_image) {
+                    $(".inside_banner").attr({ "src": "'" +  banner_image + "'")" });
+                }
+            }
             var new_stores_list = getNewStoresList();
             var new_stores = [];
             $.each(new_stores_list, function(key, val){
