@@ -37,7 +37,7 @@
     </div>
     <div class="right-panel">
         <div class="detail-banner">
-            <img alt="New Stores" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492697613000/Gift_Card_Banner.jpg">
+            <img class="inside_banner">
         </div>
         <div class="title clearfix">
             <div class="element"></div>
@@ -51,6 +51,13 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var banner_repo = getRepoDetailsByName("Gift Cards Banner");
+            if (banner_repo) {
+                var banner_image = banner_repo.images[0].image_url;
+                if (banner_image) {
+                    $(".inside_banner").attr({ "src": banner_image});
+                }
+            }
             // var pathArray = window.location.pathname.split( '/' );
             // var slug = pathArray[pathArray.length-1];
             var prefix = get_prefix();
