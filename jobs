@@ -1,0 +1,103 @@
+<div class="content clearfix">
+    <div class="left-panel visible-desktop">
+        <p class="page-title">JOBS</p>
+        <div class="element element-13">
+            <img alt="Jobs" src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492699060000/img_jobs.jpg"/>
+        </div>
+        <a href="/jobs">
+            <div class="side_btn clearfix active">
+              <p class="text">JOBS</p>
+              <div class="image"></div>
+            </div>
+        </a>
+    </div>
+    <div class="right-panel">
+        <div class="detail-banner">
+            <div class="detail-banner"><img class="inside_banner" alt=""></div>
+        </div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">JOBS</p>
+            <div class="element element-11"></div>
+        </div>
+        <div id="no_jobs" class="hidden_now title">
+            <p class="text">There are currently no job postings available. Please check back soon.</p>
+        </div>
+        <div id="retail_jobs" class="hidden_now">
+            <div id="retail_jobs_container">
+                <script id="retail_jobs_template" type="x-tmpl-mustache/text">
+                    <div class="widget widget-job">
+                        <div class="widget_right_panel">
+                            <a href="/stores/{{store_slug}}"><p class="text text-34">{{store_name}}</p></a>
+                            <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                            <p class="text text-27">Application Deadline: {{end_date}}</p>
+                            <p class="text text-28">{{description}}</p>
+                        </div>
+                    </div>  
+                </script>
+            </div>
+        </div>
+        <div id="prop_jobs" class="hidden_now">
+            <div id="mall_jobs_container">
+                <script id="mall_jobs_template" type="x-tmpl-mustache/text">
+                    <div class="widget widget-job">
+                        <div class="widget_right_panel">
+                            <p class="text text-34">{{store_name}}</p>
+                            <a href="/jobs/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                            <p class="text text-27">Application Deadline: {{end_date}}</p>
+                            <p class="text text-28">{{description}}</p>
+                        </div>
+                    </div>  
+                </script>
+            </div>
+        </div>
+    </div>    
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var banner_repo = getRepoDetailsByName("Hours Banner");
+            if (banner_repo) {
+                var banner_image = banner_repo.images[0].image_url;
+                if (banner_image) {
+                    $(".inside_banner").attr({ "src": banner_image});
+                }
+            }
+            var jobs = getJobsList();
+            var mall_published_jobs = [];
+            var retailer_published_jobs = [];
+            $.each(jobs, function(key, val){
+                if(val.jobable_type == "Property"){
+                    today = moment();
+                    webDate = moment(val.show_on_web_date)
+                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        mall_published_jobs.push(val);
+                    }
+                } else {
+                    today = moment();
+                    webDate = moment(val.show_on_web_date);
+                    var store_name = getStoreDetailsByID(val.jobable_id).name;
+                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        val.store_name = store_name;
+                        retailer_published_jobs.push(val);
+                    }     
+                } 
+            });
+            var retail_jobs = retailer_published_jobs.sortBy(function(o){ return o.store_name});
+            if(retail_jobs.length > 0){
+                renderJobs("#retail_jobs_container","#retail_jobs_template", retail_jobs);
+                $("#retail_jobs").show();
+            }
+            if(mall_published_jobs.length > 0){
+                renderJobs("#mall_jobs_container","#mall_jobs_template", mall_published_jobs);
+                $("#prop_jobs").show();
+            }
+            if(mall_published_jobs.length < 1 && retail_jobs.length < 1){
+                $("#no_jobs").show();   
+            }
+            show_content();
+        }
+        loadMallData(renderAll); 
+    });
+</script>
