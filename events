@@ -1,0 +1,83 @@
+<div class="content clearfix">
+    <div class="left-panel visible-desktop">
+        <p class="page-title">PROMOS & EVENTS</p>
+        <div class="element element-13">
+            <img src="//codecloud.cdn.speedyrails.net/sites/58f66c9b6e6f647d46000000/image/jpeg/1492636399000/img_whatsnew.jpg" />
+        </div>
+        <a href="/promotions"> 
+            <div class="side_btn clearfix">     
+                <p class="text">PROMOTIONS</p>
+                <div class="image"></div>
+            </div>
+        </a>
+        <a href="#"> 
+            <div class="side_btn clearfix active">     
+                <p class="text">EVENTS</p>
+                <div class="image"></div>
+            </div>
+        </a>
+    </div>
+    <div class="right-panel">
+        <div class="detail-banner"><img class="inside_banner" alt=""></div>
+        <div class="title clearfix">
+            <div class="element"></div>
+            <p class="text">CURRENT EVENTS</p>
+            <div class="element element-11"></div>
+        </div>
+        <div id="no_jobs" class="hidden_now title">
+            <p class="text">There are currently no events. Please check back soon.</p>
+        </div>
+        <div id="promos">
+            <div id="promos_container">
+                <script id="promos_template" type="x-tmpl-mustache/text">
+                    <div class="widget widget-promotion">
+                        <div class="widget_left_panel">
+                            <div class="element element-12" style="{{image_url}}"></div>
+                        </div>
+                        <div class="widget_right_panel">
+                            <a href="/events/{{slug}}"><p class="text text-33">{{name}}</p></a>
+                            <p class="text text-27">{{dates}}</p>
+                            <p class="text text-28">{{description}}</p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var banner_repo = getRepoDetailsByName("Hours Banner");
+            if (banner_repo) {
+                var banner_image = banner_repo.images[0].image_url;
+                if (banner_image) {
+                    $(".inside_banner").attr({ "src": banner_image});
+                }
+            }
+            var events = getEventsList().sortBy(function(o){ return o.start_date });
+            var published_events = [];
+            var past_events = [];
+            $.each( events , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_events.push(val);
+                } else {
+                    past_events.push(val);
+                }
+            });
+            if(published_events.length > 0){
+                renderEvents("#promos_container","#promos_template", published_events);
+            } else {
+                $('#no_promos').show()
+            }
+            if(past_events.length > 0){
+                renderEvents("#past_events_container","#past_events_template", past_events);
+            }
+            show_content();
+        }
+        loadMallData(renderAll); 
+    });
+</script>
